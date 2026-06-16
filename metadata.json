@@ -1,0 +1,6 @@
+{
+  "name": "Global Opportunities Pakistan",
+  "description": "Connecting Pakistani students and professionals to opportunities abroad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
