@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, ChevronRight, MapPin, Briefcase, FileSignature, CheckCircle2, Building, Ship , ArrowLeft, Globe} from 'lucide-react';
+import { ShieldCheck, ChevronRight, MapPin, Briefcase, FileSignature, CheckCircle2, Building, Ship, ArrowLeft, Globe } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function CanadaAtlantic() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Languages, AlertTriangle, CheckCircle2, Link as LinkIcon , Globe} from 'lucide-react';
+import { ArrowLeft, Languages, AlertTriangle, CheckCircle2, Link as LinkIcon, Globe } from 'lucide-react';
 
 export default function GermanyLanguage() {
   const fadeIn = {

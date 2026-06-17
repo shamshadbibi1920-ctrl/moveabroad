@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, FilePlus, AlertTriangle, CheckCircle2, ExternalLink , Globe} from 'lucide-react';
+import { ArrowLeft, FilePlus, AlertTriangle, CheckCircle2, ExternalLink, Globe } from 'lucide-react';
 
 export default function GermanyWorkVisa() {
   const fadeIn = {

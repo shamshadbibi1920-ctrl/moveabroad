@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { DollarSign, MapPin, Building, Briefcase, ExternalLink, Activity , ArrowLeft, Globe} from 'lucide-react';
+import { DollarSign, MapPin, Building, Briefcase, ExternalLink, Activity, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function CanadaCostOfLiving() {

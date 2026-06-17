@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Target, CheckCircle2, ChevronRight, Calculator, CalendarClock, BookOpen, FileCheck2 , ArrowLeft, Globe} from 'lucide-react';
+import { ShieldCheck, Target, CheckCircle2, ChevronRight, Calculator, CalendarClock, BookOpen, FileCheck2, ArrowLeft, Globe } from 'lucide-react';
 import CRSCalculator from '../../components/CRSCalculator';
 import SEO from '../../components/SEO';
 

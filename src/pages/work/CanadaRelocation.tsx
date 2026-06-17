@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, MapPin, ExternalLink, CheckCircle2, Home, CreditCard , Globe} from 'lucide-react';
+import { ArrowLeft, MapPin, ExternalLink, CheckCircle2, Home, CreditCard, Globe } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function CanadaRelocation() {

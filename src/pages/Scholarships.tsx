@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'motion/react';
 import React, { useState } from 'react';
-import { Search, Filter, BookOpen, Clock, ArrowRight , Globe} from 'lucide-react';
+import { Search, Filter, BookOpen, Clock, ArrowRight, Globe } from 'lucide-react';
 
 export default function Scholarships() {
   const fadeIn = {

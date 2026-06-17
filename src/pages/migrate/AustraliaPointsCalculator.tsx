@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Calculator, ChevronRight, Info , ArrowLeft, Globe} from 'lucide-react';
+import { Calculator, ChevronRight, Info, ArrowLeft, Globe } from 'lucide-react';
 
 export default function AustraliaPointsCalculator() {
   const [age, setAge] = useState(0);

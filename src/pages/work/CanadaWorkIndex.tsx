@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { Briefcase, FilePlus, Target, ListTodo, DollarSign, MapPin, Languages, ArrowLeft , Globe} from 'lucide-react';
+import { Briefcase, FilePlus, Target, ListTodo, DollarSign, MapPin, Languages, ArrowLeft, Globe } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function CanadaWorkIndex() {

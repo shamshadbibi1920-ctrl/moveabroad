@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Target, CheckCircle2, ChevronRight , ArrowLeft, Globe} from 'lucide-react';
+import { ShieldCheck, Target, CheckCircle2, ChevronRight, ArrowLeft, Globe } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function AustraliaSkilledIndependent() {

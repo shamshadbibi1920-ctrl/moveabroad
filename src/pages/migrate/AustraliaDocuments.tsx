@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, ChevronRight, CheckCircle2, FileCheck2, AlertTriangle, Building2, Globe2, Globe, ArrowLeft} from 'lucide-react';
+import { ShieldCheck, ChevronRight, CheckCircle2, FileCheck2, AlertTriangle, Building2, Globe2, Globe, ArrowLeft } from 'lucide-react';
 
 export default function AustraliaDocuments() {
   return (

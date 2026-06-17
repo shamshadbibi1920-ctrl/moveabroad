@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Languages, ExternalLink, GraduationCap, CheckCircle2 , Globe} from 'lucide-react';
+import { ArrowLeft, Languages, ExternalLink, GraduationCap, CheckCircle2, Globe } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function CanadaLanguage() {

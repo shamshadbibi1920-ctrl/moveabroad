@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { 
-  DollarSign, Home, ShoppingCart, Train, HeartPulse, 
-  Wifi, BookOpen, Shirt, Film, MapPin, Banknote, 
-  Briefcase, PiggyBank, AlertTriangle, Calculator, ExternalLink, Map
-, ArrowLeft, Globe} from 'lucide-react';
+import { DollarSign, Home, ShoppingCart, Train, HeartPulse, Wifi, BookOpen, Shirt, Film, MapPin, Banknote, Briefcase, PiggyBank, AlertTriangle, Calculator, ExternalLink, Map, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function GermanyCostOfLiving() {

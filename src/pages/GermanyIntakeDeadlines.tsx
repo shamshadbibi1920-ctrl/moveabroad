@@ -1,12 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { 
-  Calendar, Clock, AlertTriangle, FileCheck, 
-  MapPin, Landmark, ExternalLink, HelpCircle,
-  ArrowRight, ShieldCheck, Banknote, School,
-  Info
-, ArrowLeft, Globe} from 'lucide-react';
+import { Calendar, Clock, AlertTriangle, FileCheck, MapPin, Landmark, ExternalLink, HelpCircle, ArrowRight, ShieldCheck, Banknote, School, Info, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function GermanyIntakeDeadlines() {

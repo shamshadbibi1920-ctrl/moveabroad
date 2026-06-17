@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, ShieldCheck, ChevronRight, AlertCircle, Activity, Search, Compass , ArrowLeft, Globe} from 'lucide-react';
+import { Clock, ShieldCheck, ChevronRight, AlertCircle, Activity, Search, Compass, ArrowLeft, Globe } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function CanadaProcessingTimes() {

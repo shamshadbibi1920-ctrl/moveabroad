@@ -1,11 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { 
-  Home, Users, Building, Hotel, AlertTriangle, ListChecks, 
-  MapPin, CheckCircle2, FileText, Key, ShieldAlert,
-  Search, Utensils
-, ArrowLeft, Globe} from 'lucide-react';
+import { Home, Users, Building, Hotel, AlertTriangle, ListChecks, MapPin, CheckCircle2, FileText, Key, ShieldAlert, Search, Utensils, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function GermanyAccommodation() {

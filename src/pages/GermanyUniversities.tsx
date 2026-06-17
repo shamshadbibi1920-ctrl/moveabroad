@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Building, Search, MapPin, DollarSign, GraduationCap, Calendar, ArrowRight , ArrowLeft, Globe} from 'lucide-react';
+import { Building, Search, MapPin, DollarSign, GraduationCap, Calendar, ArrowRight, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function GermanyUniversities() {

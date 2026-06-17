@@ -19,7 +19,7 @@ allFiles.forEach(file => {
   let content = fs.readFileSync(file, 'utf8');
   let changed = false;
 
-  const needsGlobe = content.includes('<Globe') && !/import.*?Globe.*?from/.test(content);
+  const needsGlobe = content.includes('<Globe') && !/import.*?\\bGlobe\\b.*?from/.test(content);
   
   if (needsGlobe) {
     if (content.includes('from \'lucide-react\'')) {

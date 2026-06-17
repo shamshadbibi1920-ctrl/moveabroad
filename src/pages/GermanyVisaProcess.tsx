@@ -1,11 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { 
-  FileText, CheckCircle2, AlertTriangle, Landmark, 
-  Clock, MapPin, ExternalLink, PlaneTakeoff, 
-  Briefcase, ShieldCheck, HeartPulse, HelpCircle, CreditCard
-, ArrowLeft, Globe} from 'lucide-react';
+import { FileText, CheckCircle2, AlertTriangle, Landmark, Clock, MapPin, ExternalLink, PlaneTakeoff, Briefcase, ShieldCheck, HeartPulse, HelpCircle, CreditCard, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function GermanyVisaProcess() {

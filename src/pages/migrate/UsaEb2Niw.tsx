@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, CheckCircle, ChevronRight, AlertTriangle, FileCheck2, Globe2, Clock, Banknote, Briefcase } from 'lucide-react';
+import { ShieldCheck, CheckCircle, ChevronRight, AlertTriangle, FileCheck2, Globe2, Clock, Banknote, Briefcase, Globe } from 'lucide-react';
 
 export default function UsaEb2Niw() {
   return (

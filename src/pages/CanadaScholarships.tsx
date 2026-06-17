@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Banknote, FileText, Calendar, ArrowRight, CheckCircle2, DollarSign, ChevronRight, AlertTriangle , ArrowLeft, Globe} from 'lucide-react';
+import { Banknote, FileText, Calendar, ArrowRight, CheckCircle2, DollarSign, ChevronRight, AlertTriangle, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function CanadaScholarships() {

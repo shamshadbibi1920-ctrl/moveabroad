@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { BookOpen, FileText, CheckCircle2, AlertTriangle, ArrowRight , ArrowLeft, Globe} from 'lucide-react';
+import { BookOpen, FileText, CheckCircle2, AlertTriangle, ArrowRight, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function CanadaApplicationProcess() {

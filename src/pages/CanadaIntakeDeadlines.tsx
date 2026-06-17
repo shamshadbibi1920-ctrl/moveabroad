@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Calendar, AlertTriangle, ArrowRight, Clock, Target , ArrowLeft, Globe} from 'lucide-react';
+import { Calendar, AlertTriangle, ArrowRight, Clock, Target, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function CanadaIntakeDeadlines() {

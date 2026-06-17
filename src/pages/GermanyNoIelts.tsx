@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Globe, AlertTriangle, CheckCircle2 , ArrowLeft} from 'lucide-react';
+import { Globe, AlertTriangle, CheckCircle2, ArrowLeft } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 const noIeltsUniversities = [

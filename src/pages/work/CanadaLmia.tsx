@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Target, ShieldAlert, ExternalLink, Activity, Car, Building , Globe} from 'lucide-react';
+import { ArrowLeft, Target, ShieldAlert, ExternalLink, Activity, Car, Building, Globe } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function CanadaLmia() {

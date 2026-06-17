@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { GraduationCap, DollarSign, Calendar, FileText, Clock, AlertTriangle, CheckCircle2, TrendingUp, Info , ArrowLeft, Globe} from 'lucide-react';
+import { GraduationCap, DollarSign, Calendar, FileText, Clock, AlertTriangle, CheckCircle2, TrendingUp, Info, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 const scholarships = [

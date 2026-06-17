@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowRight, ShieldCheck , ArrowLeft, Globe} from 'lucide-react';
+import { ArrowRight, ShieldCheck, ArrowLeft, Globe } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function AustraliaMigrate() {

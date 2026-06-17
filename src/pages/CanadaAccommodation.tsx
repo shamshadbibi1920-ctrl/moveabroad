@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Home, Search, ShieldCheck, ExternalLink, Users, AlertCircle , ArrowLeft, Globe} from 'lucide-react';
+import { Home, Search, ShieldCheck, ExternalLink, Users, AlertCircle, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function CanadaAccommodation() {

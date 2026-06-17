@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, ChevronRight, CheckCircle2, MapPin, Search , ArrowLeft, Globe} from 'lucide-react';
+import { ShieldCheck, ChevronRight, CheckCircle2, MapPin, Search, ArrowLeft, Globe } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function AustraliaSkilledNominated() {

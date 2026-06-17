@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { FileText, Calendar, CheckCircle2, AlertTriangle, ExternalLink, GraduationCap, Briefcase, Info, List as ListIcon, ShieldAlert , ArrowLeft, Globe} from 'lucide-react';
+import { FileText, Calendar, CheckCircle2, AlertTriangle, ExternalLink, GraduationCap, Briefcase, Info, List as ListIcon, ShieldAlert, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function GermanyApplicationProcess() {

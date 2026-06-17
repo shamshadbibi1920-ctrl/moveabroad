@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Briefcase, FileText, Banknote, Building, Calendar, ArrowRight, CheckCircle2, TrendingUp , Globe} from 'lucide-react';
+import { Briefcase, FileText, Banknote, Building, Calendar, ArrowRight, CheckCircle2, TrendingUp, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function WorkDestination() {

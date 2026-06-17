@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, MapPin, AlertTriangle, CheckCircle2 , Globe} from 'lucide-react';
+import { ArrowLeft, MapPin, AlertTriangle, CheckCircle2, Globe } from 'lucide-react';
 
 export default function GermanyRelocation() {
   const fadeIn = {

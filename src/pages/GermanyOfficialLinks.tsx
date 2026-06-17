@@ -1,11 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Building2, GraduationCap, Building, Banknote, HeartPulse, 
-  Home, BookOpen, UserCircle2, Briefcase,
-  ExternalLink, Search, Star, AlertTriangle, MapPin
-, ArrowLeft, Globe} from 'lucide-react';
+import { Building2, GraduationCap, Building, Banknote, HeartPulse, Home, BookOpen, UserCircle2, Briefcase, ExternalLink, Search, Star, AlertTriangle, MapPin, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 const linkCategories = [

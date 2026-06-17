@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Euro, AlertTriangle, Info, CheckCircle2 , Globe} from 'lucide-react';
+import { ArrowLeft, Euro, AlertTriangle, Info, CheckCircle2, Globe } from 'lucide-react';
 
 export default function GermanySalary() {
   const fadeIn = {
