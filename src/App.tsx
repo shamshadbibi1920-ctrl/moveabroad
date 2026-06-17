@@ -105,8 +105,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="study" element={<CountryGuides />} />
+          <Route path="work-abroad" element={<CountryGuides />} />
           <Route path="scholarships" element={<Scholarships />} />
-          <Route path="work-abroad" element={<WorkAbroad />} />
           <Route path="healthcare-abroad" element={<HealthcareAbroad />} />
           <Route path="country-guides" element={<CountryGuides />} />
           <Route path="compare" element={<CompareCountries />} />

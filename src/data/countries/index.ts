@@ -32,10 +32,58 @@ const countries: Record<string, CountryData> = {
   'saudi-arabia': { ...saudiArabia, heroImage: countryImages['saudi-arabia'] }
 };
 
+const HOME_COUNTRIES = [
+  { id: 'germany', name: 'Germany', flag: '🇩🇪' },
+  { id: 'austria', name: 'Austria', flag: '🇦🇹' },
+  { id: 'belgium', name: 'Belgium', flag: '🇧🇪' },
+  { id: 'croatia', name: 'Croatia', flag: '🇭🇷' },
+  { id: 'czech-republic', name: 'Czech Republic', flag: '🇨🇿' },
+  { id: 'denmark', name: 'Denmark', flag: '🇩🇰' },
+  { id: 'estonia', name: 'Estonia', flag: '🇪🇪' },
+  { id: 'finland', name: 'Finland', flag: '🇫🇮' },
+  { id: 'france', name: 'France', flag: '🇫🇷' },
+  { id: 'greece', name: 'Greece', flag: '🇬🇷' },
+  { id: 'hungary', name: 'Hungary', flag: '🇭🇺' },
+  { id: 'iceland', name: 'Iceland', flag: '🇮🇸' },
+  { id: 'italy', name: 'Italy', flag: '🇮🇹' },
+  { id: 'latvia', name: 'Latvia', flag: '🇱🇻' },
+  { id: 'lithuania', name: 'Lithuania', flag: '🇱🇹' },
+  { id: 'luxembourg', name: 'Luxembourg', flag: '🇱🇺' },
+  { id: 'malta', name: 'Malta', flag: '🇲🇹' },
+  { id: 'netherlands', name: 'Netherlands', flag: '🇳🇱' },
+  { id: 'norway', name: 'Norway', flag: '🇳🇴' },
+  { id: 'poland', name: 'Poland', flag: '🇵🇱' },
+  { id: 'portugal', name: 'Portugal', flag: '🇵🇹' },
+  { id: 'slovakia', name: 'Slovakia', flag: '🇸🇰' },
+  { id: 'slovenia', name: 'Slovenia', flag: '🇸🇮' },
+  { id: 'spain', name: 'Spain', flag: '🇪🇸' },
+  { id: 'sweden', name: 'Sweden', flag: '🇸🇪' },
+  { id: 'switzerland', name: 'Switzerland', flag: '🇨🇭' },
+  { id: 'canada', name: 'Canada', flag: '🇨🇦' },
+  { id: 'usa', name: 'USA', flag: '🇺🇸' },
+  { id: 'uk', name: 'UK', flag: '🇬🇧' },
+  { id: 'ireland', name: 'Ireland', flag: '🇮🇪' },
+  { id: 'australia', name: 'Australia', flag: '🇦🇺' },
+  { id: 'new-zealand', name: 'New Zealand', flag: '🇳🇿' },
+  { id: 'uae', name: 'UAE', flag: '🇦🇪' },
+  { id: 'saudi-arabia', name: 'Saudi Arabia', flag: '🇸🇦' },
+  { id: 'qatar', name: 'Qatar', flag: '🇶🇦' },
+  { id: 'kuwait', name: 'Kuwait', flag: '🇰🇼' },
+  { id: 'bahrain', name: 'Bahrain', flag: '🇧🇭' },
+  { id: 'oman', name: 'Oman', flag: '🇴🇲' },
+  { id: 'japan', name: 'Japan', flag: '🇯🇵' },
+  { id: 'south-korea', name: 'South Korea', flag: '🇰🇷' },
+  { id: 'singapore', name: 'Singapore', flag: '🇸🇬' },
+  { id: 'malaysia', name: 'Malaysia', flag: '🇲🇾' },
+  { id: 'china', name: 'China', flag: '🇨🇳' }
+];
+
 export const getCountryData = (countryId: string): CountryData | undefined => {
   return countries[countryId.toLowerCase()];
 };
 
 export const getAllCountries = (): CountryData[] => {
-  return Object.values(countries);
+  return HOME_COUNTRIES.map(hc => {
+    return (countries[hc.id.toLowerCase()] || hc) as CountryData;
+  });
 };
