@@ -138,7 +138,7 @@ export default function Layout() {
       </header>
 
       {/* Main Content */}
-      <main className="flex-grow w-full">
+      <main className="flex flex-col flex-grow w-full">
         <Outlet />
       </main>
 
