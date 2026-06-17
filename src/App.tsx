@@ -48,6 +48,14 @@ const SwedishInstituteScholarship = React.lazy(() => import('./pages/blog/Swedis
 
 // Work Destinations (Germany)
 const GermanyWorkIndex = React.lazy(() => import('./pages/work/GermanyWorkIndex'));
+const CanadaWorkIndex = React.lazy(() => import('./pages/work/CanadaWorkIndex'));
+const CanadaJobs = React.lazy(() => import('./pages/work/CanadaJobs'));
+const CanadaWorkPermit = React.lazy(() => import('./pages/work/CanadaWorkPermit'));
+const CanadaLmia = React.lazy(() => import('./pages/work/CanadaLmia'));
+const CanadaWorkApplication = React.lazy(() => import('./pages/work/CanadaWorkApplication'));
+const CanadaSalary = React.lazy(() => import('./pages/work/CanadaSalary'));
+const CanadaRelocation = React.lazy(() => import('./pages/work/CanadaRelocation'));
+const CanadaLanguage = React.lazy(() => import('./pages/work/CanadaLanguage'));
 const GermanyJobs = React.lazy(() => import('./pages/work/GermanyJobs'));
 const GermanyWorkVisa = React.lazy(() => import('./pages/work/GermanyWorkVisa'));
 const GermanyWorkOpportunityCard = React.lazy(() => import('./pages/work/GermanyWorkOpportunityCard'));
@@ -169,6 +177,14 @@ export default function App() {
           <Route path="work/germany/salary" element={<GermanySalary />} />
           <Route path="work/germany/relocation" element={<GermanyRelocation />} />
           <Route path="work/germany/language" element={<GermanyLanguage />} />
+          <Route path="work/canada" element={<CanadaWorkIndex />} />
+          <Route path="work/canada/jobs" element={<CanadaJobs />} />
+          <Route path="work/canada/work-permit" element={<CanadaWorkPermit />} />
+          <Route path="work/canada/lmia" element={<CanadaLmia />} />
+          <Route path="work/canada/application-process" element={<CanadaWorkApplication />} />
+          <Route path="work/canada/salary" element={<CanadaSalary />} />
+          <Route path="work/canada/relocation" element={<CanadaRelocation />} />
+          <Route path="work/canada/language" element={<CanadaLanguage />} />
           <Route path="work/:countryId" element={<WorkDestination />} />
           <Route path="healthcare/:countryId/:professionId" element={<HealthcareDestination />} />
         </Route>

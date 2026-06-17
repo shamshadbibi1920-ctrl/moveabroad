@@ -28,7 +28,9 @@ export default function MigrateHome() {
           <img 
             src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&q=80" 
             alt="Migration Destination" 
-            className="w-full h-full object-cover opacity-60"
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+          loading="eager"
+          className="w-full h-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-slate-900/80 backdrop-blur-sm"></div>
         </div>

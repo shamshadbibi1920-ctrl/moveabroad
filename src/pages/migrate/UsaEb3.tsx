@@ -5,8 +5,12 @@ import { ShieldCheck, ChevronRight, AlertTriangle, Briefcase, CheckCircle, FileC
 export default function UsaEb3() {
   return (
     <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300 pb-20">
-      <div className="bg-slate-900 py-16 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+        <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&q=80" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+          loading="eager"
+          className="absolute inset-0 w-full h-full object-cover" alt="USA" />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Link to="/migrate" className="inline-flex items-center text-red-400 hover:text-white mb-6 transition-colors font-medium">
              &larr; Back to Migrate
           </Link>

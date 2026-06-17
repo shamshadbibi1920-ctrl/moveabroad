@@ -25,7 +25,9 @@ export default function CanadaVisaProcess() {
             <img 
               src={data.heroImage} 
               alt="Canada Visa" 
-              className="w-full h-full object-cover"
+              onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+          loading="eager"
+          className="w-full h-full object-cover"
             />
           ) : (
             <div className="w-full h-full bg-indigo-900"></div>

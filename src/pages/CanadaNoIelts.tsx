@@ -25,7 +25,9 @@ export default function CanadaNoIelts() {
             <img 
               src={data.heroImage} 
               alt="Canada" 
-              className="w-full h-full object-cover opacity-80"
+              onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+          loading="eager"
+          className="w-full h-full object-cover opacity-80"
             />
           ) : (
             <div className="w-full h-full bg-amber-900"></div>

@@ -36,7 +36,9 @@ export default function AustraliaMigrate() {
           <img 
             src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&q=80" 
             alt="Sydney Opera House" 
-            className="w-full h-full object-cover opacity-60"
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+          loading="eager"
+          className="w-full h-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-slate-900/80 backdrop-blur-sm"></div>
         </div>

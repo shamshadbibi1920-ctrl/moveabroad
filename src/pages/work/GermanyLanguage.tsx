@@ -25,7 +25,9 @@ export default function GermanyLanguage() {
           <img 
             src="https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
             alt="Germany" 
-            className="w-full h-full object-cover opacity-20"
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+          loading="eager"
+          className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent"></div>
         </div>

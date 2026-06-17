@@ -98,7 +98,7 @@ export default function StudyDestination() {
   }
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <div className="bg-slate-50 dark:bg-slate-900 w-full min-h-screen transition-colors duration-300">
       <SEO 
         title={safeId === 'germany' 
           ? "Study in Germany Free for Pakistani Students 2026 | MoveAbroad.pk" 
@@ -120,7 +120,9 @@ export default function StudyDestination() {
             <img 
               src={data.heroImage} 
               alt={`${countryName} skyline`} 
-              className="w-full h-full object-cover"
+              onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+          loading="eager"
+          className="w-full h-full object-cover"
             />
           ) : (
             <div className="w-full h-full bg-blue-900"></div>

@@ -32,7 +32,9 @@ export default function GermanyCostOfLiving() {
             <img 
               src={data.heroImage} 
               alt={`${countryName} skyline`} 
-              className="w-full h-full object-cover"
+              onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+          loading="eager"
+          className="w-full h-full object-cover"
             />
           ) : (
             <div className="w-full h-full bg-blue-900"></div>

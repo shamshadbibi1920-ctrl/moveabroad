@@ -137,7 +137,9 @@ export default function Home() {
           <img 
             src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2070&auto=format&fit=crop" 
             alt="Global Destinations" 
-            className="w-full h-full object-cover"
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+          loading="eager"
+          className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/75 mix-blend-multiply"></div>
           <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-500 blur-3xl opacity-20"></div>

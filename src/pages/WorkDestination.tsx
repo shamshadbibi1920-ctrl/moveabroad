@@ -34,7 +34,7 @@ export default function WorkDestination() {
   }
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <div className="bg-slate-50 dark:bg-slate-900 w-full min-h-screen transition-colors duration-300">
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         {/* Background Image with Overlay */}
@@ -43,7 +43,9 @@ export default function WorkDestination() {
             <img 
               src={data.heroImage} 
               alt={`${countryName} skyline`} 
-              className="w-full h-full object-cover"
+              onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+          loading="eager"
+          className="w-full h-full object-cover"
             />
           ) : (
             <div className="w-full h-full bg-indigo-900"></div>

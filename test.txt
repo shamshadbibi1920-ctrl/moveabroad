@@ -1,0 +1,261 @@
+src/pages/ContactUs.tsx:17:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/ContactUs.tsx:19:          className="text-center mb-16 max-w-2xl mx-auto"
+src/pages/migrate/NewZealandMigrate.tsx:9:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/NewZealandMigrate.tsx:14:          <p className="text-xl text-slate-300 max-w-3xl">Comprehensive guide to Skilled Migrant Category, Accredited Employer Work Visa (AEWV) and Green Lists.</p>
+src/pages/migrate/NewZealandMigrate.tsx:18:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/NewZealandMigrate.tsx:101:           <div className="space-y-6 text-sm max-w-3xl relative z-10">
+src/pages/migrate/AustraliaDocuments.tsx:9:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/AustraliaDocuments.tsx:14:          <p className="text-xl text-slate-300 max-w-3xl">A comprehensive guide to gathering documents from Pakistan for Australian Skilled Visas.</p>
+src/pages/migrate/AustraliaDocuments.tsx:18:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/AustraliaDocuments.tsx:64:             <p className="text-slate-300 mb-8 relative z-10 max-w-3xl">
+src/pages/migrate/UsaEb2Niw.tsx:9:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/UsaEb2Niw.tsx:14:          <p className="text-xl text-slate-300 max-w-3xl">Get a US Green Card without a job offer or labor certification.</p>
+src/pages/migrate/UsaEb2Niw.tsx:18:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/UsaEb2Niw.tsx:123:           <div className="space-y-6 text-sm max-w-3xl relative z-10">
+src/pages/migrate/CanadaExpressEntry.tsx:16:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/CanadaExpressEntry.tsx:21:          <p className="text-xl text-slate-300 max-w-3xl">The fastest and most popular pathway for skilled Pakistani professionals to obtain Canadian Permanent Residency.</p>
+src/pages/migrate/CanadaExpressEntry.tsx:25:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+src/pages/migrate/CanadaExpressEntry.tsx:252:           <div className="space-y-6 relative z-10 max-w-3xl">
+src/pages/migrate/MigrateHome.tsx:36:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+src/pages/migrate/MigrateHome.tsx:37:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl mx-auto">
+src/pages/migrate/MigrateHome.tsx:48:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/migrate/UsaEb3.tsx:9:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/UsaEb3.tsx:14:          <p className="text-xl text-slate-300 max-w-3xl">Employment-based permanent residency via employer sponsorship.</p>
+src/pages/migrate/UsaEb3.tsx:18:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/UsaEb3.tsx:80:           <div className="space-y-6 text-sm max-w-3xl relative z-10">
+src/pages/migrate/CanadaAtlantic.tsx:15:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/CanadaAtlantic.tsx:20:          <p className="text-xl text-slate-300 max-w-3xl">Employer-driven path to PR in Canada's 4 beautiful Atlantic provinces.</p>
+src/pages/migrate/CanadaAtlantic.tsx:24:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+src/pages/migrate/CanadaAtlantic.tsx:110:           <p className="text-slate-300 mb-8 max-w-3xl">
+src/pages/migrate/AustraliaEmployerSponsored.tsx:9:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/AustraliaEmployerSponsored.tsx:14:          <p className="text-xl text-slate-300 max-w-3xl">A permanent visa for skilled workers who are sponsored by an Australian employer.</p>
+src/pages/migrate/AustraliaEmployerSponsored.tsx:18:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/AustraliaEmployerSponsored.tsx:111:           <p className="text-slate-300 text-base mb-6 relative z-10 max-w-3xl">
+src/pages/migrate/AustraliaEmployerSponsored.tsx:115:           <ul className="space-y-4 text-sm max-w-3xl relative z-10 text-slate-300">
+src/pages/migrate/AustraliaSkilledIndependent.tsx:15:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/AustraliaSkilledIndependent.tsx:20:          <p className="text-xl text-slate-300 max-w-3xl">Live and work anywhere in Australia as a permanent resident.</p>
+src/pages/migrate/AustraliaSkilledIndependent.tsx:24:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/CanadaDocuments.tsx:15:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/CanadaDocuments.tsx:20:          <p className="text-xl text-slate-300 max-w-3xl">A comprehensive guide for applicants applying from Pakistan. Formatting and attestation rules matter.</p>
+src/pages/migrate/CanadaDocuments.tsx:24:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/MaltaGoldenVisa.tsx:10:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/MaltaGoldenVisa.tsx:15:          <p className="text-xl text-slate-300 max-w-3xl">A straightforward, investment-based path to permanent residency in an English-speaking EU nation.</p>
+src/pages/migrate/MaltaGoldenVisa.tsx:19:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/MaltaGoldenVisa.tsx:91:             <p className="text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto mb-6">
+src/pages/migrate/MaltaGoldenVisa.tsx:123:           <div className="space-y-6 relative z-10 max-w-3xl">
+src/pages/migrate/AustraliaSkilledNominated.tsx:15:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/AustraliaSkilledNominated.tsx:20:          <p className="text-xl text-slate-300 max-w-3xl">A permanent visa for skilled workers who are nominated by an Australian state or territory government.</p>
+src/pages/migrate/AustraliaSkilledNominated.tsx:24:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/AustraliaSkilledNominated.tsx:94:           <div className="space-y-6 text-sm max-w-3xl relative z-10">
+src/pages/migrate/PortugalGoldenVisa.tsx:16:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/PortugalGoldenVisa.tsx:21:          <p className="text-xl text-slate-300 max-w-3xl">Residency by investment and a 5-year path to an EU passport, with only 7 days a year stay requirement.</p>
+src/pages/migrate/PortugalGoldenVisa.tsx:25:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/PortugalGoldenVisa.tsx:79:             <p className="text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto mb-6">
+src/pages/migrate/PortugalGoldenVisa.tsx:111:           <div className="space-y-6 relative z-10 max-w-3xl">
+src/pages/migrate/AustraliaFamilyStream.tsx:9:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/AustraliaFamilyStream.tsx:14:          <p className="text-xl text-slate-300 max-w-3xl">Partner, Parent, and Child visas to reunite with family in Australia.</p>
+src/pages/migrate/AustraliaFamilyStream.tsx:18:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/AustraliaMigrate.tsx:44:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/migrate/AustraliaMigrate.tsx:45:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/migrate/AustraliaMigrate.tsx:59:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/migrate/GreeceGoldenVisa.tsx:10:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/GreeceGoldenVisa.tsx:15:          <p className="text-xl text-slate-300 max-w-3xl">One of Europe's most popular real estate residency programs, offering an EU gateway with zero minimum stay requirements.</p>
+src/pages/migrate/GreeceGoldenVisa.tsx:19:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/GreeceGoldenVisa.tsx:74:             <p className="text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto mb-6">
+src/pages/migrate/GreeceGoldenVisa.tsx:106:           <div className="space-y-6 relative z-10 max-w-3xl">
+src/pages/migrate/IrelandMigrate.tsx:9:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/IrelandMigrate.tsx:14:          <p className="text-xl text-slate-300 max-w-3xl">Comprehensive guide to Critical Skills, General Employment Permits, and Irish permanent residency.</p>
+src/pages/migrate/IrelandMigrate.tsx:18:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/IrelandMigrate.tsx:102:           <div className="space-y-6 text-sm max-w-3xl relative z-10">
+src/pages/migrate/GermanyMigrate.tsx:15:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/GermanyMigrate.tsx:20:          <p className="text-xl text-slate-300 max-w-3xl">Comprehensive guide to the EU Blue Card, Opportunity Card, and Skilled Immigration Act for Pakistani professionals.</p>
+src/pages/migrate/GermanyMigrate.tsx:24:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/GermanyMigrate.tsx:128:           <div className="space-y-6 text-sm max-w-3xl relative z-10">
+src/pages/migrate/CanadaFamilySponsorship.tsx:15:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/CanadaFamilySponsorship.tsx:20:          <p className="text-xl text-slate-300 max-w-3xl">Reunite with your loved ones in Canada. A comprehensive guide for Pakistani sponsors and applicants.</p>
+src/pages/migrate/CanadaFamilySponsorship.tsx:24:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+src/pages/migrate/CanadaFamilySponsorship.tsx:134:           <div className="space-y-6 relative z-10 max-w-3xl">
+src/pages/migrate/UaeGoldenVisa.tsx:10:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/UaeGoldenVisa.tsx:15:          <p className="text-xl text-slate-300 max-w-3xl">A long-term 10-year residency for investors, entrepreneurs, and outstanding talents.</p>
+src/pages/migrate/UaeGoldenVisa.tsx:19:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/UaeGoldenVisa.tsx:78:             <p className="text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto mb-6">
+src/pages/migrate/UaeGoldenVisa.tsx:110:           <div className="space-y-6 relative z-10 max-w-3xl">
+src/pages/migrate/UaeGoldenVisa.tsx:155:             <div className="space-y-4 max-w-2xl">
+src/pages/migrate/CanadaProcessingTimes.tsx:15:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/CanadaProcessingTimes.tsx:20:          <p className="text-xl text-slate-300 max-w-3xl">Estimated wait times for common Canadian PR applications from Pakistan, tracking methods, and delay protocols.</p>
+src/pages/migrate/CanadaProcessingTimes.tsx:24:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/SpainGoldenVisa.tsx:10:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/SpainGoldenVisa.tsx:15:          <p className="text-xl text-slate-300 max-w-3xl">The "Visa de Oro" - premium EU residency for investors with extensive travel benefits and zero maintenance stay required.</p>
+src/pages/migrate/SpainGoldenVisa.tsx:19:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/SpainGoldenVisa.tsx:69:             <p className="text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto mb-6">
+src/pages/migrate/SpainGoldenVisa.tsx:101:           <div className="space-y-6 relative z-10 max-w-3xl">
+src/pages/migrate/SpainGoldenVisa.tsx:145:             <div className="space-y-4 max-w-2xl">
+src/pages/migrate/UkMigrate.tsx:15:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/UkMigrate.tsx:20:          <p className="text-xl text-slate-300 max-w-3xl">Comprehensive guide to Global Talent, Skilled Worker, and Health & Care Visas.</p>
+src/pages/migrate/UkMigrate.tsx:24:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/migrate/UkMigrate.tsx:223:           <div className="space-y-6 text-sm max-w-3xl relative z-10">
+src/pages/migrate/CanadaMigrate.tsx:44:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/migrate/CanadaMigrate.tsx:45:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/migrate/CanadaMigrate.tsx:59:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/migrate/AustraliaPointsCalculator.tsx:26:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/AustraliaPointsCalculator.tsx:31:          <p className="text-xl text-slate-300 max-w-3xl">Estimate your points for Subclass 189, 190, and 491 visas.</p>
+src/pages/migrate/AustraliaPointsCalculator.tsx:35:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+src/pages/migrate/CanadaPnp.tsx:16:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/migrate/CanadaPnp.tsx:21:          <p className="text-xl text-slate-300 max-w-3xl">Secure your PR by getting nominated by a specific Canadian province.</p>
+src/pages/migrate/CanadaPnp.tsx:25:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+src/pages/HealthcareDestination.tsx:37:        <div className="text-center max-w-md">
+src/pages/HealthcareDestination.tsx:67:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/HealthcareDestination.tsx:68:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/HealthcareDestination.tsx:82:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/CanadaScholarships.tsx:147:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/CanadaScholarships.tsx:148:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/CanadaScholarships.tsx:162:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/CountryGuides.tsx:22:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/CountryGuides.tsx:24:          className="text-center mb-16 max-w-3xl mx-auto"
+src/pages/CanadaNoIelts.tsx:36:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/CanadaNoIelts.tsx:37:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/CanadaNoIelts.tsx:51:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/CanadaCostOfLiving.tsx:36:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/CanadaCostOfLiving.tsx:37:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/CanadaCostOfLiving.tsx:51:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/CanadaAccommodation.tsx:36:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/CanadaAccommodation.tsx:37:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/CanadaAccommodation.tsx:51:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/CanadaApplicationProcess.tsx:36:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/CanadaApplicationProcess.tsx:37:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/CanadaApplicationProcess.tsx:51:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/blog/DhaLicensingExam.tsx:9:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/blog/DhaLicensingExam.tsx:38:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-6 text-slate-600 dark:text-slate-300">
+src/pages/blog/GermanyOpportunityCard.tsx:9:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/blog/GermanyOpportunityCard.tsx:38:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-6 text-slate-600 dark:text-slate-300">
+src/pages/blog/SwedenWorkVisa.tsx:9:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/blog/SwedenWorkVisa.tsx:38:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-6 text-slate-600 dark:text-slate-300">
+src/pages/blog/DaadScholarshipGuide.tsx:15:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/blog/DaadScholarshipGuide.tsx:44:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-6 text-slate-600 dark:text-slate-300">
+src/pages/blog/SwedishInstituteScholarship.tsx:9:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/blog/SwedishInstituteScholarship.tsx:38:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-6 text-slate-600 dark:text-slate-300">
+src/pages/blog/SaudiGoldenVisa.tsx:9:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/blog/SaudiGoldenVisa.tsx:38:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-6 text-slate-600 dark:text-slate-300">
+src/pages/WorkDestination.tsx:54:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/WorkDestination.tsx:55:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/WorkDestination.tsx:69:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/CanadaUniversities.tsx:78:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/CanadaUniversities.tsx:79:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/CanadaUniversities.tsx:93:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+src/pages/Home.tsx:148:          className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32"
+src/pages/Home.tsx:153:          <div className="max-w-3xl">
+src/pages/Home.tsx:161:              className="text-lg md:text-2xl text-slate-300 mb-10 max-w-2xl font-light leading-relaxed"
+src/pages/Home.tsx:180:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/Home.tsx:189:            <motion.p variants={fadeIn} className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Explore tailored guides and opportunities based on your career goals.</motion.p>
+src/pages/Home.tsx:252:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/Home.tsx:298:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/Home.tsx:361:              className="bg-white dark:bg-slate-900 w-full max-w-2xl sm:rounded-3xl rounded-t-3xl shadow-2xl flex flex-col max-h-[90vh] sm:max-h-[85vh] overflow-hidden relative"
+src/pages/GermanyApplicationProcess.tsx:33:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/GermanyApplicationProcess.tsx:34:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-4xl">
+src/pages/GermanyApplicationProcess.tsx:48:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/CanadaIntakeDeadlines.tsx:36:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/CanadaIntakeDeadlines.tsx:37:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/CanadaIntakeDeadlines.tsx:51:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/PrivacyPolicy.tsx:6:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/PrivacyPolicy.tsx:9:          <div className="prose prose-lg prose-blue max-w-none text-slate-600 dark:text-slate-400 space-y-6">
+src/pages/StudyDestination.tsx:131:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/StudyDestination.tsx:132:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/StudyDestination.tsx:146:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/GermanyVisaProcess.tsx:68:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/GermanyVisaProcess.tsx:69:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-4xl">
+src/pages/GermanyVisaProcess.tsx:83:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/work/GermanyRelocation.tsx:24:        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center md:text-left">
+src/pages/work/GermanyRelocation.tsx:32:            <p className="text-xl text-blue-100 max-w-3xl leading-relaxed md:text-2xl font-light">
+src/pages/work/GermanyRelocation.tsx:39:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10 pb-20">
+src/pages/work/GermanyRelocation.tsx:56:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-12">
+src/pages/work/GermanyWorkApplication.tsx:35:        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center md:text-left">
+src/pages/work/GermanyWorkApplication.tsx:43:            <p className="text-xl text-blue-100 max-w-3xl leading-relaxed md:text-2xl font-light">
+src/pages/work/GermanyWorkApplication.tsx:50:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10 pb-20">
+src/pages/work/GermanyWorkApplication.tsx:67:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-12">
+src/pages/work/GermanySalary.tsx:41:        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center md:text-left">
+src/pages/work/GermanySalary.tsx:49:            <p className="text-xl text-blue-100 max-w-3xl leading-relaxed md:text-2xl font-light">
+src/pages/work/GermanySalary.tsx:56:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10 pb-20">
+src/pages/work/GermanySalary.tsx:73:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-12">
+src/pages/work/GermanyWorkIndex.tsx:35:        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 mb-10 text-center md:text-left">
+src/pages/work/GermanyWorkIndex.tsx:43:            <p className="text-xl text-blue-100 max-w-3xl leading-relaxed md:text-2xl font-light">
+src/pages/work/GermanyWorkIndex.tsx:51:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-10 pb-20">
+src/pages/work/GermanyWorkOpportunityCard.tsx:33:        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center md:text-left">
+src/pages/work/GermanyWorkOpportunityCard.tsx:41:            <p className="text-xl text-blue-100 max-w-3xl leading-relaxed md:text-2xl font-light">
+src/pages/work/GermanyWorkOpportunityCard.tsx:48:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10 pb-20">
+src/pages/work/GermanyWorkOpportunityCard.tsx:65:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-12">
+src/pages/work/GermanyJobs.tsx:43:        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center md:text-left">
+src/pages/work/GermanyJobs.tsx:51:            <p className="text-xl text-blue-100 max-w-3xl leading-relaxed md:text-2xl font-light">
+src/pages/work/GermanyJobs.tsx:58:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10 pb-20">
+src/pages/work/GermanyJobs.tsx:75:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-12">
+src/pages/work/GermanyLanguage.tsx:32:        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center md:text-left">
+src/pages/work/GermanyLanguage.tsx:40:            <p className="text-xl text-blue-100 max-w-3xl leading-relaxed md:text-2xl font-light">
+src/pages/work/GermanyLanguage.tsx:47:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10 pb-20">
+src/pages/work/GermanyLanguage.tsx:64:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-12">
+src/pages/work/GermanyWorkVisa.tsx:44:        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center md:text-left">
+src/pages/work/GermanyWorkVisa.tsx:52:            <p className="text-xl text-blue-100 max-w-3xl leading-relaxed md:text-2xl font-light">
+src/pages/work/GermanyWorkVisa.tsx:59:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10 pb-20">
+src/pages/work/GermanyWorkVisa.tsx:76:          <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-12">
+src/pages/work/CanadaWorkIndex.tsx:41:        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 mb-10 text-center md:text-left">
+src/pages/work/CanadaWorkIndex.tsx:49:            <p className="text-xl text-rose-100 max-w-3xl leading-relaxed md:text-2xl font-light">
+src/pages/work/CanadaWorkIndex.tsx:57:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-10 pb-20">
+src/pages/work/CanadaJobs.tsx:35:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/work/CanadaJobs.tsx:42:          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl text-rose-100 max-w-3xl font-light">
+src/pages/work/CanadaJobs.tsx:48:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+src/pages/work/CanadaWorkPermit.tsx:24:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/work/CanadaWorkPermit.tsx:31:          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl text-rose-100 max-w-3xl font-light">
+src/pages/work/CanadaWorkPermit.tsx:37:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+src/pages/work/CanadaLmia.tsx:24:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/work/CanadaLmia.tsx:31:          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl text-rose-100 max-w-3xl font-light">
+src/pages/work/CanadaLmia.tsx:37:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+src/pages/work/CanadaWorkApplication.tsx:35:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/work/CanadaWorkApplication.tsx:42:          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl text-rose-100 max-w-3xl font-light">
+src/pages/work/CanadaWorkApplication.tsx:48:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+src/pages/work/CanadaSalary.tsx:24:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/work/CanadaSalary.tsx:31:          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl text-rose-100 max-w-3xl font-light">
+src/pages/work/CanadaSalary.tsx:37:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+src/pages/work/CanadaRelocation.tsx:24:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/work/CanadaRelocation.tsx:31:          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl text-rose-100 max-w-3xl font-light">
+src/pages/work/CanadaRelocation.tsx:37:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+src/pages/work/CanadaLanguage.tsx:24:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/work/CanadaLanguage.tsx:31:          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl text-rose-100 max-w-3xl font-light">
+src/pages/work/CanadaLanguage.tsx:37:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+src/pages/WorkAbroad.tsx:25:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/WorkAbroad.tsx:31:          <motion.p variants={fadeIn} className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Explore job opportunities requiring skilled professionals from Pakistan.</motion.p>
+src/pages/GermanyUniversities.tsx:78:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/GermanyUniversities.tsx:79:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/GermanyUniversities.tsx:93:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+src/pages/CanadaVisaProcess.tsx:36:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/CanadaVisaProcess.tsx:37:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/CanadaVisaProcess.tsx:51:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+src/pages/Disclaimer.tsx:6:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/Disclaimer.tsx:9:          <div className="prose prose-lg prose-blue max-w-none text-slate-600 dark:text-slate-400 space-y-6">
+src/pages/GermanyScholarships.tsx:165:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/GermanyScholarships.tsx:166:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-4xl">
+src/pages/GermanyScholarships.tsx:180:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/GermanyNoIelts.tsx:59:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/GermanyNoIelts.tsx:60:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
+src/pages/GermanyNoIelts.tsx:74:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+src/pages/GermanyNoIelts.tsx:75:        <motion.section initial="initial" whileInView="animate" viewport={{ once: true }} variants={staggerContainer} className="bg-white dark:bg-slate-800 rounded-[2rem] p-8 shadow-sm border border-slate-100 dark:border-slate-700 max-w-4xl mx-auto">
+src/pages/GermanyOfficialLinks.tsx:177:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/GermanyOfficialLinks.tsx:178:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-4xl">
+src/pages/GermanyOfficialLinks.tsx:192:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+src/pages/GermanyOfficialLinks.tsx:194:          <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="flex-1 max-w-xl relative">
+src/pages/CompareCountries.tsx:43:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/CompareCountries.tsx:45:          className="text-center mb-12 max-w-3xl mx-auto"
+src/pages/Scholarships.tsx:42:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/Scholarships.tsx:48:          <motion.p variants={fadeIn} className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Discover fully-funded opportunities for Pakistani students across the globe.</motion.p>
+src/pages/GermanyAccommodation.tsx:41:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/GermanyAccommodation.tsx:42:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-4xl">
+src/pages/GermanyAccommodation.tsx:56:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/GermanyIntakeDeadlines.tsx:84:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/GermanyIntakeDeadlines.tsx:85:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-4xl">
+src/pages/GermanyIntakeDeadlines.tsx:99:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/GermanyCostOfLiving.tsx:43:        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+src/pages/GermanyCostOfLiving.tsx:44:          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-4xl">
+src/pages/GermanyCostOfLiving.tsx:58:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+src/pages/HealthcareAbroad.tsx:25:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/HealthcareAbroad.tsx:27:          className="text-center mb-16 max-w-3xl mx-auto"
+src/pages/HealthcareAbroad.tsx:49:                <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed max-w-sm">{prof.desc}</p>
+src/pages/Blog.tsx:27:      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/AboutUs.tsx:17:      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+src/pages/AboutUs.tsx:30:          <div className="prose prose-lg prose-blue max-w-none text-slate-600 dark:text-slate-400 leading-relaxed">
