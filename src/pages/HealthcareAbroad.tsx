@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Routes, Link } from 'react-router-dom';
 import { Stethoscope, HeartPulse, Pill, Baby, Activity, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -13,11 +14,11 @@ export default function HealthcareAbroad() {
   };
 
   const professions = [
-    { title: 'Doctors', icon: <Stethoscope className="h-8 w-8" />, exams: ['PLAB (UK)', 'USMLE (USA)', 'DHA (UAE)'], desc: 'Pathways, exam resources, and job guides for Pakistani MBBS graduates.' },
-    { title: 'Nurses', icon: <HeartPulse className="h-8 w-8" />, exams: ['NCLEX (USA/Canada)', 'NMC (UK)', 'DHA/HAAD (UAE)'], desc: 'Registration guides, CBT prep, and relocation advice for Registered Nurses.' },
-    { title: 'Pharmacists', icon: <Pill className="h-8 w-8" />, exams: ['KAPS (Australia)', 'PEBC (Canada)', 'DHA (UAE)'], desc: 'Licensing exams and retail/hospital pharmacy opportunities abroad.' },
-    { title: 'Dentists', icon: <Baby className="h-8 w-8" />, exams: ['ORE/LDS (UK)', 'INBDE (USA)', 'ADC (Australia)'], desc: 'How to practice dentistry and complete equivalence exams in top countries.' },
-    { title: 'Physiotherapists', icon: <Activity className="h-8 w-8" />, exams: ['HCPC (UK)', 'PCE (Canada)', 'DHC (UAE)'], desc: 'Registration processes and job hunting for DPT graduates.' },
+    { id: 'doctor', title: 'Doctors', icon: <Stethoscope className="h-8 w-8" />, exams: ['PLAB (UK)', 'USMLE (USA)', 'DHA (UAE)'], desc: 'Pathways, exam resources, and job guides for Pakistani MBBS graduates.' },
+    { id: 'nurse', title: 'Nurses', icon: <HeartPulse className="h-8 w-8" />, exams: ['NCLEX (USA/Canada)', 'NMC (UK)', 'DHA/HAAD (UAE)'], desc: 'Registration guides, CBT prep, and relocation advice for Registered Nurses.' },
+    { id: 'pharmacist', title: 'Pharmacists', icon: <Pill className="h-8 w-8" />, exams: ['KAPS (Australia)', 'PEBC (Canada)', 'DHA (UAE)'], desc: 'Licensing exams and retail/hospital pharmacy opportunities abroad.' },
+    { id: 'dentist', title: 'Dentists', icon: <Baby className="h-8 w-8" />, exams: ['ORE/LDS (UK)', 'INBDE (USA)', 'ADC (Australia)'], desc: 'How to practice dentistry and complete equivalence exams in top countries.' },
+    { id: 'physiotherapist', title: 'Physiotherapists', icon: <Activity className="h-8 w-8" />, exams: ['HCPC (UK)', 'PCE (Canada)', 'DHC (UAE)'], desc: 'Registration processes and job hunting for DPT graduates.' },
   ];
 
   return (
@@ -57,12 +58,12 @@ export default function HealthcareAbroad() {
                   ))}
                 </div>
               </div>
-              <div className="bg-slate-50 dark:bg-slate-800/50 px-10 py-6 border-t border-slate-100 dark:border-slate-700 group-hover:bg-teal-50 dark:bg-teal-900/30 transition-colors">
-                <button className="w-full flex justify-between items-center text-teal-700 dark:text-teal-400 font-bold hover:text-teal-900 transition-colors">
+              <Link to={`/healthcare-abroad/${prof.id}`} className="bg-slate-50 dark:bg-slate-800/50 px-10 py-6 border-t border-slate-100 dark:border-slate-700 group-hover:bg-teal-50 dark:bg-teal-900/30 transition-colors block">
+                <button className="w-full flex justify-between items-center text-teal-700 dark:text-teal-400 font-bold hover:text-teal-900 transition-colors pointer-events-none">
                   View Complete Guide
                   <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </button>
-              </div>
+              </Link>
             </motion.div>
           ))}
         </motion.div>

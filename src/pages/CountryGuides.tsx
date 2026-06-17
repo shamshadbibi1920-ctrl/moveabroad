@@ -1,23 +1,33 @@
 import React from 'react';
 import { ChevronRight, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation, useParams } from 'react-router-dom';
 import { getAllCountries } from '../data/countries';
 
 export default function CountryGuides() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { professionId } = useParams<{ professionId?: string }>();
   const allCountries = getAllCountries();
 
   const isWork = location.pathname.includes('work-abroad') || location.pathname.includes('work');
   const isStudy = location.pathname.includes('study');
+  const isHealthcare = location.pathname.includes('healthcare-abroad') || location.pathname.includes('healthcare');
 
-  const title = isStudy ? "Study Destinations" : isWork ? "Work Destinations" : "Country Guides";
-  const subtitle = isStudy 
-    ? "Explore study opportunities, universities, and scholarships abroad." 
-    : isWork 
-    ? "Explore work visas, skilled worker programs, and job seeker pathways." 
-    : "Comprehensive guides on visas, living costs, and cultural adaptation.";
+  let title = "Country Guides";
+  let subtitle = "Comprehensive guides on visas, living costs, and cultural adaptation.";
+  
+  if (isStudy) {
+    title = "Study Destinations";
+    subtitle = "Explore study opportunities, universities, and scholarships abroad.";
+  } else if (isWork) {
+    title = "Work Destinations";
+    subtitle = "Explore work visas, skilled worker programs, and job seeker pathways.";
+  } else if (isHealthcare) {
+    const profName = professionId ? professionId.charAt(0).toUpperCase() + professionId.slice(1) : "Healthcare Professionals";
+    title = `Destinations for ${profName}`;
+    subtitle = "Explore licensing, exams, and job pathways for healthcare professionals.";
+  }
 
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
@@ -49,12 +59,19 @@ export default function CountryGuides() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
           initial="initial" animate="animate" variants={staggerContainer}
         >
-          {allCountries.map((country, idx) => (
+          {allCountries.map((country) => (
             <motion.div 
               variants={fadeIn}
               key={country.id} 
               onClick={() => {
-                const path = isWork ? `/work/${country.id}` : isStudy ? `/study/${country.id}` : `/country-guides/${country.id}`;
+                let path = `/country-guides/${country.id}`;
+                if (isHealthcare && professionId) {
+                  path = `/healthcare/${country.id}/${professionId}`;
+                } else if (isWork) {
+                  path = `/work/${country.id}`;
+                } else if (isStudy) {
+                  path = `/study/${country.id}`;
+                }
                 navigate(path);
               }}
               className="group bg-white dark:bg-slate-800 rounded-[2rem] shadow-sm border border-slate-100 dark:border-slate-700 p-8 flex flex-col hover:shadow-2xl hover:border-blue-100 transition-all duration-300 cursor-pointer transform hover:-translate-y-2 text-center"

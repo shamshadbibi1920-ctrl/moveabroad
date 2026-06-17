@@ -109,6 +109,7 @@ export default function App() {
           <Route path="work-abroad" element={<CountryGuides />} />
           <Route path="scholarships" element={<Scholarships />} />
           <Route path="healthcare-abroad" element={<HealthcareAbroad />} />
+          <Route path="healthcare-abroad/:professionId" element={<CountryGuides />} />
           <Route path="country-guides" element={<CountryGuides />} />
           <Route path="compare" element={<CompareCountries />} />
           <Route path="blog" element={<Blog />} />
