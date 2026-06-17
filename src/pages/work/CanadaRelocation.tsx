@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, MapPin, ExternalLink, CheckCircle2, Home, CreditCard } from 'lucide-react';
+import { ArrowLeft, MapPin, ExternalLink, CheckCircle2, Home, CreditCard , Globe} from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function CanadaRelocation() {
@@ -19,22 +19,38 @@ export default function CanadaRelocation() {
         canonicalPath="/work/canada/relocation"
       />
       
-      {/* Hero Section */}
-      <div className="bg-rose-900 py-16 border-b border-rose-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/work/canada" className="inline-flex items-center text-rose-200 hover:text-white mb-6 transition-colors">
+      {/* Hero Banner */}
+      <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1489447068241-b3490214e879?w=1400&q=80" 
+            alt="Hero Background" 
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+            loading="eager"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/35"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <Link to="/work/canada" className="inline-flex items-center text-blue-100 hover:text-white transition-colors mb-8 font-medium">
             <ArrowLeft className="w-5 h-5 mr-2" /> Back to Work in Canada
           </Link>
-          <motion.h1 initial="initial" animate="animate" variants={fadeIn} className="text-4xl md:text-5xl font-bold text-white mb-6 font-display">
-            Relocation Guide
-          </motion.h1>
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl text-rose-100 max-w-3xl font-light">
-            Settle in faster with our checklist tailored for Pakistanis moving to Canada.
-          </motion.p>
+          <motion.div initial="initial" animate="animate" variants={{ initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5 } }} className="max-w-3xl">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/30 backdrop-blur-md border border-blue-400/30 text-blue-50 text-sm font-semibold mb-6">
+              <Globe className="w-4 h-4 mr-2" /> Canada Guide
+            </div>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Relocation Guide 🇨🇦
+            </h1>
+            <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+              Explore comprehensive guides and resources for moving abroad.
+            </p>
+          </motion.div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-4 mb-8 rounded-r-lg">
           <p className="text-amber-800 dark:text-amber-200 text-sm">
             <strong>Disclaimer:</strong> Policies change frequently. Always verify the latest information with official IRCC sources before applying.

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Briefcase, FileText, Banknote, Building, Calendar, ArrowRight, CheckCircle2, Globe, TrendingUp } from 'lucide-react';
+import { Briefcase, FileText, Banknote, Building, Calendar, ArrowRight, CheckCircle2, TrendingUp , Globe} from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function WorkDestination() {
@@ -68,7 +68,7 @@ export default function WorkDestination() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           
           <div className="lg:col-span-2 space-y-12">

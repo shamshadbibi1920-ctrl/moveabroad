@@ -1,6 +1,7 @@
+import { motion } from 'motion/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, ChevronRight, CheckCircle2, Heart, Users, Calculator, AlertCircle, FileText, CalendarClock } from 'lucide-react';
+import { ShieldCheck, ChevronRight, CheckCircle2, Heart, Users, Calculator, AlertCircle, FileText, CalendarClock , ArrowLeft, Globe} from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function CanadaFamilySponsorship() {
@@ -11,17 +12,38 @@ export default function CanadaFamilySponsorship() {
         description="How to sponsor your spouse, children or parents from Pakistan to Canada. Income requirements, Super Visa, and processing times."
         canonicalPath="/migrate/canada/family-sponsorship"
       />
-      <div className="bg-slate-900 py-16 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/migrate/canada" className="inline-flex items-center text-rose-400 hover:text-white mb-6 transition-colors font-medium">
-             &larr; Back to Canada Migration
+      {/* Hero Banner */}
+      <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1561134643-668f2b97d4f9?w=1400&q=80" 
+            alt="Hero Background" 
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+            loading="eager"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/35"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <Link to="/migrate/canada" className="inline-flex items-center text-blue-100 hover:text-white transition-colors mb-8 font-medium">
+            <ArrowLeft className="w-5 h-5 mr-2" /> Back to Canada Migration
           </Link>
-          <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">Family Sponsorship</h1>
-          <p className="text-xl text-slate-300 max-w-3xl">Reunite with your loved ones in Canada. A comprehensive guide for Pakistani sponsors and applicants.</p>
+          <motion.div initial="initial" animate="animate" variants={{ initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5 } }} className="max-w-3xl">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/30 backdrop-blur-md border border-blue-400/30 text-blue-50 text-sm font-semibold mb-6">
+              <Globe className="w-4 h-4 mr-2" /> Canada Guide
+            </div>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Family Sponsorship 🇨🇦
+            </h1>
+            <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+              Sponsor your spouse, partner, or dependent children to become permanent residents of Canada.
+            </p>
+          </motion.div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
         <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 rounded-r-xl p-6 flex flex-col md:flex-row items-start gap-4 shadow-sm">
           <div className="flex-shrink-0">
              <ShieldCheck className="w-6 h-6 text-amber-600 dark:text-amber-400 mt-0.5" />

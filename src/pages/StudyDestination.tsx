@@ -1,6 +1,6 @@
+import { motion, AnimatePresence } from 'motion/react';
 import React, { useState, useMemo } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'motion/react';
 import { Globe, BookOpen, FileText, Banknote, Building, Calendar, ArrowRight, CheckCircle2, MapPin, Search, GraduationCap, DollarSign, Home, MessageCircle, HelpCircle, AlertTriangle, Info, ChevronDown } from 'lucide-react';
 import { getCountryData } from '../data/countries';
 import SEO from '../components/SEO';
@@ -145,7 +145,7 @@ export default function StudyDestination() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           
           {/* Main Content */}

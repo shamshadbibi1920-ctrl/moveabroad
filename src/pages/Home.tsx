@@ -1,7 +1,7 @@
+import { motion, AnimatePresence } from 'motion/react';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Plane, GraduationCap, Briefcase, Stethoscope, ArrowRight, CheckCircle2, ChevronRight, Search, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
 import SEO from '../components/SEO';
 
 const COUNTRY_GROUPS = [

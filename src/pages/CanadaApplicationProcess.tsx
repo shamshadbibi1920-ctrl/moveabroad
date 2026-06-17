@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { BookOpen, FileText, CheckCircle2, AlertTriangle, ArrowRight } from 'lucide-react';
+import { BookOpen, FileText, CheckCircle2, AlertTriangle, ArrowRight , ArrowLeft, Globe} from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function CanadaApplicationProcess() {
@@ -19,38 +19,38 @@ export default function CanadaApplicationProcess() {
 
   return (
     <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+      {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
-          {data?.heroImage ? (
-            <img 
-              src={data.heroImage} 
-              alt="Canada" 
-              onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
-          loading="eager"
-          className="w-full h-full object-cover opacity-80"
-            />
-          ) : (
-             <div className="w-full h-full bg-blue-900 text-opacity-50"></div>
-          )}
-          <div className="absolute inset-0 bg-slate-900/60 dark:bg-slate-900/80 backdrop-blur-[2px]"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1561134643-668f2b97d4f9?w=1400&q=80" 
+            alt="Hero Background" 
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+            loading="eager"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/35"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
-            <Link to="/study/canada" className="inline-flex items-center text-blue-300 hover:text-white mb-6 transition-colors">
-              &larr; Back to Study in Canada
-            </Link>
-            <motion.h1 variants={fadeIn} className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Application Process
-            </motion.h1>
-            <motion.p variants={fadeIn} className="text-xl text-blue-100 mb-8 leading-relaxed">
+          <Link to="/study/canada" className="inline-flex items-center text-blue-100 hover:text-white transition-colors mb-8 font-medium">
+            <ArrowLeft className="w-5 h-5 mr-2" /> Back to Study in Canada
+          </Link>
+          <motion.div initial="initial" animate="animate" variants={{ initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5 } }} className="max-w-3xl">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/30 backdrop-blur-md border border-blue-400/30 text-blue-50 text-sm font-semibold mb-6">
+              <Globe className="w-4 h-4 mr-2" /> Canada Guide
+            </div>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Application Process 🇨🇦
+            </h1>
+            <p className="text-xl text-blue-100 mb-8 leading-relaxed">
               Find out how to apply for Bachelor and Master programs in Canada, exactly what documents you need, and expert tips on your SOP.
-            </motion.p>
+            </p>
           </motion.div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         {/* Bachelors vs Masters Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">

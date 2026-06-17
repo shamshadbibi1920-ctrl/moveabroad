@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import React, { useState } from 'react';
 import { XCircle } from 'lucide-react';
 import { getAllCountries } from '../data/countries';
 

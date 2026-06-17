@@ -1,11 +1,11 @@
+import { motion, AnimatePresence } from 'motion/react';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'motion/react';
 import { 
   Building2, GraduationCap, Building, Banknote, HeartPulse, 
-  Home, BookOpen, UserCircle2, Briefcase, Globe,
+  Home, BookOpen, UserCircle2, Briefcase,
   ExternalLink, Search, Star, AlertTriangle, MapPin
-} from 'lucide-react';
+, ArrowLeft, Globe} from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 const linkCategories = [
@@ -160,38 +160,38 @@ export default function GermanyOfficialLinks() {
 
   return (
     <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+      {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
-          {data?.heroImage ? (
-            <img 
-              src={data.heroImage} 
-              alt={`${countryName} skyline`} 
-              onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
-          loading="eager"
-          className="w-full h-full object-cover"
-            />
-          ) : (
-            <div className="w-full h-full bg-blue-900"></div>
-          )}
-          <div className="absolute inset-0 bg-black/60"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1560969184-10fe8719e047?w=1400&q=80" 
+            alt="Hero Background" 
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+            loading="eager"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/35"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-4xl">
-            <Link to="/study/germany" className="inline-flex items-center text-blue-300 hover:text-white mb-6 transition-colors">
-              &larr; Back to Study in Germany
-            </Link>
-            <motion.h1 variants={fadeIn} className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight text-white">
-              Official Links & Resources
-            </motion.h1>
-            <motion.p variants={fadeIn} className="text-xl text-blue-100 mb-8 leading-relaxed">
+          <Link to="/study/germany" className="inline-flex items-center text-blue-100 hover:text-white transition-colors mb-8 font-medium">
+            <ArrowLeft className="w-5 h-5 mr-2" /> Back to Study in Germany
+          </Link>
+          <motion.div initial="initial" animate="animate" variants={{ initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5 } }} className="max-w-3xl">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/30 backdrop-blur-md border border-blue-400/30 text-blue-50 text-sm font-semibold mb-6">
+              <Globe className="w-4 h-4 mr-2" /> Germany Guide
+            </div>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Official Links & Resources 🇩🇪
+            </h1>
+            <p className="text-xl text-blue-100 mb-8 leading-relaxed">
               A curated, centralized directory of all the official websites and portals Pakistani students need for their German study journey.
-            </motion.p>
+            </p>
           </motion.div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-12 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="flex-1 max-w-xl relative">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">

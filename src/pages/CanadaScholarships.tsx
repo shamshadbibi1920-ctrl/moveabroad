@@ -1,7 +1,7 @@
+import { motion, AnimatePresence } from 'motion/react';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'motion/react';
-import { Banknote, FileText, Calendar, ArrowRight, CheckCircle2, DollarSign, ChevronRight, Globe, AlertTriangle } from 'lucide-react';
+import { Banknote, FileText, Calendar, ArrowRight, CheckCircle2, DollarSign, ChevronRight, AlertTriangle , ArrowLeft, Globe} from 'lucide-react';
 import { getCountryData } from '../data/countries';
 
 export default function CanadaScholarships() {
@@ -130,38 +130,38 @@ export default function CanadaScholarships() {
 
   return (
     <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+      {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
-          {data?.heroImage ? (
-            <img 
-              src={data.heroImage} 
-              alt="Canada" 
-              onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
-          loading="eager"
-          className="w-full h-full object-cover"
-            />
-          ) : (
-            <div className="w-full h-full bg-emerald-900"></div>
-          )}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1489447068241-b3490214e879?w=1400&q=80" 
+            alt="Hero Background" 
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+            loading="eager"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/35"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-3xl">
-            <Link to="/study/canada" className="inline-flex items-center text-blue-300 hover:text-white mb-6 transition-colors">
-              &larr; Back to Study in Canada
-            </Link>
-            <motion.h1 variants={fadeIn} className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Scholarships in Canada
-            </motion.h1>
-            <motion.p variants={fadeIn} className="text-xl text-emerald-50 mb-8 leading-relaxed">
+          <Link to="/study/canada" className="inline-flex items-center text-blue-100 hover:text-white transition-colors mb-8 font-medium">
+            <ArrowLeft className="w-5 h-5 mr-2" /> Back to Study in Canada
+          </Link>
+          <motion.div initial="initial" animate="animate" variants={{ initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5 } }} className="max-w-3xl">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/30 backdrop-blur-md border border-blue-400/30 text-blue-50 text-sm font-semibold mb-6">
+              <Globe className="w-4 h-4 mr-2" /> Canada Guide
+            </div>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Scholarships in Canada 🇨🇦
+            </h1>
+            <p className="text-xl text-blue-100 mb-8 leading-relaxed">
               Find fully funded scholarships and financial aid opportunities for Pakistani students in Canada.
-            </motion.p>
+            </p>
           </motion.div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 rounded-xl p-5 mb-12 flex items-start">
           <AlertTriangle className="w-6 h-6 text-amber-600 dark:text-amber-400 mr-3 flex-shrink-0 mt-0.5" />
           <div>

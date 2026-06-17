@@ -1,21 +1,43 @@
+import { motion } from 'motion/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, ChevronRight, CheckCircle2, Briefcase, FileCheck2, Clock } from 'lucide-react';
+import { ShieldCheck, ChevronRight, CheckCircle2, Briefcase, FileCheck2, Clock , ArrowLeft, Globe} from 'lucide-react';
 
 export default function AustraliaEmployerSponsored() {
   return (
     <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300 pb-20">
-      <div className="bg-slate-900 py-16 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/migrate/australia" className="inline-flex items-center text-rose-400 hover:text-white mb-6 transition-colors font-medium">
-             &larr; Back to Australia Migration
+      {/* Hero Banner */}
+      <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=1400&q=80" 
+            alt="Hero Background" 
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
+            loading="eager"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/35"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <Link to="/migrate/australia" className="inline-flex items-center text-blue-100 hover:text-white transition-colors mb-8 font-medium">
+            <ArrowLeft className="w-5 h-5 mr-2" /> Back to Australia Migration
           </Link>
-          <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">Employer Sponsored Visa (Subclass 186)</h1>
-          <p className="text-xl text-slate-300 max-w-3xl">A permanent visa for skilled workers who are sponsored by an Australian employer.</p>
+          <motion.div initial="initial" animate="animate" variants={{ initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5 } }} className="max-w-3xl">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/30 backdrop-blur-md border border-blue-400/30 text-blue-50 text-sm font-semibold mb-6">
+              <Globe className="w-4 h-4 mr-2" /> Australia Guide
+            </div>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Employer Sponsored Visa (Subclass 186) 🇦🇺
+            </h1>
+            <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+              The Employer Nomination Scheme (Subclass 186) visa allows skilled workers to live and work in Australia permanently based on an employer nomination.
+            </p>
+          </motion.div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
         <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 rounded-r-xl p-6 flex flex-col md:flex-row items-start gap-4 shadow-sm">
           <div className="flex-shrink-0">
              <ShieldCheck className="w-6 h-6 text-amber-600 dark:text-amber-400 mt-0.5" />
