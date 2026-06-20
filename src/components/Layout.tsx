@@ -14,6 +14,28 @@ export default function Layout() {
 
   const location = useLocation();
 
+  const [email, setEmail] = useState('');
+  const [newsletterStatus, setNewsletterStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [newsletterMessage, setNewsletterMessage] = useState('');
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+      setNewsletterStatus('error');
+      setNewsletterMessage('Please enter a valid email address');
+      return;
+    }
+    setNewsletterStatus('success');
+    setNewsletterMessage("Thank you for subscribing! We'll send you the latest updates.");
+    setEmail('');
+    
+    // reset message after some time
+    setTimeout(() => {
+      setNewsletterStatus('idle');
+      setNewsletterMessage('');
+    }, 5000);
+  };
+
   const toggleDarkMode = () => {
     const nextMode = !isDarkMode;
     setIsDarkMode(nextMode);
@@ -199,19 +221,28 @@ export default function Layout() {
             <div>
               <h3 className="text-sm font-semibold tracking-wider uppercase mb-4 text-slate-300">Newsletter</h3>
               <p className="text-slate-400 text-sm mb-4">Get the latest scholarships and job updates straight to your inbox.</p>
-              <form className="flex">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  required
-                  className="w-full px-3 py-2 border border-slate-700 rounded-l-md bg-slate-800 text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-sm"
-                />
-                <button
-                  type="submit"
-                  className="px-4 py-2 border border-transparent rounded-r-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-slate-900 transition-colors"
-                >
-                  <Mail className="h-4 w-4" />
-                </button>
+              <form className="flex flex-col gap-2" onSubmit={handleNewsletterSubmit} noValidate>
+                <div className="flex">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    className="w-full px-3 py-2 border border-slate-700 rounded-l-md bg-slate-800 text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                  />
+                  <button
+                    type="submit"
+                    className="px-4 py-2 border border-transparent rounded-r-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-slate-900 transition-colors"
+                  >
+                    <Mail className="h-4 w-4" />
+                  </button>
+                </div>
+                {newsletterStatus !== 'idle' && (
+                  <p className={`text-xs mt-1 ${newsletterStatus === 'success' ? 'text-green-400' : 'text-red-400'}`}>
+                    {newsletterMessage}
+                  </p>
+                )}
               </form>
             </div>
           </div>

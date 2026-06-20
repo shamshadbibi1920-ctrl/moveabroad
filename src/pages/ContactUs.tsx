@@ -1,8 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, MessageCircle, MapPin } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function ContactUs() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  
+  const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [formMessage, setFormMessage] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!name || !email || !message) {
+      setFormStatus('error');
+      setFormMessage('Please fill all required fields');
+      return;
+    }
+    
+    setFormStatus('success');
+    setFormMessage("Thank you for your message! We'll respond within 24 hours via email or WhatsApp.");
+    setName('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+    
+    setTimeout(() => {
+      setFormStatus('idle');
+      setFormMessage('');
+    }, 8000);
+  };
+
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -69,22 +98,27 @@ export default function ContactUs() {
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
             className="bg-white dark:bg-slate-800 rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100 dark:border-slate-700 p-8 md:p-12"
           >
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit} noValidate>
+              {formStatus !== 'idle' && (
+                <div className={`p-4 rounded-xl text-sm font-medium ${formStatus === 'success' ? 'bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-400' : 'bg-red-50 text-red-700 dark:bg-red-900/30 dark:text-red-400'}`}>
+                  {formMessage}
+                </div>
+              )}
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-slate-900 dark:text-slate-50 mb-2">Full Name</label>
-                <input type="text" id="name" className="w-full px-5 py-3 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-slate-50 dark:bg-slate-800/50 transition-colors" placeholder="Ali Khan" />
+                <label htmlFor="name" className="block text-sm font-semibold text-slate-900 dark:text-slate-50 mb-2">Full Name *</label>
+                <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} required className="w-full px-5 py-3 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-slate-50 dark:bg-slate-800/50 transition-colors" placeholder="Ali Khan" />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-slate-900 dark:text-slate-50 mb-2">Email Address</label>
-                <input type="email" id="email" className="w-full px-5 py-3 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-slate-50 dark:bg-slate-800/50 transition-colors" placeholder="ali@example.com" />
+                <label htmlFor="email" className="block text-sm font-semibold text-slate-900 dark:text-slate-50 mb-2">Email Address *</label>
+                <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required className="w-full px-5 py-3 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-slate-50 dark:bg-slate-800/50 transition-colors" placeholder="ali@example.com" />
               </div>
               <div>
                 <label htmlFor="subject" className="block text-sm font-semibold text-slate-900 dark:text-slate-50 mb-2">Subject</label>
-                <input type="text" id="subject" className="w-full px-5 py-3 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-slate-50 dark:bg-slate-800/50 transition-colors" placeholder="How can we help?" />
+                <input type="text" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} className="w-full px-5 py-3 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-slate-50 dark:bg-slate-800/50 transition-colors" placeholder="How can we help?" />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-slate-900 dark:text-slate-50 mb-2">Message</label>
-                <textarea id="message" rows={5} className="w-full px-5 py-3 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-slate-50 dark:bg-slate-800/50 transition-colors" placeholder="Your message here..."></textarea>
+                <label htmlFor="message" className="block text-sm font-semibold text-slate-900 dark:text-slate-50 mb-2">Message *</label>
+                <textarea id="message" rows={5} value={message} onChange={(e) => setMessage(e.target.value)} required className="w-full px-5 py-3 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-slate-50 dark:bg-slate-800/50 transition-colors" placeholder="Your message here..."></textarea>
               </div>
               <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-xl shadow-lg shadow-blue-500/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all transform hover:scale-[1.02]">
                 Send Message
