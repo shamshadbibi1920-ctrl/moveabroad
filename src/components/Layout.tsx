@@ -180,7 +180,7 @@ export default function Layout() {
                 Your complete guide to moving abroad for Pakistani students and professionals
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors">
+                <a href="https://www.facebook.com/profile.php?id=61590813940028" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 transition-colors">
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors">
