@@ -9,6 +9,8 @@ import GermanyDentistContent from '../components/healthcare/GermanyDentistConten
 import GermanyPharmacistContent from '../components/healthcare/GermanyPharmacistContent';
 import GermanyPhysioContent from '../components/healthcare/GermanyPhysioContent';
 
+import CanadaDoctorContent from '../components/healthcare/CanadaDoctorContent';
+
 export default function HealthcareDestination() {
   const { countryId, professionId } = useParams<{ countryId: string, professionId: string }>();
   const safeCountryId = countryId || 'uk';
@@ -89,6 +91,7 @@ export default function HealthcareDestination() {
         {safeCountryId === 'germany' && professionId === 'dentist' && <GermanyDentistContent data={professionData} />}
         {safeCountryId === 'germany' && professionId === 'pharmacist' && <GermanyPharmacistContent data={professionData} />}
         {safeCountryId === 'germany' && professionId === 'physiotherapist' && <GermanyPhysioContent data={professionData} />}
+        {safeCountryId === 'canada' && professionId === 'doctor' && <CanadaDoctorContent />}
       </div>
     </div>
   );

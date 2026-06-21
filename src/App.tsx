@@ -38,6 +38,12 @@ const CanadaCostOfLiving = React.lazy(() => import('./pages/CanadaCostOfLiving')
 const CanadaAccommodation = React.lazy(() => import('./pages/CanadaAccommodation'));
 const CanadaIntakeDeadlines = React.lazy(() => import('./pages/CanadaIntakeDeadlines'));
 
+// Healthcare Canada Doctor Pathways
+const CanadaDoctorCaRMS = React.lazy(() => import('./pages/healthcare/CanadaDoctorCaRMS'));
+const CanadaDoctorFellowship = React.lazy(() => import('./pages/healthcare/CanadaDoctorFellowship'));
+const CanadaDoctorPRA = React.lazy(() => import('./pages/healthcare/CanadaDoctorPRA'));
+const CanadaDoctorPER = React.lazy(() => import('./pages/healthcare/CanadaDoctorPER'));
+
 // Blog Pages
 const GermanyOpportunityCard = React.lazy(() => import('./pages/blog/GermanyOpportunityCard'));
 const DaadScholarshipGuide = React.lazy(() => import('./pages/blog/DaadScholarshipGuide'));
@@ -188,6 +194,10 @@ export default function App() {
           <Route path="work/canada/relocation" element={<CanadaRelocation />} />
           <Route path="work/canada/language" element={<CanadaLanguage />} />
           <Route path="work/:countryId" element={<WorkDestination />} />
+          <Route path="healthcare/canada/doctor/carms-pathway" element={<CanadaDoctorCaRMS />} />
+          <Route path="healthcare/canada/doctor/fellowship-pathway" element={<CanadaDoctorFellowship />} />
+          <Route path="healthcare/canada/doctor/pra-pathway" element={<CanadaDoctorPRA />} />
+          <Route path="healthcare/canada/doctor/per-pathway" element={<CanadaDoctorPER />} />
           <Route path="healthcare/:countryId/:professionId" element={<HealthcareDestination />} />
         </Route>
         </Routes>
