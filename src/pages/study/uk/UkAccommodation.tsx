@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { Home, ArrowLeft, Building, Users, MapPin, ExternalLink, ShieldCheck } from 'lucide-react';
+import { Home, ArrowLeft, Building, Users, MapPin, ExternalLink, ShieldCheck, ArrowRight } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 export default function UkAccommodation() {
@@ -125,5 +125,4 @@ export default function UkAccommodation() {
   );
 }
 
-// Added this to fix the undefined ArrowRight icon in the code above
-const ArrowRight = ({className}: {className?: string}) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>;
+

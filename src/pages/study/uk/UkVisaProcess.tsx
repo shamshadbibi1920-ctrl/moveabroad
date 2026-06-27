@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { FileText, ArrowLeft, CheckCircle2, Clock, DollarSign, Activity, AlertTriangle, Link as LinkIcon } from 'lucide-react';
+import { FileText, ArrowLeft, CheckCircle2, Clock, DollarSign, Activity, AlertTriangle, Link as LinkIcon, ArrowRight } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 export default function UkVisaProcess() {
