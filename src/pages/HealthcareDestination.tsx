@@ -66,9 +66,9 @@ export default function HealthcareDestination() {
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
-          {data.heroImage ? (
+          {data.heroImage || safeCountryId === 'uk' ? (
             <img 
-              src={data.heroImage} 
+              src={safeCountryId === 'uk' ? 'https://images.unsplash.com/photo-1587351021355-a479a299d2f9?w=1400&q=80' : data.heroImage} 
               alt={`${countryName} skyline`} 
               onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
               loading="eager"
