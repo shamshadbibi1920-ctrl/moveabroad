@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { FileText, CheckCircle2, AlertTriangle, ArrowRight, HeartPulse, Building2, BadgeDollarSign, MapPin, ExternalLink, ActivitySquare } from 'lucide-react';
+import { FileText, CheckCircle2, AlertTriangle, ArrowRight, ArrowLeft, HeartPulse, Building2, BadgeDollarSign, MapPin, ExternalLink, ActivitySquare } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function UkNurseContent() {
@@ -16,7 +16,7 @@ export default function UkNurseContent() {
       <div className="relative bg-slate-900 py-16 sm:py-24 overflow-hidden rounded-3xl mt-8">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1400&q=80" 
+            src="https://images.unsplash.com/photo-1518398046578-8cca57782e17?w=1400&q=80" 
             alt="UK Healthcare Nurse" 
             className="w-full h-full object-cover opacity-40"
           />
@@ -167,4 +167,4 @@ export default function UkNurseContent() {
   );
 }
 
-const ArrowLeft = ({className}: {className?: string}) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>;
+

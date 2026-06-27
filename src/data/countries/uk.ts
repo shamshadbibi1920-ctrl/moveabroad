@@ -73,6 +73,27 @@ export const uk: CountryData = {
         'Pass the OSCE in the UK within weeks of arrival',
         'Receive NMC PIN and practice as an RN'
       ]
+    },
+    dentist: {
+      overview: 'Growing dentist shortage in UK, especially NHS dentistry.',
+      registrationBoard: 'General Dental Council (GDC)',
+      exams: ['ORE Part 1', 'ORE Part 2'],
+      languageRequirements: 'IELTS/OET',
+      process: []
+    },
+    pharmacist: {
+      overview: 'Steady demand for pharmacists.',
+      registrationBoard: 'General Pharmaceutical Council (GPhC)',
+      exams: ['GPhC registration assessment'],
+      languageRequirements: 'IELTS/OET/TOEFL/PTE',
+      process: []
+    },
+    physiotherapist: {
+      overview: 'Good demand in NHS and private practice.',
+      registrationBoard: 'Health and Care Professions Council (HCPC)',
+      exams: [],
+      languageRequirements: 'IELTS/OET',
+      process: []
     }
   },
   officialLinks: [
