@@ -162,7 +162,7 @@ export default function StudyDestination() {
                   {data.overview}
                 </p>
 
-                {['germany', 'canada'].includes(safeId) && (
+                {['germany', 'canada', 'uk'].includes(safeId) && (
                   <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <Link to={`/study/${safeId}/universities`} className="flex flex-col p-6 bg-slate-50 dark:bg-slate-900/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 border border-slate-200 dark:border-slate-700/50 hover:border-blue-300 dark:hover:border-blue-800 rounded-2xl transition-all group text-center shadow-sm hover:shadow-md">
                       <GraduationCap className="w-10 h-10 text-blue-600 dark:text-blue-400 mb-4 mx-auto group-hover:scale-110 transition-transform" />
@@ -207,7 +207,7 @@ export default function StudyDestination() {
               </motion.section>
             )}
 
-            {!['germany', 'canada'].includes(safeId) && (
+            {!['germany', 'canada', 'uk'].includes(safeId) && (
               <>
                 {/* University Finder Section */}
             {data.universities && data.universities.length > 0 && (
@@ -624,6 +624,34 @@ export default function StudyDestination() {
                       'New updates affect the eligibility criteria for PGWP.',
                       'Master\'s degree graduates will continue to be eligible for 3-year PGWPs.',
                       'Always check IRCC for the most current post-graduation work rules.'
+                    ]
+                  }
+                ] : safeId === 'uk' ? [
+                  {
+                    title: 'UKVI IHS fee and Visa updates 2026',
+                    date: '1 day ago',
+                    details: [
+                      'Immigration Health Surcharge (IHS) fees have been updated for student visas.',
+                      'Graduate Route visa remains in place for 2 years post-graduation.',
+                      'Financial requirements for London now £1,334 per month.'
+                    ]
+                  },
+                  {
+                    title: 'Fall 2026 Intake Deadlines Approaching',
+                    date: '5 days ago',
+                    details: [
+                      'Russell Group universities are closing early applications.',
+                      'UCAS undergraduate deadline is January 29 for most courses.',
+                      'Always apply early to secure university accommodation.'
+                    ]
+                  },
+                  {
+                    title: 'New Scholarship Opportunities for Pakistani Students',
+                    date: '2 weeks ago',
+                    details: [
+                      'British Council GREAT Scholarships announced for Pakistan.',
+                      'Commonwealth Master\'s Scholarships applications opening soon.',
+                      'Check with your university for specific Vice-Chancellor awards.'
                     ]
                   }
                 ] : [

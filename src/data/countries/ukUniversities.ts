@@ -1,0 +1,55 @@
+export const ukUniversities = [
+  // Russell Group / Top Tier
+  { name: 'University of Oxford', city: 'Oxford', region: 'England', type: 'Russell Group', tuition: '£33,000 - £48,000', programs: 'Medicine, Law, Humanities', english: 'IELTS 7.5', deadline: '15 Oct' },
+  { name: 'University of Cambridge', city: 'Cambridge', region: 'England', type: 'Russell Group', tuition: '£35,000 - £50,000', programs: 'Engineering, Sciences, Economics', english: 'IELTS 7.5', deadline: '15 Oct' },
+  { name: 'Imperial College London', city: 'London', region: 'England', type: 'Russell Group', tuition: '£38,000 - £45,000', programs: 'Engineering, Medicine, Computing', english: 'IELTS 7.0', deadline: 'Jan 29' },
+  { name: 'UCL (University College London)', city: 'London', region: 'England', type: 'Russell Group', tuition: '£26,000 - £35,000', programs: 'Architecture, Education, Law', english: 'IELTS 6.5 - 7.5', deadline: 'Jan 29' },
+  { name: 'London School of Economics (LSE)', city: 'London', region: 'England', type: 'Russell Group', tuition: '£24,000 - £34,000', programs: 'Economics, Finance, Politics', english: 'IELTS 7.0', deadline: 'Jan 29' },
+  { name: 'King\'s College London', city: 'London', region: 'England', type: 'Russell Group', tuition: '£23,000 - £33,000', programs: 'Nursing, Law, Psychology', english: 'IELTS 7.0', deadline: 'Jan 29' },
+  { name: 'University of Edinburgh', city: 'Edinburgh', region: 'Scotland', type: 'Russell Group', tuition: '£24,000 - £35,000', programs: 'Computer Science, Arts, Medicine', english: 'IELTS 6.5', deadline: 'Jan 29' },
+  { name: 'University of Manchester', city: 'Manchester', region: 'England', type: 'Russell Group', tuition: '£25,000 - £32,000', programs: 'Business, Engineering', english: 'IELTS 6.5', deadline: 'Jan 29' },
+  { name: 'University of Birmingham', city: 'Birmingham', region: 'England', type: 'Russell Group', tuition: '£22,000 - £28,000', programs: 'Engineering, Business, Dentistry', english: 'IELTS 6.5', deadline: 'Jan 29' },
+  { name: 'University of Bristol', city: 'Bristol', region: 'England', type: 'Russell Group', tuition: '£24,000 - £31,000', programs: 'Engineering, Law, Sciences', english: 'IELTS 6.5', deadline: 'Jan 29' },
+  { name: 'University of Glasgow', city: 'Glasgow', region: 'Scotland', type: 'Russell Group', tuition: '£23,000 - £30,000', programs: 'Veterinary, Business, Engineering', english: 'IELTS 6.5', deadline: 'Jan 29' },
+  { name: 'University of Leeds', city: 'Leeds', region: 'England', type: 'Russell Group', tuition: '£22,000 - £29,000', programs: 'Business, Engineering, Communication', english: 'IELTS 6.0', deadline: 'Jan 29' },
+  { name: 'University of Sheffield', city: 'Sheffield', region: 'England', type: 'Russell Group', tuition: '£21,000 - £27,000', programs: 'Architecture, Engineering', english: 'IELTS 6.0', deadline: 'Jan 29' },
+  { name: 'University of Nottingham', city: 'Nottingham', region: 'England', type: 'Russell Group', tuition: '£20,000 - £26,000', programs: 'Pharmacy, Business', english: 'IELTS 6.0', deadline: 'Jan 29' },
+  { name: 'University of Southampton', city: 'Southampton', region: 'England', type: 'Russell Group', tuition: '£22,000 - £28,000', programs: 'Engineering, Computer Science', english: 'IELTS 6.5', deadline: 'Jan 29' },
+  { name: 'Queen Mary University of London', city: 'London', region: 'England', type: 'Russell Group', tuition: '£23,000 - £29,000', programs: 'Medicine, Law, Business', english: 'IELTS 6.5', deadline: 'Jan 29' },
+  { name: 'University of Warwick', city: 'Coventry', region: 'England', type: 'Russell Group', tuition: '£24,000 - £30,000', programs: 'Business, Mathematics, Economics', english: 'IELTS 6.5', deadline: 'Jan 29' },
+  { name: 'Durham University', city: 'Durham', region: 'England', type: 'Russell Group', tuition: '£23,000 - £30,000', programs: 'Theology, Geography, Law', english: 'IELTS 6.5', deadline: 'Jan 29' },
+  { name: 'University of Liverpool', city: 'Liverpool', region: 'England', type: 'Russell Group', tuition: '£21,000 - £27,000', programs: 'Veterinary, Medicine, Engineering', english: 'IELTS 6.0', deadline: 'Jan 29' },
+  { name: 'Cardiff University', city: 'Cardiff', region: 'Wales', type: 'Russell Group', tuition: '£20,000 - £25,000', programs: 'Architecture, Communications, Pharmacy', english: 'IELTS 6.5', deadline: 'Jan 29' },
+
+  // Other Popular Universities
+  { name: 'Coventry University', city: 'Coventry', region: 'England', type: 'Other', tuition: '£16,000 - £20,000', programs: 'Automotive Engineering, Business', english: 'IELTS 6.0 / MOI', deadline: 'Rolling' },
+  { name: 'University of Hertfordshire', city: 'Hatfield', region: 'England', type: 'Other', tuition: '£15,000 - £18,000', programs: 'Engineering, Computer Science', english: 'IELTS 6.0 / MOI', deadline: 'Rolling' },
+  { name: 'University of East London', city: 'London', region: 'England', type: 'Other', tuition: '£14,000 - £17,000', programs: 'Business, Architecture', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'Northumbria University', city: 'Newcastle', region: 'England', type: 'Other', tuition: '£16,000 - £19,000', programs: 'Design, Business, IT', english: 'IELTS 6.0 / MOI', deadline: 'Rolling' },
+  { name: 'University of Greenwich', city: 'London', region: 'England', type: 'Other', tuition: '£15,000 - £18,000', programs: 'Accounting, Computing', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'Brunel University', city: 'London', region: 'England', type: 'Other', tuition: '£18,000 - £21,000', programs: 'Engineering, Design, Business', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'University of Westminster', city: 'London', region: 'England', type: 'Other', tuition: '£15,000 - £19,000', programs: 'Media, Architecture, Business', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'Kingston University', city: 'London', region: 'England', type: 'Other', tuition: '£16,000 - £19,000', programs: 'Art, Design, Business', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'University of Bedfordshire', city: 'Luton', region: 'England', type: 'Other', tuition: '£13,000 - £16,000', programs: 'Nursing, Business, IT', english: 'IELTS 6.0 / MOI', deadline: 'Rolling' },
+  { name: 'Teesside University', city: 'Middlesbrough', region: 'England', type: 'Other', tuition: '£14,000 - £17,000', programs: 'Animation, IT, Engineering', english: 'IELTS 6.0 / MOI', deadline: 'Rolling' },
+  { name: 'University of Wolverhampton', city: 'Wolverhampton', region: 'England', type: 'Other', tuition: '£13,000 - £16,000', programs: 'Pharmacy, Engineering, Business', english: 'IELTS 6.0 / MOI', deadline: 'Rolling' },
+  { name: 'Anglia Ruskin University', city: 'Cambridge', region: 'England', type: 'Other', tuition: '£14,000 - £17,000', programs: 'Optometry, Business, IT', english: 'IELTS 6.0 / MOI', deadline: 'Rolling' },
+  { name: 'De Montfort University', city: 'Leicester', region: 'England', type: 'Other', tuition: '£15,000 - £18,000', programs: 'Pharmacy, Business, Design', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'University of Sunderland', city: 'Sunderland', region: 'England', type: 'Other', tuition: '£13,000 - £16,000', programs: 'Pharmacy, Business, Tourism', english: 'IELTS 6.0 / MOI', deadline: 'Rolling' },
+  { name: 'University of Central Lancashire', city: 'Preston', region: 'England', type: 'Other', tuition: '£14,000 - £17,000', programs: 'Dentistry, Business, Engineering', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'Sheffield Hallam University', city: 'Sheffield', region: 'England', type: 'Other', tuition: '£15,000 - £18,000', programs: 'Hospitality, Engineering, IT', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'Leeds Beckett University', city: 'Leeds', region: 'England', type: 'Other', tuition: '£14,000 - £17,000', programs: 'Sports Science, Business', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'University of Salford', city: 'Salford', region: 'England', type: 'Other', tuition: '£15,000 - £18,000', programs: 'Media, Engineering, Nursing', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'Staffordshire University', city: 'Stoke-on-Trent', region: 'England', type: 'Other', tuition: '£14,000 - £17,000', programs: 'Computing, Game Design, Business', english: 'IELTS 6.0 / MOI', deadline: 'Rolling' },
+  { name: 'University of South Wales', city: 'Pontypridd', region: 'Wales', type: 'Other', tuition: '£14,000 - £17,000', programs: 'Engineering, IT, Business', english: 'IELTS 6.0 / MOI', deadline: 'Rolling' },
+
+  // Scotland
+  { name: 'University of Strathclyde', city: 'Glasgow', region: 'Scotland', type: 'Other', tuition: '£17,000 - £23,000', programs: 'Engineering, Business, Pharmacy', english: 'IELTS 6.5', deadline: 'Rolling' },
+  { name: 'University of Dundee', city: 'Dundee', region: 'Scotland', type: 'Other', tuition: '£19,000 - £25,000', programs: 'Medicine, Dentistry, Arts', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'Heriot-Watt University', city: 'Edinburgh', region: 'Scotland', type: 'Other', tuition: '£16,000 - £22,000', programs: 'Engineering, Business', english: 'IELTS 6.0', deadline: 'Rolling' },
+  { name: 'University of Aberdeen', city: 'Aberdeen', region: 'Scotland', type: 'Other', tuition: '£18,000 - £24,000', programs: 'Energy, Engineering, Law', english: 'IELTS 6.0', deadline: 'Rolling' },
+
+  // Northern Ireland
+  { name: 'Queen\'s University Belfast', city: 'Belfast', region: 'Northern Ireland', type: 'Russell Group', tuition: '£18,000 - £24,000', programs: 'Pharmacy, Law, Engineering', english: 'IELTS 6.5', deadline: 'Jan 29' },
+  { name: 'Ulster University', city: 'Coleraine', region: 'Northern Ireland', type: 'Other', tuition: '£15,000 - £18,000', programs: 'Business, IT, Healthcare', english: 'IELTS 6.0', deadline: 'Rolling' }
+];

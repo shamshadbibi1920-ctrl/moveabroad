@@ -4,6 +4,7 @@ export const uk: CountryData = {
   id: 'uk',
   name: 'United Kingdom',
   flag: '🇬🇧',
+  heroImage: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80',
   overview: 'The UK is home to some of the world\'s oldest and most prestigious universities. With the Graduate Route visa, students can stay for 2 years (3 years for PhDs) after completing their degree. It also recruits heavily from abroad for the NHS.',
   costOfLiving: '£1,000 - £1,500 per month (UKVI requires £1,334/month for London, £1,023/month outside London).',
   languageRequirements: 'IELTS UKVI Academic (usually 6.0/6.5) or PTE Academic UKVI. For healthcare professionals, OET or IELTS is strictly enforced.',

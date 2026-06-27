@@ -38,6 +38,16 @@ const CanadaCostOfLiving = React.lazy(() => import('./pages/CanadaCostOfLiving')
 const CanadaAccommodation = React.lazy(() => import('./pages/CanadaAccommodation'));
 const CanadaIntakeDeadlines = React.lazy(() => import('./pages/CanadaIntakeDeadlines'));
 
+// Study in UK Pages
+const UkUniversities = React.lazy(() => import('./pages/study/uk/UkUniversities'));
+const UkScholarships = React.lazy(() => import('./pages/study/uk/UkScholarships'));
+const UkVisaProcess = React.lazy(() => import('./pages/study/uk/UkVisaProcess'));
+const UkApplicationProcess = React.lazy(() => import('./pages/study/uk/UkApplicationProcess'));
+const UkNoIelts = React.lazy(() => import('./pages/study/uk/UkNoIelts'));
+const UkCostOfLiving = React.lazy(() => import('./pages/study/uk/UkCostOfLiving'));
+const UkAccommodation = React.lazy(() => import('./pages/study/uk/UkAccommodation'));
+const UkIntakeDeadlines = React.lazy(() => import('./pages/study/uk/UkIntakeDeadlines'));
+
 // Healthcare Canada Doctor Pathways
 const CanadaDoctorCaRMS = React.lazy(() => import('./pages/healthcare/CanadaDoctorCaRMS'));
 const CanadaDoctorFellowship = React.lazy(() => import('./pages/healthcare/CanadaDoctorFellowship'));
@@ -176,6 +186,14 @@ export default function App() {
           <Route path="study/canada/cost-of-living" element={<CanadaCostOfLiving />} />
           <Route path="study/canada/accommodation" element={<CanadaAccommodation />} />
           <Route path="study/canada/intake-deadlines" element={<CanadaIntakeDeadlines />} />
+          <Route path="study/uk/universities" element={<UkUniversities />} />
+          <Route path="study/uk/scholarships" element={<UkScholarships />} />
+          <Route path="study/uk/visa-process" element={<UkVisaProcess />} />
+          <Route path="study/uk/application-process" element={<UkApplicationProcess />} />
+          <Route path="study/uk/no-ielts" element={<UkNoIelts />} />
+          <Route path="study/uk/cost-of-living" element={<UkCostOfLiving />} />
+          <Route path="study/uk/accommodation" element={<UkAccommodation />} />
+          <Route path="study/uk/intake-deadlines" element={<UkIntakeDeadlines />} />
           <Route path="study/:countryId" element={<StudyDestination />} />
           <Route path="work/germany" element={<GermanyWorkIndex />} />
           <Route path="work/germany/jobs" element={<GermanyJobs />} />
