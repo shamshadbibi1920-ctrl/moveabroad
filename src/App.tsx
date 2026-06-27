@@ -234,6 +234,11 @@ export default function App() {
           <Route path="healthcare/canada/doctor/fellowship-pathway" element={<CanadaDoctorFellowship />} />
           <Route path="healthcare/canada/doctor/pra-pathway" element={<CanadaDoctorPRA />} />
           <Route path="healthcare/canada/doctor/per-pathway" element={<CanadaDoctorPER />} />
+          <Route path="healthcare/uk/doctor" element={<HealthcareDestination />} />
+          <Route path="healthcare/uk/nurse" element={<HealthcareDestination />} />
+          <Route path="healthcare/uk/dentist" element={<HealthcareDestination />} />
+          <Route path="healthcare/uk/pharmacist" element={<HealthcareDestination />} />
+          <Route path="healthcare/uk/physiotherapist" element={<HealthcareDestination />} />
           <Route path="healthcare/:countryId/:professionId" element={<HealthcareDestination />} />
         </Route>
         </Routes>

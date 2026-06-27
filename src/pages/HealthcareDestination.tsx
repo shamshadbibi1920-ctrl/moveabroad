@@ -15,6 +15,12 @@ import CanadaDentistContent from '../components/healthcare/CanadaDentistContent'
 import CanadaPharmacistContent from '../components/healthcare/CanadaPharmacistContent';
 import CanadaPhysioContent from '../components/healthcare/CanadaPhysioContent';
 
+import UkDoctorContent from '../components/healthcare/UkDoctorContent';
+import UkNurseContent from '../components/healthcare/UkNurseContent';
+import UkDentistContent from '../components/healthcare/UkDentistContent';
+import UkPharmacistContent from '../components/healthcare/UkPharmacistContent';
+import UkPhysioContent from '../components/healthcare/UkPhysioContent';
+
 export default function HealthcareDestination() {
   const { countryId, professionId } = useParams<{ countryId: string, professionId: string }>();
   const safeCountryId = countryId || 'uk';
@@ -100,6 +106,11 @@ export default function HealthcareDestination() {
         {safeCountryId === 'canada' && professionId === 'dentist' && <CanadaDentistContent />}
         {safeCountryId === 'canada' && professionId === 'pharmacist' && <CanadaPharmacistContent />}
         {safeCountryId === 'canada' && professionId === 'physiotherapist' && <CanadaPhysioContent />}
+        {safeCountryId === 'uk' && professionId === 'doctor' && <UkDoctorContent />}
+        {safeCountryId === 'uk' && professionId === 'nurse' && <UkNurseContent />}
+        {safeCountryId === 'uk' && professionId === 'dentist' && <UkDentistContent />}
+        {safeCountryId === 'uk' && professionId === 'pharmacist' && <UkPharmacistContent />}
+        {safeCountryId === 'uk' && professionId === 'physiotherapist' && <UkPhysioContent />}
       </div>
     </div>
   );
