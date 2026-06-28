@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, DollarSign, Calculator, Info, Wallet, PieChart, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SEO from '../../../../components/SEO';
+import SEO from '../../../components/SEO';
 
 export default function AustraliaSalary() {
   return (
@@ -130,5 +130,5 @@ export default function AustraliaSalary() {
       </div>
     </div>
     </>
-  ;
+  );
 }

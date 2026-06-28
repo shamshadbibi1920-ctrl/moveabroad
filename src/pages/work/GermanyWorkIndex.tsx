@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Briefcase, FilePlus, Target, ListTodo, Euro, MapPin, Languages, Link as LinkIcon, ArrowLeft, Globe } from 'lucide-react';
-import SEO from '../../../components/SEO';
+import SEO from '../../components/SEO';
 
 export default function GermanyWorkIndex() {
   const fadeIn = {

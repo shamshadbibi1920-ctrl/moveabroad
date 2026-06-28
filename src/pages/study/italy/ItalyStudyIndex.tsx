@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { GraduationCap, Award, FileCheck, FileText, Globe, DollarSign, Home, Calendar, ArrowLeft, ChevronDown, ChevronUp, AlertTriangle } from 'lucide-react';
-import SEO from '../../../../components/SEO';
+import SEO from '../../../components/SEO';
 
 export default function ItalyStudyIndex() {
   const [openSection, setOpenSection] = useState<string | null>(null);

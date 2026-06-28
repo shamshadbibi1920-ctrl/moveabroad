@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, CheckCircle2, AlertTriangle, FileText, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SEO from '../../../../components/SEO';
+import SEO from '../../../components/SEO';
 
 export default function AustraliaWorkApplication() {
   return (
@@ -104,5 +104,5 @@ export default function AustraliaWorkApplication() {
       </div>
     </div>
     </>
-  ;
+  );
 }

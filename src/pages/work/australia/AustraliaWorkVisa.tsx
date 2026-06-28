@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, FilePlus, AlertTriangle, CheckCircle2, Clock, DollarSign, Target, Briefcase } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SEO from '../../../../components/SEO';
+import SEO from '../../../components/SEO';
 
 export default function AustraliaWorkVisa() {
   return (
@@ -179,5 +179,5 @@ export default function AustraliaWorkVisa() {
       </div>
     </div>
     </>
-  ;
+  );
 }

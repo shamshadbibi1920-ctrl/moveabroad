@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Target, AlertTriangle, CheckCircle2, ExternalLink, Globe } from 'lucide-react';
-import SEO from '../../../components/SEO';
+import SEO from '../../components/SEO';
 
 export default function GermanyWorkOpportunityCard() {
   const fadeIn = {

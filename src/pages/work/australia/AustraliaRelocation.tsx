@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, MapPin, CheckCircle2, Home, Landmark, Users, ArrowRightLeft, Plane } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SEO from '../../../../components/SEO';
+import SEO from '../../../components/SEO';
 
 export default function AustraliaRelocation() {
   return (
@@ -140,5 +140,5 @@ export default function AustraliaRelocation() {
       </div>
     </div>
     </>
-  ;
+  );
 }

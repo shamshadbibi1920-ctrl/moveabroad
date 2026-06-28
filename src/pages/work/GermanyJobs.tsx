@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Briefcase, ExternalLink, AlertTriangle, CheckCircle2, Globe } from 'lucide-react';
-import SEO from '../../../components/SEO';
+import SEO from '../../components/SEO';
 
 export default function GermanyJobs() {
   const fadeIn = {

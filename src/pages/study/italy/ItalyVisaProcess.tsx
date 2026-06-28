@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, FileCheck, CheckCircle2, AlertTriangle, Clock, MapPin, Globe, Stamp } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SEO from '../../../../components/SEO';
+import SEO from '../../../components/SEO';
 
 export default function ItalyVisaProcess() {
   return (

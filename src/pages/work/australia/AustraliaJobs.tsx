@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, Briefcase, TrendingUp, MonitorSmartphone, HeartPulse, Building2, HardHat, FileText, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SEO from '../../../../components/SEO';
+import SEO from '../../../components/SEO';
 
 export default function AustraliaJobs() {
   return (
@@ -160,5 +160,5 @@ export default function AustraliaJobs() {
       </div>
     </div>
     </>
-  ;
+  );
 }

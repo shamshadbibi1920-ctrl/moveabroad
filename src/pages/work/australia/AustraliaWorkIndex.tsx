@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Briefcase, FilePlus, ListTodo, DollarSign, MapPin, Languages, ArrowLeft, Globe, AlertTriangle, ChevronDown, ChevronUp } from 'lucide-react';
-import SEO from '../../../../components/SEO';
+import SEO from '../../../components/SEO';
 
 export default function AustraliaWorkIndex() {
   const [openSection, setOpenSection] = useState<string | null>(null);
@@ -115,5 +115,5 @@ export default function AustraliaWorkIndex() {
       </div>
     </div>
     </>
-  ;
+  );
 }

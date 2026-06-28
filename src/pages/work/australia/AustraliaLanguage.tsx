@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, Languages, CheckCircle2, AlertTriangle, BookOpen, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SEO from '../../../../components/SEO';
+import SEO from '../../../components/SEO';
 
 export default function AustraliaLanguage() {
   return (
@@ -111,5 +111,5 @@ export default function AustraliaLanguage() {
       </div>
     </div>
     </>
-  ;
+  );
 }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, GraduationCap, MapPin, Search, Filter, ExternalLink, Euro, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SEO from '../../../../components/SEO';
+import SEO from '../../../components/SEO';
 
 export default function ItalyUniversities() {
   const [searchTerm, setSearchTerm] = useState('');
