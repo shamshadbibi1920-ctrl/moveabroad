@@ -75,6 +75,18 @@ const CanadaDoctorFellowship = React.lazy(() => import('./pages/healthcare/Canad
 const CanadaDoctorPRA = React.lazy(() => import('./pages/healthcare/CanadaDoctorPRA'));
 const CanadaDoctorPER = React.lazy(() => import('./pages/healthcare/CanadaDoctorPER'));
 
+// Healthcare Australia Doctor Pathways
+const AustraliaDoctorIndex = React.lazy(() => import('./pages/healthcare/AustraliaDoctorIndex'));
+const AustraliaDoctorStandard = React.lazy(() => import('./pages/healthcare/AustraliaDoctorStandard'));
+const AustraliaDoctorCompetent = React.lazy(() => import('./pages/healthcare/AustraliaDoctorCompetent'));
+const AustraliaDoctorSpecialist = React.lazy(() => import('./pages/healthcare/AustraliaDoctorSpecialist'));
+
+// Healthcare Australia Other Professions
+const AustraliaNurse = React.lazy(() => import('./pages/healthcare/AustraliaNurse'));
+const AustraliaDentist = React.lazy(() => import('./pages/healthcare/AustraliaDentist'));
+const AustraliaPharmacist = React.lazy(() => import('./pages/healthcare/AustraliaPharmacist'));
+const AustraliaPhysiotherapist = React.lazy(() => import('./pages/healthcare/AustraliaPhysiotherapist'));
+
 // Blog Pages
 const GermanyOpportunityCard = React.lazy(() => import('./pages/blog/GermanyOpportunityCard'));
 const DaadScholarshipGuide = React.lazy(() => import('./pages/blog/DaadScholarshipGuide'));
@@ -288,6 +300,14 @@ export default function App() {
           <Route path="healthcare/canada/doctor/fellowship-pathway" element={<CanadaDoctorFellowship />} />
           <Route path="healthcare/canada/doctor/pra-pathway" element={<CanadaDoctorPRA />} />
           <Route path="healthcare/canada/doctor/per-pathway" element={<CanadaDoctorPER />} />
+          <Route path="healthcare/australia/doctor" element={<AustraliaDoctorIndex />} />
+          <Route path="healthcare/australia/doctor/standard-pathway" element={<AustraliaDoctorStandard />} />
+          <Route path="healthcare/australia/doctor/competent-authority-pathway" element={<AustraliaDoctorCompetent />} />
+          <Route path="healthcare/australia/doctor/specialist-pathway" element={<AustraliaDoctorSpecialist />} />
+          <Route path="healthcare/australia/nurse" element={<AustraliaNurse />} />
+          <Route path="healthcare/australia/dentist" element={<AustraliaDentist />} />
+          <Route path="healthcare/australia/pharmacist" element={<AustraliaPharmacist />} />
+          <Route path="healthcare/australia/physiotherapist" element={<AustraliaPhysiotherapist />} />
           <Route path="healthcare/:countryId/:professionId" element={<HealthcareDestination />} />
         </Route>
         </Routes>
