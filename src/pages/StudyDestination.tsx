@@ -162,7 +162,7 @@ export default function StudyDestination() {
                   {data.overview}
                 </p>
 
-                {['germany', 'canada', 'uk'].includes(safeId) && (
+                {['germany', 'canada', 'uk', 'australia'].includes(safeId) && (
                   <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <Link to={`/study/${safeId}/universities`} className="flex flex-col p-6 bg-slate-50 dark:bg-slate-900/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 border border-slate-200 dark:border-slate-700/50 hover:border-blue-300 dark:hover:border-blue-800 rounded-2xl transition-all group text-center shadow-sm hover:shadow-md">
                       <GraduationCap className="w-10 h-10 text-blue-600 dark:text-blue-400 mb-4 mx-auto group-hover:scale-110 transition-transform" />
@@ -207,7 +207,7 @@ export default function StudyDestination() {
               </motion.section>
             )}
 
-            {!['germany', 'canada', 'uk'].includes(safeId) && (
+            {!['germany', 'canada', 'uk', 'australia'].includes(safeId) && (
               <>
                 {/* University Finder Section */}
             {data.universities && data.universities.length > 0 && (
@@ -652,6 +652,34 @@ export default function StudyDestination() {
                       'British Council GREAT Scholarships announced for Pakistan.',
                       'Commonwealth Master\'s Scholarships applications opening soon.',
                       'Check with your university for specific Vice-Chancellor awards.'
+                    ]
+                  }
+                ] : safeId === 'australia' ? [
+                  {
+                    title: 'Student Visa (Subclass 500) Financial Requirements Increased',
+                    date: '3 days ago',
+                    details: [
+                      'Proof of financial capacity increased to AUD $29,710.',
+                      'Genuine Student (GS) requirement has replaced the GTE requirement for all new applications.',
+                      'Visa processing times are currently 4 to 8 weeks for complete applications.'
+                    ]
+                  },
+                  {
+                    title: 'New English Language Requirements for Visas',
+                    date: '1 week ago',
+                    details: [
+                      'IELTS score requirement for Student visas increased from 5.5 to 6.0.',
+                      'For students undertaking ELICOS before their main course, the requirement increased from 4.5 to 5.0.',
+                      'PTE Academic remains fully accepted for all visa applications.'
+                    ]
+                  },
+                  {
+                    title: 'Post-Study Work Rights and Temporary Graduate Visas',
+                    date: '2 weeks ago',
+                    details: [
+                      'Maximum eligible age for Temporary Graduate visa (subclass 485) reduced to 35 years.',
+                      'Stay periods have been adjusted: 2 years for Bachelors and Masters (coursework).',
+                      'Masters by research and PhD graduates are eligible for 3 years.'
                     ]
                   }
                 ] : [

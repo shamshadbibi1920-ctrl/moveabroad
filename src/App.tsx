@@ -38,6 +38,16 @@ const CanadaCostOfLiving = React.lazy(() => import('./pages/CanadaCostOfLiving')
 const CanadaAccommodation = React.lazy(() => import('./pages/CanadaAccommodation'));
 const CanadaIntakeDeadlines = React.lazy(() => import('./pages/CanadaIntakeDeadlines'));
 
+// Study in Australia Pages
+const AustraliaUniversities = React.lazy(() => import('./pages/AustraliaUniversities'));
+const AustraliaScholarships = React.lazy(() => import('./pages/AustraliaScholarships'));
+const AustraliaVisaProcess = React.lazy(() => import('./pages/AustraliaVisaProcess'));
+const AustraliaApplicationProcess = React.lazy(() => import('./pages/AustraliaApplicationProcess'));
+const AustraliaNoIelts = React.lazy(() => import('./pages/AustraliaNoIelts'));
+const AustraliaCostOfLiving = React.lazy(() => import('./pages/AustraliaCostOfLiving'));
+const AustraliaAccommodation = React.lazy(() => import('./pages/AustraliaAccommodation'));
+const AustraliaIntakeDeadlines = React.lazy(() => import('./pages/AustraliaIntakeDeadlines'));
+
 // Study in UK Pages
 const UkUniversities = React.lazy(() => import('./pages/study/uk/UkUniversities'));
 const UkScholarships = React.lazy(() => import('./pages/study/uk/UkScholarships'));
@@ -196,6 +206,14 @@ export default function App() {
           <Route path="study/canada/cost-of-living" element={<CanadaCostOfLiving />} />
           <Route path="study/canada/accommodation" element={<CanadaAccommodation />} />
           <Route path="study/canada/intake-deadlines" element={<CanadaIntakeDeadlines />} />
+          <Route path="study/australia/universities" element={<AustraliaUniversities />} />
+          <Route path="study/australia/scholarships" element={<AustraliaScholarships />} />
+          <Route path="study/australia/visa-process" element={<AustraliaVisaProcess />} />
+          <Route path="study/australia/application-process" element={<AustraliaApplicationProcess />} />
+          <Route path="study/australia/no-ielts" element={<AustraliaNoIelts />} />
+          <Route path="study/australia/cost-of-living" element={<AustraliaCostOfLiving />} />
+          <Route path="study/australia/accommodation" element={<AustraliaAccommodation />} />
+          <Route path="study/australia/intake-deadlines" element={<AustraliaIntakeDeadlines />} />
           <Route path="study/uk/universities" element={<UkUniversities />} />
           <Route path="study/uk/scholarships" element={<UkScholarships />} />
           <Route path="study/uk/visa-process" element={<UkVisaProcess />} />
