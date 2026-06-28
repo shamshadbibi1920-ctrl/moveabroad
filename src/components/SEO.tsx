@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 
 interface SEOProps {
   title: string;
@@ -14,9 +15,11 @@ export default function SEO({
   description, 
   keywords, 
   canonicalPath, 
-  ogImage = 'https://www.moveabroad.pk/og-image.jpg'
+  ogImage = 'https://moveabroad.pk/og-image.jpg'
 }: SEOProps) {
-  const url = canonicalPath ? `https://www.moveabroad.pk${canonicalPath}` : 'https://www.moveabroad.pk';
+  const location = useLocation();
+  const currentPath = canonicalPath || location.pathname;
+  const url = currentPath === '/' ? 'https://moveabroad.pk/' : `https://moveabroad.pk${currentPath}`;
   const defaultKeywords = 'migrate abroad from Pakistan, study abroad Pakistan, work abroad Pakistan, scholarships for Pakistanis, Canada immigration, Germany visa, UAE Golden Visa, UK skilled worker';
 
   return (
