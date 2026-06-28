@@ -95,6 +95,16 @@ const SaudiGoldenVisa = React.lazy(() => import('./pages/blog/SaudiGoldenVisa'))
 const DhaLicensingExam = React.lazy(() => import('./pages/blog/DhaLicensingExam'));
 const SwedishInstituteScholarship = React.lazy(() => import('./pages/blog/SwedishInstituteScholarship'));
 
+// Work Destinations (Italy)
+const ItalyWorkIndex = React.lazy(() => import('./pages/work/italy/ItalyWorkIndex'));
+const ItalyJobs = React.lazy(() => import('./pages/work/italy/ItalyJobs'));
+const ItalyWorkVisa = React.lazy(() => import('./pages/work/italy/ItalyWorkVisa'));
+const ItalyPakistanQuota = React.lazy(() => import('./pages/work/italy/ItalyPakistanQuota'));
+const ItalyWorkApplication = React.lazy(() => import('./pages/work/italy/ItalyWorkApplication'));
+const ItalySalary = React.lazy(() => import('./pages/work/italy/ItalySalary'));
+const ItalyRelocation = React.lazy(() => import('./pages/work/italy/ItalyRelocation'));
+const ItalyLanguage = React.lazy(() => import('./pages/work/italy/ItalyLanguage'));
+
 // Work Destinations (Germany)
 const GermanyWorkIndex = React.lazy(() => import('./pages/work/GermanyWorkIndex'));
 const CanadaWorkIndex = React.lazy(() => import('./pages/work/CanadaWorkIndex'));
@@ -272,6 +282,14 @@ export default function App() {
           <Route path="work/germany/salary" element={<GermanySalary />} />
           <Route path="work/germany/relocation" element={<GermanyRelocation />} />
           <Route path="work/germany/language" element={<GermanyLanguage />} />
+          <Route path="work/italy" element={<ItalyWorkIndex />} />
+          <Route path="work/italy/jobs" element={<ItalyJobs />} />
+          <Route path="work/italy/visa" element={<ItalyWorkVisa />} />
+          <Route path="work/italy/pakistan-quota" element={<ItalyPakistanQuota />} />
+          <Route path="work/italy/application-process" element={<ItalyWorkApplication />} />
+          <Route path="work/italy/salary" element={<ItalySalary />} />
+          <Route path="work/italy/relocation" element={<ItalyRelocation />} />
+          <Route path="work/italy/language" element={<ItalyLanguage />} />
           <Route path="work/canada" element={<CanadaWorkIndex />} />
           <Route path="work/canada/jobs" element={<CanadaJobs />} />
           <Route path="work/canada/work-permit" element={<CanadaWorkPermit />} />
