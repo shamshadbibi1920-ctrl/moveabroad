@@ -206,10 +206,10 @@ export default function Layout() {
             <div>
               <h3 className="text-sm font-semibold tracking-wider uppercase mb-4 text-slate-300">Top Destinations</h3>
               <ul className="space-y-2">
-                <li><Link to="/country-guides" className="text-slate-400 hover:text-white transition-colors text-sm">Study in Germany</Link></li>
-                <li><Link to="/country-guides" className="text-slate-400 hover:text-white transition-colors text-sm">Work in Canada</Link></li>
-                <li><Link to="/country-guides" className="text-slate-400 hover:text-white transition-colors text-sm">Healthcare in UK/UAE</Link></li>
-                <li><Link to="/country-guides" className="text-slate-400 hover:text-white transition-colors text-sm">Scholarships in Australia</Link></li>
+                <li><Link to="/study/germany" className="text-slate-400 hover:text-white transition-colors text-sm">Study in Germany</Link></li>
+                <li><Link to="/work/canada" className="text-slate-400 hover:text-white transition-colors text-sm">Work in Canada</Link></li>
+                <li><Link to="/healthcare/uk/doctor" className="text-slate-400 hover:text-white transition-colors text-sm">Healthcare in UK</Link></li>
+                <li><Link to="/study/australia/scholarships" className="text-slate-400 hover:text-white transition-colors text-sm">Scholarships in Australia</Link></li>
               </ul>
             </div>
 
