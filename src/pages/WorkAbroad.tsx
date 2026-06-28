@@ -1,6 +1,7 @@
 import React from 'react';
 import { Briefcase, MapPin, Building2, ChevronRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import SEO from '../components/SEO';
 
 export default function WorkAbroad() {
   const fadeIn = {
@@ -21,7 +22,9 @@ export default function WorkAbroad() {
   ];
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10">
+    <>
+      <SEO title="Work Abroad | MoveAbroad.pk" description="Comprehensive guide to work abroad for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="mb-12 text-center"
@@ -103,5 +106,6 @@ export default function WorkAbroad() {
         </div>
       </div>
     </div>
+    </>
   );
 }

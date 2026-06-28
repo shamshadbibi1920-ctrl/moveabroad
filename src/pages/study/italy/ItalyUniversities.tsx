@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, GraduationCap, MapPin, Search, Filter, ExternalLink, Euro, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../../../components/SEO';
 
 export default function ItalyUniversities() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -47,7 +48,9 @@ export default function ItalyUniversities() {
   });
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Italy: Universities | MoveAbroad.pk" description="Comprehensive guide to italy universities for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <div className="relative text-white py-16 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
@@ -171,5 +174,6 @@ export default function ItalyUniversities() {
         )}
       </div>
     </div>
+    </>
   );
 }

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { HeartPulse, CheckCircle2, AlertTriangle, FileText, ArrowLeft, ArrowRight, UserCheck, BookOpen, Languages, MapPin, Building2, ExternalLink } from 'lucide-react';
 import { getCountryData } from '../../data/countries';
+import SEO from '../../components/SEO';
 
 export default function CanadaDoctorFellowship() {
   const data = getCountryData('canada');
@@ -20,7 +21,9 @@ export default function CanadaDoctorFellowship() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Canada Doctor Fellowship | MoveAbroad.pk" description="Comprehensive guide to canada doctor fellowship for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
           {data?.heroImage ? (
@@ -143,5 +146,6 @@ export default function CanadaDoctorFellowship() {
         </div>
       </div>
     </div>
+    </>
   );
 }

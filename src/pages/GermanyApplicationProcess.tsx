@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { FileText, Calendar, CheckCircle2, AlertTriangle, ExternalLink, GraduationCap, Briefcase, Info, List as ListIcon, ShieldAlert, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
+import SEO from '../components/SEO';
 
 export default function GermanyApplicationProcess() {
   const germanyData = getCountryData('germany');
@@ -18,7 +19,9 @@ export default function GermanyApplicationProcess() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Germany: Application Process | MoveAbroad.pk" description="Comprehensive guide to germany application process for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
@@ -242,5 +245,6 @@ export default function GermanyApplicationProcess() {
         </div>
       </div>
     </div>
+    </>
   );
 }

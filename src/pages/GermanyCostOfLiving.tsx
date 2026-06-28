@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { DollarSign, Home, ShoppingCart, Train, HeartPulse, Wifi, BookOpen, Shirt, Film, MapPin, Banknote, Briefcase, PiggyBank, AlertTriangle, Calculator, ExternalLink, Map, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
+import SEO from '../components/SEO';
 
 export default function GermanyCostOfLiving() {
   const data = getCountryData('germany');
@@ -21,7 +22,9 @@ export default function GermanyCostOfLiving() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Germany: Cost Of Living | MoveAbroad.pk" description="Comprehensive guide to germany cost of living for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
@@ -450,6 +453,6 @@ export default function GermanyCostOfLiving() {
 
       </div>
     </div>
+    </>
   );
 }
-

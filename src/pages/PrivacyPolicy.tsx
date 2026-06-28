@@ -1,8 +1,11 @@
 import React from 'react';
+import SEO from '../components/SEO';
 
 export default function PrivacyPolicy() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-20 lg:py-32">
+    <>
+      <SEO title="Privacy Policy | MoveAbroad.pk" description="Comprehensive guide to privacy policy for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-20 lg:py-32">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white dark:bg-slate-800 rounded-[2rem] shadow-sm border border-slate-100 dark:border-slate-700 p-8 md:p-16">
           <h1 className="font-display text-4xl font-bold text-slate-900 dark:text-slate-50 mb-8">Privacy Policy</h1>
@@ -32,5 +35,6 @@ export default function PrivacyPolicy() {
         </div>
       </div>
     </div>
+    </>
   );
 }

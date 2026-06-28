@@ -2,10 +2,13 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, Stethoscope, Briefcase, MapPin, CheckCircle2, Clock, AlertTriangle, Lightbulb, FileText, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function AustraliaDentist() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Australia Dentist | MoveAbroad.pk" description="Comprehensive guide to australia dentist for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <div className="relative text-white py-16 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
@@ -138,5 +141,6 @@ export default function AustraliaDentist() {
         </div>
       </div>
     </div>
+    </>
   );
 }

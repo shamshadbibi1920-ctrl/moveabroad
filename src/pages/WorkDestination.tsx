@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Briefcase, FileText, Banknote, Building, Calendar, ArrowRight, CheckCircle2, TrendingUp, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
+import SEO from '../components/SEO';
 
 export default function WorkDestination() {
   const { countryId } = useParams<{ countryId: string }>();
@@ -22,6 +23,8 @@ export default function WorkDestination() {
 
   if (!data) {
     return (
+    <>
+      <SEO title="Work Destination | MoveAbroad.pk" description="Comprehensive guide to work destination for Pakistani students and professionals moving abroad." />
       <div className="bg-slate-50 dark:bg-slate-900 min-h-screen flex items-center justify-center p-8">
         <div className="text-center">
           <Briefcase className="w-16 h-16 text-indigo-500 mx-auto mb-4 opacity-50" />
@@ -30,7 +33,8 @@ export default function WorkDestination() {
           <Link to="/" className="mt-6 inline-block text-indigo-600 hover:underline">Return Home</Link>
         </div>
       </div>
-    );
+    </>
+  );
   }
 
   return (

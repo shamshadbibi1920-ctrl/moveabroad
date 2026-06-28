@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function Blog() {
   const fadeIn = {
@@ -23,7 +24,9 @@ export default function Blog() {
   ];
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10">
+    <>
+      <SEO title="Blog | MoveAbroad.pk" description="Comprehensive guide to blog for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="mb-12"
@@ -75,5 +78,6 @@ export default function Blog() {
         </motion.div>
       </div>
     </div>
+    </>
   );
 }

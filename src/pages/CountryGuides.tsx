@@ -3,6 +3,7 @@ import { ChevronRight, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link, useNavigate, useLocation, useParams } from 'react-router-dom';
 import { getAllCountries } from '../data/countries';
+import SEO from '../components/SEO';
 
 export default function CountryGuides() {
   const navigate = useNavigate();
@@ -39,7 +40,9 @@ export default function CountryGuides() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10">
+    <>
+      <SEO title="Country Guides | MoveAbroad.pk" description="Comprehensive guide to country guides for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16 max-w-3xl mx-auto"
@@ -90,5 +93,6 @@ export default function CountryGuides() {
         </motion.div>
       </div>
     </div>
+    </>
   );
 }

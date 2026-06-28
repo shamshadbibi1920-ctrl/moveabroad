@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import React, { useState } from 'react';
 import { XCircle } from 'lucide-react';
 import { getAllCountries } from '../data/countries';
+import SEO from '../components/SEO';
 
 export default function CompareCountries() {
   const allCountries = getAllCountries();
@@ -39,7 +40,9 @@ export default function CompareCountries() {
   ];
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10 lg:py-20">
+    <>
+      <SEO title="Compare Countries | MoveAbroad.pk" description="Comprehensive guide to compare countries for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-12 max-w-3xl mx-auto"
@@ -161,5 +164,6 @@ export default function CompareCountries() {
 
       </div>
     </div>
+    </>
   );
 }

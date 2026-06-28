@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, MessageCircle, MapPin } from 'lucide-react';
 import { motion } from 'motion/react';
+import SEO from '../components/SEO';
 
 export default function ContactUs() {
   const [name, setName] = useState('');
@@ -42,7 +43,9 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-20 lg:py-32">
+    <>
+      <SEO title="Contact Us | MoveAbroad.pk" description="Comprehensive guide to contact us for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16 max-w-2xl mx-auto"
@@ -128,5 +131,6 @@ export default function ContactUs() {
         </div>
       </div>
     </div>
+    </>
   );
 }

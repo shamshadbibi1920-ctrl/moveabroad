@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, CheckCircle, ChevronRight, AlertTriangle, FileCheck2, Globe2, Clock, Banknote, Briefcase, Globe } from 'lucide-react';
+import SEO from '../../components/SEO';
 
 export default function UsaEb2Niw() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300 pb-20">
+    <>
+      <SEO title="Migrate to Usa Eb2 Niw | MoveAbroad.pk" description="Comprehensive guide to usa eb2 niw for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300 pb-20">
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&q=80" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
           loading="eager"
@@ -307,5 +310,6 @@ export default function UsaEb2Niw() {
 
       </div>
     </div>
+    </>
   );
 }

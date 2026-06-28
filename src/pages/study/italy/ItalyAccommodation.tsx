@@ -2,10 +2,13 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, Home, Building2, Users, AlertTriangle, ExternalLink, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../../components/SEO';
 
 export default function ItalyAccommodation() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Italy: Accommodation | MoveAbroad.pk" description="Comprehensive guide to italy accommodation for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <div className="relative text-white py-16 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
@@ -123,5 +126,6 @@ export default function ItalyAccommodation() {
         </section>
       </div>
     </div>
+    </>
   );
 }

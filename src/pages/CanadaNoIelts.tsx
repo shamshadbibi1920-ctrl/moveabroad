@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Globe, AlertTriangle, CheckCircle2, ChevronRight, ArrowLeft } from 'lucide-react';
 import { getCountryData } from '../data/countries';
+import SEO from '../components/SEO';
 
 export default function CanadaNoIelts() {
   const data = getCountryData('canada');
@@ -18,7 +19,9 @@ export default function CanadaNoIelts() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Canada: No Ielts | MoveAbroad.pk" description="Comprehensive guide to canada no ielts for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
@@ -127,5 +130,6 @@ export default function CanadaNoIelts() {
 
       </div>
     </div>
+    </>
   );
 }

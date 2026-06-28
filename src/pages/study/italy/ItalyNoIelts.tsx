@@ -2,10 +2,13 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, Globe, CheckCircle2, AlertTriangle, FileText, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../../../components/SEO';
 
 export default function ItalyNoIelts() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Italy: No Ielts | MoveAbroad.pk" description="Comprehensive guide to italy no ielts for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <div className="relative text-white py-16 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
@@ -129,5 +132,6 @@ export default function ItalyNoIelts() {
 
       </div>
     </div>
+    </>
   );
 }

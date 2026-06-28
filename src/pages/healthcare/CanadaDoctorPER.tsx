@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, AlertTriangle, FileText, ArrowLeft, ArrowRight, UserCheck, BookOpen, Languages, MapPin, Scale, Award, ExternalLink } from 'lucide-react';
 import { getCountryData } from '../../data/countries';
+import SEO from '../../components/SEO';
 
 export default function CanadaDoctorPER() {
   const data = getCountryData('canada');
@@ -20,7 +21,9 @@ export default function CanadaDoctorPER() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Canada Doctor P E R | MoveAbroad.pk" description="Comprehensive guide to canada doctor p e r for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
           {data?.heroImage ? (
@@ -136,5 +139,6 @@ export default function CanadaDoctorPER() {
         </div>
       </div>
     </div>
+    </>
   );
 }

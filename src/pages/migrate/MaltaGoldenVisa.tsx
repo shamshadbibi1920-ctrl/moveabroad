@@ -3,10 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, ChevronRight, CheckCircle2, CalendarClock, Briefcase, Plane, Landmark, ArrowLeft, Globe } from 'lucide-react';
 import GoldenVisaComparison from '../../components/GoldenVisaComparison';
+import SEO from '../../components/SEO';
 
 export default function MaltaGoldenVisa() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300 pb-20">
+    <>
+      <SEO title="Migrate to Malta Golden Visa | MoveAbroad.pk" description="Comprehensive guide to malta golden visa for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300 pb-20">
             {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
@@ -241,5 +244,6 @@ export default function MaltaGoldenVisa() {
 
       </div>
     </div>
+    </>
   );
 }

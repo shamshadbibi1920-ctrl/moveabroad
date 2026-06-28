@@ -2,10 +2,13 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, MapPin, CheckCircle2, Home, Landmark, Users, ArrowRightLeft, Plane } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../../../components/SEO';
 
 export default function AustraliaRelocation() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Work in Australia: Relocation | MoveAbroad.pk" description="Comprehensive guide to australia relocation for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <div className="bg-blue-900 dark:bg-slate-950 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link to="/work/australia" className="inline-flex items-center text-blue-200 hover:text-white transition-colors mb-8">
@@ -136,5 +139,6 @@ export default function AustraliaRelocation() {
         </div>
       </div>
     </div>
-  );
+    </>
+  ;
 }

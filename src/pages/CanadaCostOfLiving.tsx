@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { DollarSign, MapPin, Building, Briefcase, ExternalLink, Activity, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
+import SEO from '../components/SEO';
 
 export default function CanadaCostOfLiving() {
   const data = getCountryData('canada');
@@ -18,7 +19,9 @@ export default function CanadaCostOfLiving() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Canada: Cost Of Living | MoveAbroad.pk" description="Comprehensive guide to canada cost of living for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
@@ -161,5 +164,6 @@ export default function CanadaCostOfLiving() {
 
       </div>
     </div>
+    </>
   );
 }

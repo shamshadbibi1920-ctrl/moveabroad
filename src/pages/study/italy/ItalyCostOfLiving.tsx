@@ -2,10 +2,13 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, DollarSign, PieChart, MapPin, Briefcase, ExternalLink, Euro } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../../components/SEO';
 
 export default function ItalyCostOfLiving() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Italy: Cost Of Living | MoveAbroad.pk" description="Comprehensive guide to italy cost of living for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <div className="relative text-white py-16 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
@@ -126,5 +129,6 @@ export default function ItalyCostOfLiving() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -2,10 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, ChevronRight, CheckCircle2, CalendarClock, Briefcase, FileCheck2, Building2, Landmark } from 'lucide-react';
 import GoldenVisaComparison from '../../components/GoldenVisaComparison';
+import SEO from '../../components/SEO';
 
 export default function GreeceGoldenVisa() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300 pb-20">
+    <>
+      <SEO title="Migrate to Greece Golden Visa | MoveAbroad.pk" description="Comprehensive guide to greece golden visa for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300 pb-20">
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1e3a8a, #1e293b)'; }}
           loading="eager"
@@ -210,6 +213,6 @@ export default function GreeceGoldenVisa() {
 
       </div>
     </div>
+    </>
   );
 }
-

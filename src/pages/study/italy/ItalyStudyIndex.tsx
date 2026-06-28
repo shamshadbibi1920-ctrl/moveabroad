@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { GraduationCap, Award, FileCheck, FileText, Globe, DollarSign, Home, Calendar, ArrowLeft, ChevronDown, ChevronUp, AlertTriangle } from 'lucide-react';
+import SEO from '../../../../components/SEO';
 
 export default function ItalyStudyIndex() {
   const [openSection, setOpenSection] = useState<string | null>(null);
@@ -22,7 +23,9 @@ export default function ItalyStudyIndex() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Italy | MoveAbroad.pk" description="Complete guide to studying in Italy for Pakistani students. Find top universities, visa process, and scholarships." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
@@ -116,5 +119,6 @@ export default function ItalyStudyIndex() {
         </div>
       </div>
     </div>
+    </>
   );
 }

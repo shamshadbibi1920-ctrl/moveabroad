@@ -3,6 +3,7 @@ import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Building, Search, MapPin, DollarSign, GraduationCap, Calendar, ArrowRight, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
+import SEO from '../components/SEO';
 
 export default function CanadaUniversities() {
   const data = getCountryData('canada');
@@ -59,7 +60,9 @@ export default function CanadaUniversities() {
   const privateUniversities = data?.universities?.filter(u => u.type.includes('Private')).slice(0, 3) || [];
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Canada: Universities | MoveAbroad.pk" description="Comprehensive guide to canada universities for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
@@ -244,5 +247,6 @@ export default function CanadaUniversities() {
         )}
       </div>
     </div>
+    </>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import { Stethoscope, HeartPulse, Pill, Baby, Activity, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import SEO from '../components/SEO';
 
 export default function HealthcareAbroad() {
   const fadeIn = {
@@ -22,7 +23,9 @@ export default function HealthcareAbroad() {
   ];
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10">
+    <>
+      <SEO title="Healthcare Abroad | MoveAbroad.pk" description="Comprehensive guide to healthcare abroad for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16 max-w-3xl mx-auto"
@@ -69,5 +72,6 @@ export default function HealthcareAbroad() {
         </motion.div>
       </div>
     </div>
+    </>
   );
 }

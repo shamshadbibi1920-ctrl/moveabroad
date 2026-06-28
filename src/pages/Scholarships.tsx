@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import React, { useState } from 'react';
 import { Search, Filter, BookOpen, Clock, ArrowRight, Globe } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Scholarships() {
   const fadeIn = {
@@ -38,7 +39,9 @@ export default function Scholarships() {
   });
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10">
+    <>
+      <SEO title="Scholarships | MoveAbroad.pk" description="Comprehensive guide to scholarships for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="mb-12 text-center"
@@ -152,5 +155,6 @@ export default function Scholarships() {
         )}
       </div>
     </div>
+    </>
   );
 }

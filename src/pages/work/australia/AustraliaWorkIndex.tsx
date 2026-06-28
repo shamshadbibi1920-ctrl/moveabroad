@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Briefcase, FilePlus, ListTodo, DollarSign, MapPin, Languages, ArrowLeft, Globe, AlertTriangle, ChevronDown, ChevronUp } from 'lucide-react';
+import SEO from '../../../../components/SEO';
 
 export default function AustraliaWorkIndex() {
   const [openSection, setOpenSection] = useState<string | null>(null);
@@ -20,7 +21,9 @@ export default function AustraliaWorkIndex() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Work in Australia: Work Index | MoveAbroad.pk" description="Comprehensive guide to australia work index for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
@@ -111,5 +114,6 @@ export default function AustraliaWorkIndex() {
         </div>
       </div>
     </div>
-  );
+    </>
+  ;
 }

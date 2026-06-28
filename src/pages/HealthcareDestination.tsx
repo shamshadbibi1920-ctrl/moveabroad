@@ -20,6 +20,7 @@ import UkNurseContent from '../components/healthcare/UkNurseContent';
 import UkDentistContent from '../components/healthcare/UkDentistContent';
 import UkPharmacistContent from '../components/healthcare/UkPharmacistContent';
 import UkPhysioContent from '../components/healthcare/UkPhysioContent';
+import SEO from '../components/SEO';
 
 export default function HealthcareDestination() {
   const { countryId, professionId } = useParams<{ countryId: string, professionId: string }>();
@@ -45,6 +46,8 @@ export default function HealthcareDestination() {
 
   if (!data || !professionData) {
     return (
+    <>
+      <SEO title="Healthcare Destination | MoveAbroad.pk" description="Comprehensive guide to healthcare destination for Pakistani students and professionals moving abroad." />
       <div className="bg-slate-50 dark:bg-slate-900 min-h-screen flex items-center justify-center p-8">
         <div className="text-center max-w-md">
           <Stethoscope className="w-16 h-16 text-teal-500 mx-auto mb-4 opacity-50" />
@@ -55,7 +58,8 @@ export default function HealthcareDestination() {
           <Link to="/" className="mt-6 inline-block text-teal-600 hover:underline">Return Home</Link>
         </div>
       </div>
-    );
+    </>
+  );
   }
 
   return (

@@ -2,10 +2,13 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, AlertTriangle, Clock, CheckCircle2, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../../components/SEO';
 
 export default function ItalyIntakeDeadlines() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Italy: Intake Deadlines | MoveAbroad.pk" description="Comprehensive guide to italy intake deadlines for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <div className="relative text-white py-16 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
@@ -128,5 +131,6 @@ export default function ItalyIntakeDeadlines() {
         </section>
       </div>
     </div>
+    </>
   );
 }

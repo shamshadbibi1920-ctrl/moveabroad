@@ -2,10 +2,13 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, ShieldCheck, Clock, DollarSign, AlertTriangle, FileText, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function AustraliaDoctorSpecialist() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Australia Doctor Specialist | MoveAbroad.pk" description="Comprehensive guide to australia doctor specialist for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <div className="relative text-white py-16 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
@@ -124,5 +127,6 @@ export default function AustraliaDoctorSpecialist() {
         </div>
       </div>
     </div>
+    </>
   );
 }

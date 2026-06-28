@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Banknote, FileText, Calendar, ArrowRight, CheckCircle2, DollarSign, ChevronRight, AlertTriangle, ArrowLeft, Globe } from 'lucide-react';
 import { getCountryData } from '../data/countries';
+import SEO from '../components/SEO';
 
 export default function CanadaScholarships() {
   const data = getCountryData('canada');
@@ -129,7 +130,9 @@ export default function CanadaScholarships() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+    <>
+      <SEO title="Study in Canada: Scholarships | MoveAbroad.pk" description="Comprehensive guide to canada scholarships for Pakistani students and professionals moving abroad." />
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
@@ -304,5 +307,6 @@ export default function CanadaScholarships() {
 
       </div>
     </div>
+    </>
   );
 }
