@@ -100,6 +100,15 @@ const UkSalary = React.lazy(() => import('./pages/work/uk/UkSalary'));
 const UkRelocation = React.lazy(() => import('./pages/work/uk/UkRelocation'));
 const UkLanguage = React.lazy(() => import('./pages/work/uk/UkLanguage'));
 
+// Work in Australia Pages
+const AustraliaWorkIndex = React.lazy(() => import('./pages/work/australia/AustraliaWorkIndex'));
+const AustraliaJobs = React.lazy(() => import('./pages/work/australia/AustraliaJobs'));
+const AustraliaWorkVisa = React.lazy(() => import('./pages/work/australia/AustraliaWorkVisa'));
+const AustraliaWorkApplication = React.lazy(() => import('./pages/work/australia/AustraliaWorkApplication'));
+const AustraliaSalary = React.lazy(() => import('./pages/work/australia/AustraliaSalary'));
+const AustraliaRelocation = React.lazy(() => import('./pages/work/australia/AustraliaRelocation'));
+const AustraliaLanguage = React.lazy(() => import('./pages/work/australia/AustraliaLanguage'));
+
 // Migrate
 const MigrateHome = React.lazy(() => import('./pages/migrate/MigrateHome'));
 const CanadaMigrate = React.lazy(() => import('./pages/migrate/CanadaMigrate'));
@@ -247,6 +256,13 @@ export default function App() {
           <Route path="work/uk/salary" element={<UkSalary />} />
           <Route path="work/uk/relocation" element={<UkRelocation />} />
           <Route path="work/uk/language" element={<UkLanguage />} />
+          <Route path="work/australia" element={<AustraliaWorkIndex />} />
+          <Route path="work/australia/jobs" element={<AustraliaJobs />} />
+          <Route path="work/australia/visa" element={<AustraliaWorkVisa />} />
+          <Route path="work/australia/application-process" element={<AustraliaWorkApplication />} />
+          <Route path="work/australia/salary" element={<AustraliaSalary />} />
+          <Route path="work/australia/relocation" element={<AustraliaRelocation />} />
+          <Route path="work/australia/language" element={<AustraliaLanguage />} />
           <Route path="work/:countryId" element={<WorkDestination />} />
           <Route path="healthcare/canada/doctor/carms-pathway" element={<CanadaDoctorCaRMS />} />
           <Route path="healthcare/canada/doctor/fellowship-pathway" element={<CanadaDoctorFellowship />} />
