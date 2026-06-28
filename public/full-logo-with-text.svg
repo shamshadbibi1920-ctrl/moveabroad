@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 50 600 520" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />
+  
+  <!-- Globe Background -->
+  <g transform="translate(400, 240)">
+    <circle cx="0" cy="0" r="170" fill="#eef2f3" stroke="#1a5a63" stroke-width="5" />
+    <ellipse cx="0" cy="0" rx="85" ry="170" fill="none" stroke="#1a5a63" stroke-width="4" />
+    <ellipse cx="0" cy="0" rx="140" ry="170" fill="none" stroke="#1a5a63" stroke-width="2" />
+    <path d="M -145 -95 Q 0 -40 145 -95" fill="none" stroke="#1a5a63" stroke-width="4" />
+    <path d="M -170 0 Q 0 40 170 0" fill="none" stroke="#1a5a63" stroke-width="4" />
+    <path d="M -145 95 Q 0 140 145 95" fill="none" stroke="#1a5a63" stroke-width="4" />
+    <line x1="0" y1="-170" x2="0" y2="170" stroke="#1a5a63" stroke-width="4" />
+  </g>
+
+  <!-- Left Teal Peak -->
+  <path d="M 230 420 L 330 240 L 430 420" fill="none" stroke="#0b4653" stroke-width="60" stroke-linejoin="miter" stroke-linecap="butt" />
+  <!-- Right Gold Peak -->
+  <path d="M 370 420 L 470 240 L 570 420" fill="none" stroke="#a47844" stroke-width="60" stroke-linejoin="miter" stroke-linecap="butt" />
+  
+  <!-- Plane Trail -->
+  <path d="M 400 320 Q 500 280 620 120" fill="none" stroke="#a47844" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Plane -->
+  <g transform="translate(620, 120) rotate(45) scale(0.8)">
+    <path d="M -10 -30 L 10 -30 L 10 -5 L 45 10 L 45 20 L 10 15 L 10 40 L 25 55 L 25 60 L -25 60 L -25 55 L -10 40 Z" fill="#a47844" />
+  </g>
+
+  <!-- Text moveabroad.pk -->
+  <text x="400" y="500" font-family="'Montserrat', 'Arial', sans-serif" font-weight="900" font-size="72" text-anchor="middle" letter-spacing="-1">
+    <tspan fill="#0b4653">moveabroad</tspan><tspan fill="#a47844">.pk</tspan>
+  </text>
+  
+  <!-- Line and DREAM PLAN MOVE -->
+  <line x1="120" y1="540" x2="220" y2="540" stroke="#0b4653" stroke-width="3" />
+  <text x="400" y="550" font-family="'Montserrat', 'Arial', sans-serif" font-weight="bold" font-size="22" text-anchor="middle" fill="#222" letter-spacing="8">
+    DREAM. PLAN. MOVE.
+  </text>
+  <line x1="580" y1="540" x2="680" y2="540" stroke="#0b4653" stroke-width="3" />
+</svg>
