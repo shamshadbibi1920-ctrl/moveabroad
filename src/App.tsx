@@ -58,6 +58,17 @@ const UkCostOfLiving = React.lazy(() => import('./pages/study/uk/UkCostOfLiving'
 const UkAccommodation = React.lazy(() => import('./pages/study/uk/UkAccommodation'));
 const UkIntakeDeadlines = React.lazy(() => import('./pages/study/uk/UkIntakeDeadlines'));
 
+// Study in Italy Pages
+const ItalyStudyIndex = React.lazy(() => import('./pages/study/italy/ItalyStudyIndex'));
+const ItalyUniversities = React.lazy(() => import('./pages/study/italy/ItalyUniversities'));
+const ItalyScholarships = React.lazy(() => import('./pages/study/italy/ItalyScholarships'));
+const ItalyVisaProcess = React.lazy(() => import('./pages/study/italy/ItalyVisaProcess'));
+const ItalyApplicationProcess = React.lazy(() => import('./pages/study/italy/ItalyApplicationProcess'));
+const ItalyNoIelts = React.lazy(() => import('./pages/study/italy/ItalyNoIelts'));
+const ItalyCostOfLiving = React.lazy(() => import('./pages/study/italy/ItalyCostOfLiving'));
+const ItalyAccommodation = React.lazy(() => import('./pages/study/italy/ItalyAccommodation'));
+const ItalyIntakeDeadlines = React.lazy(() => import('./pages/study/italy/ItalyIntakeDeadlines'));
+
 // Healthcare Canada Doctor Pathways
 const CanadaDoctorCaRMS = React.lazy(() => import('./pages/healthcare/CanadaDoctorCaRMS'));
 const CanadaDoctorFellowship = React.lazy(() => import('./pages/healthcare/CanadaDoctorFellowship'));
@@ -231,6 +242,15 @@ export default function App() {
           <Route path="study/uk/cost-of-living" element={<UkCostOfLiving />} />
           <Route path="study/uk/accommodation" element={<UkAccommodation />} />
           <Route path="study/uk/intake-deadlines" element={<UkIntakeDeadlines />} />
+          <Route path="study/italy" element={<ItalyStudyIndex />} />
+          <Route path="study/italy/universities" element={<ItalyUniversities />} />
+          <Route path="study/italy/scholarships" element={<ItalyScholarships />} />
+          <Route path="study/italy/visa-process" element={<ItalyVisaProcess />} />
+          <Route path="study/italy/application-process" element={<ItalyApplicationProcess />} />
+          <Route path="study/italy/no-ielts" element={<ItalyNoIelts />} />
+          <Route path="study/italy/cost-of-living" element={<ItalyCostOfLiving />} />
+          <Route path="study/italy/accommodation" element={<ItalyAccommodation />} />
+          <Route path="study/italy/intake-deadlines" element={<ItalyIntakeDeadlines />} />
           <Route path="study/:countryId" element={<StudyDestination />} />
           <Route path="work/germany" element={<GermanyWorkIndex />} />
           <Route path="work/germany/jobs" element={<GermanyJobs />} />
