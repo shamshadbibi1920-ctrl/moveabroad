@@ -9,28 +9,33 @@ export default function ItalyIntakeDeadlines() {
     <>
       <SEO title="Study in Italy: Intake Deadlines | MoveAbroad.pk" description="Comprehensive guide to italy intake deadlines for Pakistani students and professionals moving abroad." />
       <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
-      <div className="relative text-white py-16 overflow-hidden bg-slate-900">
+      {/* Hero Banner */}
+      <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1520626336302-6014e77222bd?w=1400&q=80" 
+            src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1400&q=80" 
             alt="Italy Background" 
-            className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+            loading="eager"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/[0.35]"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <Link to="/study/italy" className="inline-flex items-center text-blue-200 hover:text-white transition-colors mb-8 font-medium">
+          <Link to="/study/italy" className="inline-flex items-center text-blue-100 hover:text-white transition-colors mb-8 font-medium">
             <ArrowLeft className="w-5 h-5 mr-2" /> Back to Study in Italy
           </Link>
-          <div className="flex items-center space-x-4 mb-4">
-            <div className="p-3 bg-blue-600/30 backdrop-blur-md rounded-xl border border-blue-400/30">
-              <Calendar className="w-8 h-8 text-blue-100" />
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="max-w-3xl">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/30 backdrop-blur-md border border-blue-400/30 text-blue-50 text-sm font-semibold mb-6">
+              🇮🇹 Study in Italy
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold">Intakes & Deadlines</h1>
-          </div>
-          <p className="text-lg text-blue-50 max-w-3xl">
-            Italy primarily has one major intake. Missing these deadlines means waiting an entire year.
-          </p>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Intakes & Deadlines 🇮🇹
+            </h1>
+            <p className="text-xl text-blue-50 mb-8 leading-relaxed">
+              Italy primarily has one major intake. Missing these deadlines means waiting an entire year.
+            </p>
+          </motion.div>
         </div>
       </div>
 
