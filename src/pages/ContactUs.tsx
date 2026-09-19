@@ -44,7 +44,7 @@ export default function ContactUs() {
 
   return (
     <>
-      <SEO title="Contact Us | MoveAbroad.pk" description="Comprehensive guide to contact us for Pakistani students and professionals moving abroad." />
+      <SEO title="Contact Us | MoveAbroad.pk" description="Get in touch with MoveAbroad.pk. Contact our editorial team for questions, feedback, and informational guidance on studying and working abroad for Pakistanis." />
       <div className="bg-slate-50 dark:bg-slate-800/50 dark:bg-slate-900 min-h-screen transition-colors duration-300 py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
@@ -68,7 +68,7 @@ export default function ContactUs() {
                 </div>
                 <div>
                   <h3 className="font-display text-xl font-bold text-slate-900 dark:text-slate-50 mb-1">Email</h3>
-                  <a href="mailto:malik007.mbbs@gmail.com" className="text-slate-600 dark:text-slate-400 text-lg hover:text-blue-600 dark:hover:text-blue-400 transition-colors">malik007.mbbs@gmail.com</a>
+                  <a href="mailto:contact@moveabroad.pk" className="text-slate-600 dark:text-slate-400 text-lg hover:text-blue-600 dark:hover:text-blue-400 transition-colors">contact@moveabroad.pk</a>
                 </div>
               </div>
               <div className="flex items-start group">
@@ -77,7 +77,7 @@ export default function ContactUs() {
                 </div>
                 <div>
                   <h3 className="font-display text-xl font-bold text-slate-900 dark:text-slate-50 mb-1">WhatsApp</h3>
-                  <p className="text-slate-600 dark:text-slate-400 text-lg mb-3">03002134708</p>
+                  <p className="text-slate-600 dark:text-slate-400 text-lg mb-3">+92 300 2134708</p>
                   <a href="https://wa.me/923002134708" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium transition-colors shadow-sm">
                     <MessageCircle className="w-4 h-4 mr-2" /> Chat on WhatsApp
                   </a>

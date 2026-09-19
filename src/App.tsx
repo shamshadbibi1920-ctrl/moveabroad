@@ -14,6 +14,7 @@ const AboutUs = React.lazy(() => import('./pages/AboutUs'));
 const ContactUs = React.lazy(() => import('./pages/ContactUs'));
 const PrivacyPolicy = React.lazy(() => import('./pages/PrivacyPolicy'));
 const Disclaimer = React.lazy(() => import('./pages/Disclaimer'));
+const TermsOfService = React.lazy(() => import('./pages/TermsOfService'));
 
 // Destination Hub Overview Pages
 const StudyDestination = React.lazy(() => import('./pages/StudyDestination'));
@@ -95,6 +96,8 @@ export function AppRoutes() {
           <Route path="contact" element={<ContactUs />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="disclaimer" element={<Disclaimer />} />
+          <Route path="terms" element={<TermsOfService />} />
+          <Route path="terms-of-service" element={<TermsOfService />} />
 
           {/* Migration Routes */}
           <Route path="migrate" element={<MigrateHome />} />

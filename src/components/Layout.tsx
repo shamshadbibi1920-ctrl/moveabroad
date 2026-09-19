@@ -276,6 +276,14 @@ export default function Layout() {
                     Disclaimer
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/terms"
+                    className="text-slate-400 hover:text-white transition-colors text-sm"
+                  >
+                    Terms of Service
+                  </Link>
+                </li>
               </ul>
             </div>
 

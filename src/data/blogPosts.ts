@@ -1,4 +1,4 @@
-import { EDITORIAL_TEAM, AuthorProfile } from './authors';
+import { FOUNDER, EDITORIAL_TEAM, AuthorProfile } from './authors';
 
 export interface BlogPost {
   title: string;
@@ -21,8 +21,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'Sep 18, 2026', 
     publishedAt: '2026-09-18T09:00:00Z',
     status: 'published',
-    author: EDITORIAL_TEAM.name, 
-    authorProfile: EDITORIAL_TEAM,
+    author: FOUNDER.name, 
+    authorProfile: FOUNDER,
     snippet: 'Complete guide for Pakistani dentists (BDS) to get German Approbation and work in Germany. Step-by-step process, language requirements, salary, and 2026 rule changes explained...', 
     slug: 'pakistani-dentist-germany-guide-2026',
     image: '/images/blog/pakistani-dentist-germany.jpg',
@@ -86,8 +86,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'Sep 05, 2026', 
     publishedAt: '2026-09-05T09:00:00Z',
     status: 'published',
-    author: EDITORIAL_TEAM.name, 
-    authorProfile: EDITORIAL_TEAM,
+    author: FOUNDER.name, 
+    authorProfile: FOUNDER,
     snippet: 'Want to practice medicine in Dubai? Here is what you need to know about preparing for the DHA exam...', 
     slug: 'dha-licensing-exam-pakistani-doctors',
     image: '/images/blog/dha-licensing-dubai.jpg',

@@ -19,6 +19,8 @@ const prerenderRoutes = [
   '/contact',
   '/privacy-policy',
   '/disclaimer',
+  '/terms',
+  '/terms-of-service',
   '/migrate',
 
   // Top Study Destinations & Guides
