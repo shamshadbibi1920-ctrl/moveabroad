@@ -8,6 +8,7 @@ interface SEOProps {
   keywords?: string;
   canonicalPath?: string;
   ogImage?: string;
+  ogType?: 'website' | 'article';
 }
 
 export default function SEO({ 
@@ -15,12 +16,18 @@ export default function SEO({
   description, 
   keywords, 
   canonicalPath, 
-  ogImage = 'https://moveabroad.pk/og-image.jpg'
+  ogImage = 'https://moveabroad.pk/og-image.jpg',
+  ogType = 'website'
 }: SEOProps) {
   const location = useLocation();
   const currentPath = canonicalPath || location.pathname;
   const url = currentPath === '/' ? 'https://moveabroad.pk/' : `https://moveabroad.pk${currentPath}`;
   const defaultKeywords = 'migrate abroad from Pakistan, study abroad Pakistan, work abroad Pakistan, scholarships for Pakistanis, Canada immigration, Germany visa, UAE Golden Visa, UK skilled worker';
+
+  // Ensure absolute image URL for social media crawlers (WhatsApp, Twitter, LinkedIn, Facebook)
+  const resolvedOgImage = ogImage.startsWith('http://') || ogImage.startsWith('https://')
+    ? ogImage
+    : `https://moveabroad.pk${ogImage.startsWith('/') ? '' : '/'}${ogImage}`;
 
   return (
     <Helmet>
@@ -30,17 +37,24 @@ export default function SEO({
       
       <link rel="canonical" href={url} />
 
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={ogType} />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={ogImage} />
+      <meta property="og:image" content={resolvedOgImage} />
+      <meta property="og:site_name" content="MoveAbroad.pk" />
 
+      {/* Twitter / X card metadata */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content={url} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={resolvedOgImage} />
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={url} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={ogImage} />
+      <meta property="twitter:image" content={resolvedOgImage} />
     </Helmet>
   );
 }

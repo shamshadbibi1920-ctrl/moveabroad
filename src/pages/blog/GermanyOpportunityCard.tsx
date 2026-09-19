@@ -7,7 +7,12 @@ import SEO from '../../components/SEO';
 export default function GermanyOpportunityCard() {
   return (
     <>
-      <SEO title="Germany Opportunity Card | MoveAbroad.pk" description="Comprehensive guide to germany opportunity card for Pakistani students and professionals moving abroad." />
+      <SEO 
+        title="Germany Opportunity Card | MoveAbroad.pk" 
+        description="Comprehensive guide to germany opportunity card for Pakistani students and professionals moving abroad." 
+        ogImage="/images/blog/germany-opportunity-card.jpg"
+        ogType="article"
+      />
       <div className="bg-slate-50 dark:bg-slate-900 min-h-screen py-16 transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link to="/blog" className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mb-8 font-medium">

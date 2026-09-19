@@ -74,6 +74,8 @@ export default function PakistaniDentistGermany() {
         title="How Pakistani Dentists Can Work in Germany — Complete Approbation Guide 2026 | MoveAbroad.pk" 
         description="Complete guide for Pakistani dentists (BDS) to get German Approbation and work in Germany. Step-by-step process, language requirements, salary, and 2026 rule changes explained."
         canonicalPath="/blog/pakistani-dentist-germany-guide-2026"
+        ogImage="/images/blog/pakistani-dentist-germany.jpg"
+        ogType="article"
       />
       
       <div className="bg-slate-50 dark:bg-slate-900 min-h-screen py-12 md:py-16 transition-colors duration-300">

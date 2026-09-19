@@ -11,6 +11,8 @@ export default function DaadScholarshipGuide() {
         title="DAAD Scholarship 2026 for Pakistani Students — Complete Guide"
         description="How to apply for DAAD scholarship from Pakistan. Eligibility, required documents, deadlines and tips to win."
         canonicalPath="/blog/daad-scholarships-germany-pakistan"
+        ogImage="/images/blog/daad-scholarship-germany.jpg"
+        ogType="article"
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link to="/blog" className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mb-8 font-medium">
