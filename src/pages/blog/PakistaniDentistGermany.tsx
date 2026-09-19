@@ -541,7 +541,7 @@ export default function PakistaniDentistGermany() {
                     <div>
                       <h4 className="font-bold text-slate-900 dark:text-white text-base">Target German Dental Chains and Rural Practices</h4>
                       <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">
-                        Large dental healthcare chains (ZMVZ - <em>Zahnmedizinisches Versorgungszentrum</em>) and rural practices frequently recruit foreign dentists. Many cover the costs of your FSP language preparation courses and provide guaranteed contracts upon receiving your temporary license.
+                        Large dental healthcare chains (ZMVZ - <em>Zahnmedizinisches Versorgungszentrum</em>) and rural practices frequently recruit foreign dentists. Many cover the costs of your FSP language preparation courses and provide conditional employment offers upon receiving your temporary license.
                       </p>
                     </div>
                   </div>

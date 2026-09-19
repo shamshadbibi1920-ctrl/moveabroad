@@ -340,7 +340,7 @@ export default function CRSCalculator() {
               </p>
             ) : result.score >= 450 ? (
               <p className="text-amber-700 dark:text-amber-400 font-semibold text-center text-sm md:text-base">
-                Your score is moderate. You are near the recent draw cutoffs. Maximizing IELTS or learning French can guarantee an ITA.
+                Your score is moderate. You are near recent draw cutoffs. Maximizing IELTS or learning French can significantly boost your CRS score to remain competitive for an ITA.
               </p>
             ) : (
               <p className="text-rose-700 dark:text-rose-400 font-semibold text-center text-sm md:text-base">

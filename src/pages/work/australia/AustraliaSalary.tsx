@@ -46,7 +46,7 @@ export default function AustraliaSalary() {
               <TrendingUp className="w-5 h-5 mr-2 text-emerald-600" /> National Minimum Wage
             </h3>
             <p className="text-emerald-800 dark:text-emerald-200 text-sm leading-relaxed">
-              The national minimum wage in Australia is <strong>AUD $24.10 per hour</strong> (or AUD $915.90 per 38-hour week). However, sponsored professionals on the 482 Visa are guaranteed much higher minimums due to the Core Skills Income Threshold (CSIT).
+              The national minimum wage in Australia is <strong>AUD $24.10 per hour</strong> (or AUD $915.90 per 38-hour week). However, sponsored professionals on the 482 Visa must be paid at or above the Core Skills Income Threshold (CSIT).
             </p>
           </div>
           

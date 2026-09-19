@@ -78,7 +78,7 @@ export default function CanadaPnp() {
                    These streams are aligned with the federal Express Entry system. You must have an active Express Entry profile.
                  </p>
                  <div className="bg-white dark:bg-slate-800 p-3 rounded-lg text-sm font-semibold text-rose-600 dark:text-rose-400 border border-rose-100 dark:border-rose-700">
-                   Advantage: Adds exactly 600 points to your CRS score, guaranteeing an ITA in the next draw. Faster processing (approx. 6 months).
+                   Advantage: Adds 600 points to your CRS score, virtually ensuring an Invitation to Apply (ITA) in the subsequent Express Entry draw (subject to meeting standard admissibility requirements). Faster processing (approx. 6 months).
                  </div>
                </div>
                <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-2xl border border-blue-100 dark:border-blue-800">
@@ -284,7 +284,7 @@ export default function CanadaPnp() {
                <h3 className="text-xl font-bold flex items-center text-slate-900 dark:text-white mb-3">
                  <MapPin className="w-5 h-5 text-rose-500 mr-2" /> Newfoundland & Labrador
                </h3>
-               <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">Skilled Worker category requires a guaranteed job offer from a local employer or current employment in the province.</p>
+               <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">Skilled Worker category requires a valid, full-time job offer from an eligible local employer or current qualifying employment in the province.</p>
                <a href="https://www.gov.nl.ca/immigration/" target="_blank" rel="noreferrer" className="text-xs font-semibold text-rose-600 hover:underline">Newfoundland Portal &rarr;</a>
             </div>
           </div>

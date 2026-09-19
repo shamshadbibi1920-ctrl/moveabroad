@@ -25,7 +25,7 @@ export default function GermanySalary() {
     { title: 'Pension Contribution', desc: 'Automatically deducted, building towards your retirement in Germany.' },
     { title: 'Unemployment Insurance', desc: 'Provides a safety net (Arbeitslosengeld) if you lose your job after working for at least 12 months.' },
     { title: 'Paid Holidays', desc: 'A legal minimum of 20 days off (based on a 5-day week), though most employers offer 25-30 days.' },
-    { title: 'Sick Leave', desc: 'Up to 6 weeks of fully paid sick leave guaranteed by your employer per illness.' }
+    { title: 'Sick Leave', desc: 'Up to 6 weeks of fully paid sick leave mandated by German statutory employment law per illness.' }
   ];
 
   return (
