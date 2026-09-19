@@ -88,6 +88,7 @@ const AustraliaPharmacist = React.lazy(() => import('./pages/healthcare/Australi
 const AustraliaPhysiotherapist = React.lazy(() => import('./pages/healthcare/AustraliaPhysiotherapist'));
 
 // Blog Pages
+const PakistaniDentistGermany = React.lazy(() => import('./pages/blog/PakistaniDentistGermany'));
 const GermanyOpportunityCard = React.lazy(() => import('./pages/blog/GermanyOpportunityCard'));
 const DaadScholarshipGuide = React.lazy(() => import('./pages/blog/DaadScholarshipGuide'));
 const SwedenWorkVisa = React.lazy(() => import('./pages/blog/SwedenWorkVisa'));
@@ -191,6 +192,7 @@ export default function App() {
           <Route path="country-guides" element={<CountryGuides />} />
           <Route path="compare" element={<CompareCountries />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="blog/pakistani-dentist-germany-guide-2026" element={<PakistaniDentistGermany />} />
           <Route path="blog/germany-opportunity-card-pakistan-2026" element={<GermanyOpportunityCard />} />
           <Route path="blog/daad-scholarship-pakistani-students-guide" element={<DaadScholarshipGuide />} />
           <Route path="blog/sweden-work-visa-pakistan-2026" element={<SwedenWorkVisa />} />

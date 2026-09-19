@@ -15,6 +15,7 @@ export default function Blog() {
   };
 
   const posts = [
+    { title: 'How Pakistani Dentists Can Work in Germany — Complete Approbation Guide 2026', category: 'Germany', date: 'Oct 20, 2026', author: 'Editorial Team', snippet: 'Complete guide for Pakistani dentists (BDS) to get German Approbation and work in Germany. Step-by-step process, language requirements, salary, and 2026 rule changes explained...', slug: 'pakistani-dentist-germany-guide-2026' },
     { title: 'How to Get a Germany Opportunity Card (Chancenkarte) from Pakistan 2026', category: 'Germany', date: 'Oct 15, 2026', author: 'Ali Khan', snippet: 'The new Opportunity Card makes it easier than ever to move to Germany as a skilled professional...', slug: 'germany-opportunity-card-pakistan-2026' },
     { title: 'Fully Funded DAAD Scholarships for Pakistani Students: Complete Guide', category: 'Scholarships', date: 'Oct 12, 2026', author: 'Sara Ahmed', snippet: 'A comprehensive step-by-step guide to applying for DAAD scholarships for Masters and PhD programs...', slug: 'daad-scholarship-pakistani-students-guide' },
     { title: 'Sweden Work Visa Processing Time for Pakistanis (2026 Update)', category: 'Sweden', date: 'Oct 05, 2026', author: 'Usman Raza', snippet: 'Everything you need to know about the current visa processing times and requirements for moving to Sweden...', slug: 'sweden-work-visa-pakistan-2026' },
