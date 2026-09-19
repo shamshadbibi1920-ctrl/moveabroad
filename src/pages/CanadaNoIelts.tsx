@@ -76,7 +76,7 @@ export default function CanadaNoIelts() {
             <div className="bg-white dark:bg-slate-800 rounded-[2rem] p-8 shadow-sm border border-slate-100 dark:border-slate-700">
                <ul className="space-y-4">
                  {[
-                   { name: 'TOEFL iBT', desc: 'Accepted by 100% of Canadian universities.' },
+                   { name: 'TOEFL iBT', desc: 'Accepted by virtually all Canadian universities and colleges for academic admissions.' },
                    { name: 'PTE Academic', desc: 'Accepted for both admission and SDS visa stream.' },
                    { name: 'CAEL (Canadian Academic English Language)', desc: 'Designed specifically for Canadian context.' },
                    { name: 'Duolingo English Test (DET)', desc: 'Accepted by select universities (verify carefully as acceptance changes).' },

@@ -61,7 +61,7 @@ export default function GermanyNurseContent() {
             { step: '3', title: 'Certified Translations', desc: 'Have all documents translated to German by a state-certified translator.' },
             { step: '4', title: 'Apply to State Authority', desc: 'Submit your application to the relevant state nursing authority for an equivalence assessment.' },
             { step: '5', title: 'Equivalence Assessment', desc: 'The authority compares your Pakistani nursing curriculum with the German standard.' },
-            { step: '6', title: 'Compensatory Measures', desc: 'If your degree is not 100% equivalent (very common), you must complete an adaptation course (Anpassungslehrgang) or a knowledge test (Kenntnisprüfung).' },
+            { step: '6', title: 'Compensatory Measures', desc: 'If substantial deficits are identified in your curriculum comparison (common for non-EU qualifications), you must complete an adaptation course (Anpassungslehrgang) or take a knowledge test (Kenntnisprüfung).' },
             { step: '7', title: 'German Language (B2)', desc: 'You must provide proof of B2 level German proficiency.' },
             { step: '8', title: 'Full Recognition', desc: 'Once steps are complete, you receive full recognition and can work independently as a registered nurse (Pflegefachkraft).' }
           ].map((item, i) => (

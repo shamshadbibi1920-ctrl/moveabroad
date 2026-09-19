@@ -64,7 +64,7 @@ export default function ItalyNoIelts() {
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white">Path 2: Italian-Taught Programs</h3>
               </div>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
-                If you enroll in a program taught entirely in Italian, you do not need any English test. Instead, you need proof of Italian proficiency (usually B2 level). This opens up 100% of the courses at public universities!
+                If you enroll in a program taught entirely in Italian, you do not need an English test. Instead, you need proof of Italian proficiency (usually B2 level). This unlocks access to the extensive catalog of Italian-taught degree programs at public universities (subject to course prerequisites and admission quotas).
               </p>
               <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-2 mb-4">
                 <li className="flex items-start"><CheckCircle2 className="w-4 h-4 text-emerald-500 mr-2 mt-0.5 shrink-0" /> Require CILS or CELI certificates (B1/B2 level).</li>

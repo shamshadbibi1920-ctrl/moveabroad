@@ -176,7 +176,7 @@ export default function GermanyDoctorContent() {
             <strong>What is it?</strong> It is an oral-practical medical knowledge exam for doctors whose medical degree is from outside the EU/EEA (such as Pakistan) and is not automatically recognized as equivalent to a German degree.
           </p>
           <ul className="list-disc pl-5 space-y-2">
-            <li><strong>Who Needs It?</strong> Almost all Pakistani medical graduates will eventually need to sit this exam, unless an expert individual assessment surprisingly finds your specific curriculum 100% equivalent.</li>
+            <li><strong>Who Needs It?</strong> Almost all Pakistani medical graduates will need to sit this exam, unless an individual Gutachten (equivalence assessment) determines there are no substantial curriculum differences compared to German medical licensing standards.</li>
             <li><strong>Structure:</strong> The exam strongly focuses on Internal Medicine and Surgery. You may also be questioned on Emergency Medicine, Clinical Pharmacology, Radiology, or legal frameworks. It is conducted entirely in German.</li>
             <li><strong>Preparation:</strong> Most doctors take a paid preparation course in Germany or join study groups. The pass rate is solid if you prepare properly, though the exam is rigorous.</li>
             <li><strong>Which States Require It?</strong> ALL German states require this mechanism for non-EU degrees to grant full Approbation.</li>

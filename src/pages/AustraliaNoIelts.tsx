@@ -56,7 +56,7 @@ export default function AustraliaNoIelts() {
               </div>
               <h3 className="font-bold text-slate-900 dark:text-white mb-2">PTE Academic</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">
-                Extremely popular in Pakistan. Computer-based with fast results. Accepted by 100% of Australian universities and DoHA. Minimum score: 50.
+                Extremely popular in Pakistan. Computer-based with fast results. Widely accepted across Australian universities and approved by DoHA for student visa applications. Minimum score requirements vary by institution and course (visa benchmark: 50).
               </p>
             </div>
             

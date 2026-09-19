@@ -45,7 +45,7 @@ export default function ItalyScholarships() {
           <ul className="text-sm text-amber-800 dark:text-amber-200 space-y-2 list-disc list-inside">
             <li>You must gather family income, property, and bank balance documents from Pakistan.</li>
             <li>These documents must be translated into Italian and legalized by the Italian Embassy/Consulate or MOFA.</li>
-            <li>Once in Italy (or via online CAFs), these documents are converted into your "ISEE score". If it is below a certain threshold (usually €23,000 - €25,000), you win the scholarship!</li>
+            <li>Once in Italy (or via online CAFs), these documents are converted into your "ISEE score". If it is below the applicable regional threshold (typically €23,000 - €25,000), you qualify for the regional scholarship award!</li>
           </ul>
         </div>
 

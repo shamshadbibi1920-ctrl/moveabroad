@@ -200,7 +200,7 @@ export default function CanadaExpressEntry() {
                    <li><strong>2. Learn French:</strong> Even basic to intermediate French knowledge gives a massive boost in additional points and opens doors for French-category draws.</li>
                    <li><strong>3. Higher Education:</strong> Upgrading from a Bachelor's to a Master's degree adds significant points.</li>
                    <li><strong>4. Work Experience:</strong> Gaining 3+ years of foreign experience maximizes the transferability section.</li>
-                   <li><strong>5. Provincial Nominee Programs (PNP):</strong> Getting nominated by a province automatically adds 600 points, positioning your score well above draw cutoffs and making an Invitation to Apply (ITA) virtually certain.</li>
+                   <li><strong>5. Provincial Nominee Programs (PNP):</strong> Getting nominated by a province automatically adds 600 points, positioning your CRS score well above typical draw cutoffs to receive an Invitation to Apply (ITA) in an upcoming draw.</li>
                  </ul>
               </div>
             </div>
