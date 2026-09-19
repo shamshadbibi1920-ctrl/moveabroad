@@ -16,6 +16,19 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   { 
+    title: 'How to Open a German Blocked Account (Sperrkonto) from Pakistan in 2026', 
+    category: 'Germany', 
+    date: 'Sep 19, 2026', 
+    publishedAt: '2026-09-19T09:00:00Z',
+    status: 'published',
+    author: FOUNDER.name, 
+    authorProfile: FOUNDER,
+    snippet: 'Complete 2026 guide for Pakistani students, doctors, and Opportunity Card holders to open and fund a German blocked account (€11,904). Learn SBP Form A2 wire rules, FBR tax, provider fees, and visa approval tips...', 
+    slug: 'how-to-open-german-blocked-account-pakistan-2026',
+    image: '/images/blog/german-blocked-account-pakistan.jpg',
+    altText: 'German blocked account Sperrkonto setup and banking documentation for Pakistani applicants'
+  },
+  { 
     title: 'How Pakistani Dentists Can Work in Germany — Complete Approbation Guide 2026', 
     category: 'Germany', 
     date: 'Sep 18, 2026', 

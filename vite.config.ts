@@ -66,6 +66,7 @@ const prerenderRoutes = [
   '/migrate/uk',
 
   // Primary Editorial & Scholarship Guides
+  '/blog/how-to-open-german-blocked-account-pakistan-2026',
   '/blog/pakistani-dentist-germany-guide-2026',
   '/blog/germany-opportunity-card-pakistan-2026',
   '/blog/daad-scholarship-pakistani-students-guide',
