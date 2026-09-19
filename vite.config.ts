@@ -1,21 +1,89 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
+import { prerenderPlugin } from './scripts/prerender-plugin';
+
+// Top primary routes for static pre-rendering (SSG)
+// Generates physical HTML files so Google AdSense crawler and search engines see fully rendered content
+const prerenderRoutes = [
+  '/',
+  '/study',
+  '/work-abroad',
+  '/scholarships',
+  '/healthcare-abroad',
+  '/country-guides',
+  '/compare',
+  '/blog',
+  '/about',
+  '/contact',
+  '/privacy-policy',
+  '/disclaimer',
+  '/migrate',
+
+  // Top Study Destinations & Guides
+  '/study/germany',
+  '/study/germany/universities',
+  '/study/germany/scholarships',
+  '/study/germany/visa-process',
+  '/study/germany/cost-of-living',
+  '/study/germany/accommodation',
+  '/study/canada',
+  '/study/canada/universities',
+  '/study/canada/visa-process',
+  '/study/australia',
+  '/study/uk',
+  '/study/italy',
+
+  // Top Work Destinations
+  '/work/germany',
+  '/work/canada',
+  '/work/australia',
+  '/work/uk',
+  '/work/italy',
+
+  // High-Traffic Healthcare Licensing Hubs
+  '/healthcare/germany/doctor',
+  '/healthcare/germany/dentist',
+  '/healthcare/uk/doctor',
+  '/healthcare/uk/nurse',
+  '/healthcare/australia/doctor',
+  '/healthcare/canada/doctor',
+
+  // Top Migration Pathways
+  '/migrate/canada',
+  '/migrate/canada/express-entry',
+  '/migrate/canada/pnp',
+  '/migrate/australia',
+  '/migrate/germany',
+  '/migrate/uk',
+
+  // Primary Editorial & Scholarship Guides
+  '/blog/pakistani-dentist-germany-guide-2026',
+  '/blog/germany-opportunity-card-pakistan-2026',
+  '/blog/daad-scholarship-pakistani-students-guide',
+  '/blog/sweden-work-visa-pakistan-2026',
+  '/blog/saudi-arabia-golden-visa-pakistani-professionals',
+  '/blog/dha-licensing-exam-pakistani-doctors',
+  '/blog/swedish-institute-scholarships-pakistan',
+];
 
 export default defineConfig(() => {
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [
+      react(),
+      tailwindcss(),
+      prerenderPlugin({
+        routes: prerenderRoutes,
+      }),
+    ],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
       },
     },
     server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
-      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
   };

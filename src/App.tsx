@@ -177,13 +177,12 @@ const LoadingFallback = () => (
   </div>
 );
 
-export default function App() {
+export function AppRoutes() {
   return (
-    <Router>
-      <Suspense fallback={<LoadingFallback />}>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+    <Suspense fallback={<LoadingFallback />}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
           <Route path="study" element={<CountryGuides />} />
           <Route path="work-abroad" element={<CountryGuides />} />
           <Route path="scholarships" element={<Scholarships />} />
@@ -332,6 +331,13 @@ export default function App() {
         </Route>
         </Routes>
       </Suspense>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <AppRoutes />
     </Router>
   );
 }
