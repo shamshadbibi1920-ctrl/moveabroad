@@ -31,6 +31,24 @@ export default function PrivacyPolicy() {
             <li>Develop new products, services, features, and functionality</li>
             <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website.</li>
           </ul>
+
+          <h2 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-12 mb-4">Cookies and Web Beacons</h2>
+          <p>
+            Like any other website, MoveAbroad.pk uses "cookies". These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+          </p>
+
+          <h2 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-12 mb-4">Google DoubleClick DART Cookie & Third-Party Advertising</h2>
+          <p>
+            Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to moveabroad.pk and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">https://policies.google.com/technologies/ads</a>.
+          </p>
+          <p>
+            Some of advertisers on our site may use cookies and web beacons. Our advertising partners include Google AdSense. Each of our advertising partners has their own Privacy Policy for their policies on user data. You may also opt out of personalized advertising across third-party networks by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">www.aboutads.info</a>.
+          </p>
+
+          <h2 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-12 mb-4">Contact Us</h2>
+          <p>
+            If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at <a href="mailto:contact@moveabroad.pk" className="text-blue-600 dark:text-blue-400 underline">contact@moveabroad.pk</a>.
+          </p>
           </div>
         </div>
       </div>

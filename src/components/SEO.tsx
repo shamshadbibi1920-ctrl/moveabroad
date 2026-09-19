@@ -50,11 +50,36 @@ export default function SEO({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={resolvedOgImage} />
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={url} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={resolvedOgImage} />
+
+      {/* Structured data for articles */}
+      {ogType === 'article' && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": title,
+            "description": description,
+            "image": resolvedOgImage,
+            "author": {
+              "@type": "Organization",
+              "name": "MoveAbroad.pk Editorial Team",
+              "url": "https://moveabroad.pk"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "MoveAbroad.pk",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://moveabroad.pk/logo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": url
+            }
+          })}
+        </script>
+      )}
     </Helmet>
   );
 }

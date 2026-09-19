@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Briefcase, FilePlus, HeartPulse, ListTodo, Banknote, MapPin, Languages, ArrowLeft, Globe } from 'lucide-react';
+import SEO from '../../../components/SEO';
 
 export default function UkWorkIndex() {
   const sections = [
@@ -16,6 +17,11 @@ export default function UkWorkIndex() {
 
   return (
     <div className="bg-slate-50 dark:bg-slate-900 min-h-screen transition-colors duration-300">
+      <SEO
+        title="Work in the UK for Pakistanis 2026 | Skilled Worker & Health Visas"
+        description="Complete guide to working in the UK from Pakistan. Explore Skilled Worker visas, Health and Care visas, high-demand jobs, salary levels, and application steps."
+        canonicalPath="/work/uk"
+      />
       {/* Hero Banner */}
       <div className="relative text-white py-20 lg:py-32 overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="absolute inset-0 z-0">

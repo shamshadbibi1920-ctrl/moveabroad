@@ -21,7 +21,7 @@ export default function GoldenVisaComparison() {
           </thead>
           <tbody className="text-slate-700 dark:text-slate-300">
             <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-              <td className="py-4 px-6 font-medium text-slate-900 dark:text-white"><Link to="/migrate/portugal-golden-visa" className="hover:text-amber-500">Portugal 🇵🇹</Link></td>
+              <td className="py-4 px-6 font-medium text-slate-900 dark:text-white"><Link to="/migrate/golden-visa/portugal" className="hover:text-amber-500">Portugal 🇵🇹</Link></td>
               <td className="py-4 px-6">€250,000 (Donation) / €500,000 (Fund)</td>
               <td className="py-4 px-6">1-2 years (Renewable)</td>
               <td className="py-4 px-6">5 Years</td>
@@ -29,7 +29,7 @@ export default function GoldenVisaComparison() {
               <td className="py-4 px-6">7 days / year</td>
             </tr>
             <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-              <td className="py-4 px-6 font-medium text-slate-900 dark:text-white"><Link to="/migrate/greece-golden-visa" className="hover:text-amber-500">Greece 🇬🇷</Link></td>
+              <td className="py-4 px-6 font-medium text-slate-900 dark:text-white"><Link to="/migrate/golden-visa/greece" className="hover:text-amber-500">Greece 🇬🇷</Link></td>
               <td className="py-4 px-6">€250,000 - €800,000 (Real Estate)</td>
               <td className="py-4 px-6">5 years (Renewable)</td>
               <td className="py-4 px-6">7 Years (Actual residence req.)</td>
@@ -37,7 +37,7 @@ export default function GoldenVisaComparison() {
               <td className="py-4 px-6">None</td>
             </tr>
             <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-              <td className="py-4 px-6 font-medium text-slate-900 dark:text-white"><Link to="/migrate/spain-golden-visa" className="hover:text-amber-500">Spain 🇪🇸</Link></td>
+              <td className="py-4 px-6 font-medium text-slate-900 dark:text-white"><Link to="/migrate/golden-visa/spain" className="hover:text-amber-500">Spain 🇪🇸</Link></td>
               <td className="py-4 px-6">€500,000 (Real Estate - ending soon)</td>
               <td className="py-4 px-6">2-3 years (Renewable)</td>
               <td className="py-4 px-6">10 Years</td>
@@ -45,7 +45,7 @@ export default function GoldenVisaComparison() {
               <td className="py-4 px-6">None (to maintain permit)</td>
             </tr>
             <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-              <td className="py-4 px-6 font-medium text-slate-900 dark:text-white"><Link to="/migrate/uae-golden-visa" className="hover:text-amber-500">UAE 🇦🇪</Link></td>
+              <td className="py-4 px-6 font-medium text-slate-900 dark:text-white"><Link to="/migrate/golden-visa/uae" className="hover:text-amber-500">UAE 🇦🇪</Link></td>
               <td className="py-4 px-6">AED 2,000,000 (or via Profession)</td>
               <td className="py-4 px-6">10 years (Renewable)</td>
               <td className="py-4 px-6 text-slate-400">Exceptional cases only</td>
@@ -53,7 +53,7 @@ export default function GoldenVisaComparison() {
               <td className="py-4 px-6">None</td>
             </tr>
             <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-              <td className="py-4 px-6 font-medium text-slate-900 dark:text-white"><Link to="/migrate/malta-golden-visa" className="hover:text-amber-500">Malta 🇲🇹</Link></td>
+              <td className="py-4 px-6 font-medium text-slate-900 dark:text-white"><Link to="/migrate/golden-visa/malta" className="hover:text-amber-500">Malta 🇲🇹</Link></td>
               <td className="py-4 px-6">~€150,000 cash + Property (buy/rent)</td>
               <td className="py-4 px-6">Permanent</td>
               <td className="py-4 px-6">5 Years (Actual residence req.)</td>
