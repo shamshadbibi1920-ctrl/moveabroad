@@ -8,6 +8,7 @@ const Scholarships = React.lazy(() => import('./pages/Scholarships'));
 const WorkAbroad = React.lazy(() => import('./pages/WorkAbroad'));
 const HealthcareAbroad = React.lazy(() => import('./pages/HealthcareAbroad'));
 const CountryGuides = React.lazy(() => import('./pages/CountryGuides'));
+const CountryDetailGuide = React.lazy(() => import('./pages/CountryDetailGuide'));
 const CompareCountries = React.lazy(() => import('./pages/CompareCountries'));
 const Blog = React.lazy(() => import('./pages/Blog'));
 const AboutUs = React.lazy(() => import('./pages/AboutUs'));
@@ -80,6 +81,7 @@ export function AppRoutes() {
           <Route path="healthcare-abroad" element={<HealthcareAbroad />} />
           <Route path="healthcare-abroad/:professionId" element={<CountryGuides />} />
           <Route path="country-guides" element={<CountryGuides />} />
+          <Route path="country-guides/:countryId" element={<CountryDetailGuide />} />
           <Route path="compare" element={<CompareCountries />} />
 
           {/* Editorial Blog Guides */}

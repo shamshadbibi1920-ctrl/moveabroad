@@ -3,6 +3,8 @@ import { Search, X, BookOpen, Briefcase, Stethoscope, FileText } from 'lucide-re
 import { useNavigate } from 'react-router-dom';
 
 const searchData = [
+  { title: "Germany Country Guide", category: "Guide", href: "/country-guides/germany", keywords: ["germany", "country guide", "overview", "study", "work", "blocked account", "opportunity card", "approbation"] },
+  { title: "Canada Country Guide", category: "Guide", href: "/country-guides/canada", keywords: ["canada", "country guide", "overview", "express entry", "study permit", "pnp"] },
   { title: "Study in Germany", category: "Study", href: "/study/germany", keywords: ["germany", "study", "bachelor", "master"] },
   { title: "Work in Germany", category: "Work", href: "/work/germany", keywords: ["germany", "work", "job", "career"] },
   { title: "Germany Scholarships", category: "Study", href: "/study/germany/scholarships", keywords: ["germany", "scholarships", "funding", "daad"] },

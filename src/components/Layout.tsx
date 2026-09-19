@@ -9,6 +9,7 @@ import {
   Mail,
   Moon,
   Sun,
+  ChevronDown,
 } from "lucide-react";
 import GlobalSearch from "./GlobalSearch";
 
@@ -64,6 +65,20 @@ export default function Layout() {
     }
   };
 
+  const [isGuidesDropdownOpen, setIsGuidesDropdownOpen] = useState(false);
+  const [isMobileGuidesOpen, setIsMobileGuidesOpen] = useState(false);
+
+  const POPULAR_GUIDES = [
+    { id: 'germany', name: 'Germany', flag: '🇩🇪', tagline: 'Free Universities & Opportunity Card' },
+    { id: 'canada', name: 'Canada', flag: '🇨🇦', tagline: 'Express Entry & High-Rank Unis' },
+    { id: 'uk', name: 'United Kingdom', flag: '🇬🇧', tagline: 'Graduate Route & NHS Licensing' },
+    { id: 'australia', name: 'Australia', flag: '🇦🇺', tagline: 'Subclass 189/190 & PR Pathways' },
+    { id: 'ireland', name: 'Ireland', flag: '🇮🇪', tagline: 'Critical Skills & Tech Hub' },
+    { id: 'usa', name: 'United States', flag: '🇺🇸', tagline: 'F-1 STEM OPT & EB-2 NIW' },
+    { id: 'uae', name: 'UAE (Dubai)', flag: '🇦🇪', tagline: 'Tax-Free Jobs & DHA Licensing' },
+    { id: 'saudi-arabia', name: 'Saudi Arabia', flag: '🇸🇦', tagline: 'Healthcare Careers & Vision 2030' },
+  ];
+
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Study Abroad", href: "/study" },
@@ -97,21 +112,81 @@ export default function Layout() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`inline-flex items-center px-1 pt-1 text-sm font-medium transition-colors ${
-                    location.pathname === item.href ||
-                    (item.href !== "/" &&
-                      location.pathname.startsWith(item.href))
-                      ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400"
-                      : "text-slate-600 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-300 dark:hover:border-blue-700"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item) => {
+                if (item.name === "Guides") {
+                  return (
+                    <div
+                      key={item.name}
+                      className="relative"
+                      onMouseEnter={() => setIsGuidesDropdownOpen(true)}
+                      onMouseLeave={() => setIsGuidesDropdownOpen(false)}
+                    >
+                      <Link
+                        to={item.href}
+                        className={`inline-flex items-center gap-1 px-1 pt-1 text-sm font-medium transition-colors ${
+                          location.pathname.startsWith("/country-guides")
+                            ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400"
+                            : "text-slate-600 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-300 dark:hover:border-blue-700"
+                        }`}
+                      >
+                        <span>{item.name}</span>
+                        <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isGuidesDropdownOpen ? "rotate-180" : ""}`} />
+                      </Link>
+
+                      {isGuidesDropdownOpen && (
+                        <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-80 z-50">
+                          <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200/80 dark:border-slate-800 p-3 space-y-1 backdrop-blur-xl">
+                            <div className="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 border-b border-slate-100 dark:border-slate-800 mb-1">
+                              Country Migration & Study Guides
+                            </div>
+                            <div className="grid grid-cols-1 gap-0.5 max-h-[380px] overflow-y-auto">
+                              {POPULAR_GUIDES.map((country) => (
+                                <Link
+                                  key={country.id}
+                                  to={`/country-guides/${country.id}`}
+                                  onClick={() => setIsGuidesDropdownOpen(false)}
+                                  className="flex items-center gap-3 px-3 py-2 rounded-xl text-xs hover:bg-blue-50 dark:hover:bg-blue-900/30 text-slate-700 dark:text-slate-200 transition-colors group"
+                                >
+                                  <span className="text-xl group-hover:scale-110 transition-transform">{country.flag}</span>
+                                  <div className="flex flex-col min-w-0">
+                                    <span className="font-bold text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400">{country.name}</span>
+                                    <span className="text-[11px] text-slate-500 dark:text-slate-400 truncate">{country.tagline}</span>
+                                  </div>
+                                </Link>
+                              ))}
+                            </div>
+                            <div className="pt-2 border-t border-slate-100 dark:border-slate-800">
+                              <Link
+                                to="/country-guides"
+                                onClick={() => setIsGuidesDropdownOpen(false)}
+                                className="w-full text-center block px-3 py-2 text-xs font-bold text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-xl transition-colors"
+                              >
+                                View All Country Guides →
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={`inline-flex items-center px-1 pt-1 text-sm font-medium transition-colors ${
+                      location.pathname === item.href ||
+                      (item.href !== "/" &&
+                        location.pathname.startsWith(item.href))
+                        ? "text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400"
+                        : "text-slate-600 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-300 dark:hover:border-blue-700"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
 
               <button
                 onClick={toggleDarkMode}
@@ -164,21 +239,73 @@ export default function Layout() {
           className={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800`}
         >
           <div className="pt-2 pb-3 space-y-1">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
-                  location.pathname === item.href ||
-                  (item.href !== "/" && location.pathname.startsWith(item.href))
-                    ? "bg-blue-50 dark:bg-slate-800 border-blue-700 dark:border-blue-400 text-blue-700 dark:text-blue-400"
-                    : "border-transparent text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-800 dark:hover:text-slate-100"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              if (item.name === "Guides") {
+                return (
+                  <div key={item.name} className="space-y-1">
+                    <div className="flex items-center justify-between pr-3">
+                      <Link
+                        to={item.href}
+                        className={`flex-grow pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+                          location.pathname.startsWith("/country-guides")
+                            ? "bg-blue-50 dark:bg-slate-800 border-blue-700 dark:border-blue-400 text-blue-700 dark:text-blue-400"
+                            : "border-transparent text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-800 dark:hover:text-slate-100"
+                        }`}
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                      <button
+                        type="button"
+                        onClick={() => setIsMobileGuidesOpen(!isMobileGuidesOpen)}
+                        className="p-2 text-slate-500 hover:text-blue-600 dark:text-slate-400"
+                        aria-label="Toggle country guides list"
+                      >
+                        <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isMobileGuidesOpen ? "rotate-180" : ""}`} />
+                      </button>
+                    </div>
+                    {isMobileGuidesOpen && (
+                      <div className="pl-6 pr-4 py-2 space-y-1.5 bg-slate-50 dark:bg-slate-800/50 rounded-xl mx-3 my-1">
+                        {POPULAR_GUIDES.map((country) => (
+                          <Link
+                            key={country.id}
+                            to={`/country-guides/${country.id}`}
+                            onClick={() => setIsMenuOpen(false)}
+                            className="flex items-center gap-2.5 py-1.5 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400"
+                          >
+                            <span>{country.flag}</span>
+                            <span>{country.name} Guide</span>
+                          </Link>
+                        ))}
+                        <Link
+                          to="/country-guides"
+                          onClick={() => setIsMenuOpen(false)}
+                          className="block pt-2 text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline"
+                        >
+                          All Country Guides Overview →
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+                    location.pathname === item.href ||
+                    (item.href !== "/" && location.pathname.startsWith(item.href))
+                      ? "bg-blue-50 dark:bg-slate-800 border-blue-700 dark:border-blue-400 text-blue-700 dark:text-blue-400"
+                      : "border-transparent text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-800 dark:hover:text-slate-100"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
           </div>
           <div className="pt-4 pb-4 border-t border-slate-200">
             <div className="flex items-center px-4">
