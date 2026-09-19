@@ -34,7 +34,7 @@ export default function GermanyOpportunityCard() {
             </div>
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-2" />
-              <span>Oct 15, 2026</span>
+              <span>Sep 16, 2026</span>
             </div>
           </div>
 

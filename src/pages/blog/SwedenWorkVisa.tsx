@@ -34,7 +34,7 @@ export default function SwedenWorkVisa() {
             </div>
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-2" />
-              <span>Oct 05, 2026</span>
+              <span>Sep 11, 2026</span>
             </div>
           </div>
 

@@ -118,7 +118,7 @@ export default function PakistaniDentistGermany() {
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2 text-slate-400" />
-                <span>Updated for 2026</span>
+                <span>Sep 18, 2026</span>
               </div>
               <div className="flex items-center">
                 <Clock className="w-4 h-4 mr-2 text-slate-400" />

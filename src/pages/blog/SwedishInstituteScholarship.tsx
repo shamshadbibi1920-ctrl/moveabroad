@@ -34,7 +34,7 @@ export default function SwedishInstituteScholarship() {
             </div>
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-2" />
-              <span>Sep 15, 2026</span>
+              <span>Sep 01, 2026</span>
             </div>
           </div>
 

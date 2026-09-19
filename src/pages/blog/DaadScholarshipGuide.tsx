@@ -37,7 +37,7 @@ export default function DaadScholarshipGuide() {
             </div>
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-2" />
-              <span>Oct 12, 2026</span>
+              <span>Sep 14, 2026</span>
             </div>
           </div>
 
