@@ -125,6 +125,23 @@ export default function PakistaniDentistGermany() {
                 <span>12 min read</span>
               </div>
             </div>
+
+            {/* Featured Image */}
+            <div className="mb-10 rounded-2xl overflow-hidden aspect-[16/9] sm:aspect-[21/9] w-full bg-slate-100 dark:bg-slate-700 shadow-sm relative">
+              <img
+                src="/images/blog/pakistani-dentist-germany.jpg"
+                alt="Modern dental clinic and equipment in Germany for international dentists"
+                className="w-full h-full object-cover"
+                loading="eager"
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== window.location.origin + '/images/blog/default-blog.jpg') {
+                    target.src = '/images/blog/default-blog.jpg';
+                  }
+                }}
+              />
+            </div>
             
             {/* Article Content */}
             <div className="space-y-8 text-slate-700 dark:text-slate-300 text-base sm:text-lg leading-relaxed">

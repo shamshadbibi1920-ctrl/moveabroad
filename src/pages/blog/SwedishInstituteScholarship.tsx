@@ -37,6 +37,23 @@ export default function SwedishInstituteScholarship() {
               <span>Sep 15, 2026</span>
             </div>
           </div>
+
+          {/* Featured Image */}
+          <div className="mb-10 rounded-2xl overflow-hidden aspect-[16/9] sm:aspect-[21/9] w-full bg-slate-100 dark:bg-slate-700 shadow-sm relative">
+            <img
+              src="/images/blog/swedish-institute-scholarship.jpg"
+              alt="Prestigious university campus and study hall in Sweden"
+              className="w-full h-full object-cover"
+              loading="eager"
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (target.src !== window.location.origin + '/images/blog/default-blog.jpg') {
+                  target.src = '/images/blog/default-blog.jpg';
+                }
+              }}
+            />
+          </div>
           
           <div className="prose prose-lg prose-blue dark:prose-invert max-w-none space-y-6 text-slate-600 dark:text-slate-300">
             <p className="lead text-xl text-slate-700 dark:text-slate-200 font-medium">
