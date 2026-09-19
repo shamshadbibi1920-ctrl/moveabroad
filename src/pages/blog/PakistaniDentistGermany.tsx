@@ -114,11 +114,11 @@ export default function PakistaniDentistGermany() {
             <div className="flex flex-wrap items-center text-slate-500 dark:text-slate-400 text-sm mb-10 pb-8 border-b border-slate-100 dark:border-slate-700 gap-4 md:gap-6">
               <div className="flex items-center">
                 <User className="w-4 h-4 mr-2 text-slate-400" />
-                <span className="font-medium">Editorial Healthcare Desk</span>
+                <span className="font-medium">Written by MoveAbroad.pk Editorial Team</span>
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2 text-slate-400" />
-                <span>Sep 18, 2026</span>
+                <span>Last updated: Sep 18, 2026</span>
               </div>
               <div className="flex items-center">
                 <Clock className="w-4 h-4 mr-2 text-slate-400" />

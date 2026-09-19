@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, User } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
@@ -70,8 +70,8 @@ export default function Blog() {
                   <p className="text-slate-600 dark:text-slate-400 mb-6 flex-grow leading-relaxed">{post.snippet}</p>
                   
                   <div className="flex justify-between items-center mt-auto pt-6 border-t border-slate-100 dark:border-slate-700">
-                    <div className="text-sm font-medium text-slate-900 dark:text-slate-50 flex items-center">
-                      <div className="w-6 h-6 rounded-full bg-slate-200 mr-2"></div>
+                    <div className="text-sm font-medium text-slate-700 dark:text-slate-300 flex items-center">
+                      <User className="w-4 h-4 mr-2 text-slate-400 dark:text-slate-500" />
                       {post.author}
                     </div>
                     <span className="text-blue-600 dark:text-blue-400 transition-colors p-2 rounded-full group-hover:bg-blue-50 dark:group-hover:bg-blue-900/30 transform group-hover:translate-x-2 flex items-center justify-center">

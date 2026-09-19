@@ -30,11 +30,11 @@ export default function SaudiGoldenVisa() {
           <div className="flex flex-wrap items-center text-slate-500 dark:text-slate-400 text-sm mb-10 pb-8 border-b border-slate-100 dark:border-slate-700 gap-4">
             <div className="flex items-center">
               <User className="w-4 h-4 mr-2" />
-              <span>By Fatima Noor</span>
+              <span>Written by MoveAbroad.pk Editorial Team</span>
             </div>
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-2" />
-              <span>Sep 08, 2026</span>
+              <span>Last updated: Sep 08, 2026</span>
             </div>
           </div>
 

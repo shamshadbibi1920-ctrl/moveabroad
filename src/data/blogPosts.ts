@@ -1,3 +1,5 @@
+import { EDITORIAL_TEAM, AuthorProfile } from './authors';
+
 export interface BlogPost {
   title: string;
   category: string;
@@ -5,6 +7,7 @@ export interface BlogPost {
   publishedAt: string; // ISO 8601 UTC timestamp for reliable comparisons (e.g. '2026-09-18T09:00:00Z')
   status?: 'published' | 'scheduled' | 'draft';
   author: string;
+  authorProfile?: AuthorProfile;
   snippet: string;
   slug: string;
   image: string;
@@ -18,7 +21,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'Sep 18, 2026', 
     publishedAt: '2026-09-18T09:00:00Z',
     status: 'published',
-    author: 'Editorial Team', 
+    author: EDITORIAL_TEAM.name, 
+    authorProfile: EDITORIAL_TEAM,
     snippet: 'Complete guide for Pakistani dentists (BDS) to get German Approbation and work in Germany. Step-by-step process, language requirements, salary, and 2026 rule changes explained...', 
     slug: 'pakistani-dentist-germany-guide-2026',
     image: '/images/blog/pakistani-dentist-germany.jpg',
@@ -30,7 +34,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'Sep 16, 2026', 
     publishedAt: '2026-09-16T09:00:00Z',
     status: 'published',
-    author: 'Ali Khan', 
+    author: EDITORIAL_TEAM.name, 
+    authorProfile: EDITORIAL_TEAM,
     snippet: 'The new Opportunity Card makes it easier than ever to move to Germany as a skilled professional...', 
     slug: 'germany-opportunity-card-pakistan-2026',
     image: '/images/blog/germany-opportunity-card.jpg',
@@ -42,7 +47,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'Sep 14, 2026', 
     publishedAt: '2026-09-14T09:00:00Z',
     status: 'published',
-    author: 'Sara Ahmed', 
+    author: EDITORIAL_TEAM.name, 
+    authorProfile: EDITORIAL_TEAM,
     snippet: 'A comprehensive step-by-step guide to applying for DAAD scholarships for Masters and PhD programs...', 
     slug: 'daad-scholarship-pakistani-students-guide',
     image: '/images/blog/daad-scholarship-germany.jpg',
@@ -54,7 +60,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'Sep 11, 2026', 
     publishedAt: '2026-09-11T09:00:00Z',
     status: 'published',
-    author: 'Usman Raza', 
+    author: EDITORIAL_TEAM.name, 
+    authorProfile: EDITORIAL_TEAM,
     snippet: 'Everything you need to know about the current visa processing times and requirements for moving to Sweden...', 
     slug: 'sweden-work-visa-pakistan-2026',
     image: '/images/blog/sweden-work-visa.jpg',
@@ -66,7 +73,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'Sep 08, 2026', 
     publishedAt: '2026-09-08T09:00:00Z',
     status: 'published',
-    author: 'Fatima Noor', 
+    author: EDITORIAL_TEAM.name, 
+    authorProfile: EDITORIAL_TEAM,
     snippet: 'Learn about the eligibility criteria for the Premium Residency program in Saudi Arabia for expats...', 
     slug: 'saudi-arabia-golden-visa-pakistani-professionals',
     image: '/images/blog/saudi-golden-visa.jpg',
@@ -78,7 +86,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'Sep 05, 2026', 
     publishedAt: '2026-09-05T09:00:00Z',
     status: 'published',
-    author: 'Dr. Bilal', 
+    author: EDITORIAL_TEAM.name, 
+    authorProfile: EDITORIAL_TEAM,
     snippet: 'Want to practice medicine in Dubai? Here is what you need to know about preparing for the DHA exam...', 
     slug: 'dha-licensing-exam-pakistani-doctors',
     image: '/images/blog/dha-licensing-dubai.jpg',
@@ -90,7 +99,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'Sep 01, 2026', 
     publishedAt: '2026-09-01T09:00:00Z',
     status: 'published',
-    author: 'Sara Ahmed', 
+    author: EDITORIAL_TEAM.name, 
+    authorProfile: EDITORIAL_TEAM,
     snippet: 'Discover fully funded opportunities in Sweden through the SI Scholarship for Global Professionals...', 
     slug: 'swedish-institute-scholarships-pakistan',
     image: '/images/blog/swedish-institute-scholarship.jpg',

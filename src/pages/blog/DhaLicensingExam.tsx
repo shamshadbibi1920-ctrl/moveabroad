@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowLeft, User, Calendar } from 'lucide-react';
+import { ArrowLeft, User, Calendar, Info } from 'lucide-react';
 import SEO from '../../components/SEO';
 
 export default function DhaLicensingExam() {
@@ -30,11 +30,11 @@ export default function DhaLicensingExam() {
           <div className="flex flex-wrap items-center text-slate-500 dark:text-slate-400 text-sm mb-10 pb-8 border-b border-slate-100 dark:border-slate-700 gap-4">
             <div className="flex items-center">
               <User className="w-4 h-4 mr-2" />
-              <span>By Dr. Bilal</span>
+              <span>Written by MoveAbroad.pk Editorial Team</span>
             </div>
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-2" />
-              <span>Sep 05, 2026</span>
+              <span>Last updated: Sep 05, 2026</span>
             </div>
           </div>
 
@@ -98,6 +98,14 @@ export default function DhaLicensingExam() {
             <p>
               Many Pakistani doctors fail the first attempt because they do not grasp the exam's style. Invest in good question banks (e.g., Prometric MCQs, Pastest) and review current international guidelines. Do not rely entirely on local clinical practices, as the DHA tests on broader, international standards of care.
             </p>
+
+            {/* Regulatory Disclaimer */}
+            <div className="not-prose mt-8 p-4 bg-slate-100 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 text-xs sm:text-sm text-slate-600 dark:text-slate-300 flex items-start gap-3">
+              <Info className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
+              <p>
+                <strong>Regulatory Notice:</strong> Healthcare licensing criteria, primary source verification (Dataflow) standards, and examination syllabi are governed exclusively by statutory authorities (DHA, MOH, and DoH). Regulations change periodically. Always verify current licensing requirements directly with the official Dubai Health Authority portal (Sheryan) prior to submitting applications or documentation.
+              </p>
+            </div>
           </div>
         </motion.article>
 
