@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 
-// Core pages
+// Core Application Pages
 const Home = React.lazy(() => import('./pages/Home'));
 const Scholarships = React.lazy(() => import('./pages/Scholarships'));
 const WorkAbroad = React.lazy(() => import('./pages/WorkAbroad'));
@@ -15,79 +15,15 @@ const ContactUs = React.lazy(() => import('./pages/ContactUs'));
 const PrivacyPolicy = React.lazy(() => import('./pages/PrivacyPolicy'));
 const Disclaimer = React.lazy(() => import('./pages/Disclaimer'));
 
-// Dynamic destination pages
+// Destination Hub Overview Pages
 const StudyDestination = React.lazy(() => import('./pages/StudyDestination'));
 const WorkDestination = React.lazy(() => import('./pages/WorkDestination'));
 const HealthcareDestination = React.lazy(() => import('./pages/HealthcareDestination'));
-const GermanyApplicationProcess = React.lazy(() => import('./pages/GermanyApplicationProcess'));
-const GermanyUniversities = React.lazy(() => import('./pages/GermanyUniversities'));
-const GermanyScholarships = React.lazy(() => import('./pages/GermanyScholarships'));
-const GermanyVisaProcess = React.lazy(() => import('./pages/GermanyVisaProcess'));
-const GermanyNoIelts = React.lazy(() => import('./pages/GermanyNoIelts'));
-const GermanyCostOfLiving = React.lazy(() => import('./pages/GermanyCostOfLiving'));
-const GermanyAccommodation = React.lazy(() => import('./pages/GermanyAccommodation'));
-const GermanyIntakeDeadlines = React.lazy(() => import('./pages/GermanyIntakeDeadlines'));
-const GermanyOfficialLinks = React.lazy(() => import('./pages/GermanyOfficialLinks'));
 
-const CanadaUniversities = React.lazy(() => import('./pages/CanadaUniversities'));
-const CanadaScholarships = React.lazy(() => import('./pages/CanadaScholarships'));
-const CanadaVisaProcess = React.lazy(() => import('./pages/CanadaVisaProcess'));
-const CanadaApplicationProcess = React.lazy(() => import('./pages/CanadaApplicationProcess'));
-const CanadaNoIelts = React.lazy(() => import('./pages/CanadaNoIelts'));
-const CanadaCostOfLiving = React.lazy(() => import('./pages/CanadaCostOfLiving'));
-const CanadaAccommodation = React.lazy(() => import('./pages/CanadaAccommodation'));
-const CanadaIntakeDeadlines = React.lazy(() => import('./pages/CanadaIntakeDeadlines'));
+// Master Dynamic Guide Template for all sub-routes (eliminates thin content)
+const DynamicGuideTemplate = React.lazy(() => import('./components/DynamicGuideTemplate'));
 
-// Study in Australia Pages
-const AustraliaUniversities = React.lazy(() => import('./pages/AustraliaUniversities'));
-const AustraliaScholarships = React.lazy(() => import('./pages/AustraliaScholarships'));
-const AustraliaVisaProcess = React.lazy(() => import('./pages/AustraliaVisaProcess'));
-const AustraliaApplicationProcess = React.lazy(() => import('./pages/AustraliaApplicationProcess'));
-const AustraliaNoIelts = React.lazy(() => import('./pages/AustraliaNoIelts'));
-const AustraliaCostOfLiving = React.lazy(() => import('./pages/AustraliaCostOfLiving'));
-const AustraliaAccommodation = React.lazy(() => import('./pages/AustraliaAccommodation'));
-const AustraliaIntakeDeadlines = React.lazy(() => import('./pages/AustraliaIntakeDeadlines'));
-
-// Study in UK Pages
-const UkUniversities = React.lazy(() => import('./pages/study/uk/UkUniversities'));
-const UkScholarships = React.lazy(() => import('./pages/study/uk/UkScholarships'));
-const UkVisaProcess = React.lazy(() => import('./pages/study/uk/UkVisaProcess'));
-const UkApplicationProcess = React.lazy(() => import('./pages/study/uk/UkApplicationProcess'));
-const UkNoIelts = React.lazy(() => import('./pages/study/uk/UkNoIelts'));
-const UkCostOfLiving = React.lazy(() => import('./pages/study/uk/UkCostOfLiving'));
-const UkAccommodation = React.lazy(() => import('./pages/study/uk/UkAccommodation'));
-const UkIntakeDeadlines = React.lazy(() => import('./pages/study/uk/UkIntakeDeadlines'));
-
-// Study in Italy Pages
-const ItalyStudyIndex = React.lazy(() => import('./pages/study/italy/ItalyStudyIndex'));
-const ItalyUniversities = React.lazy(() => import('./pages/study/italy/ItalyUniversities'));
-const ItalyScholarships = React.lazy(() => import('./pages/study/italy/ItalyScholarships'));
-const ItalyVisaProcess = React.lazy(() => import('./pages/study/italy/ItalyVisaProcess'));
-const ItalyApplicationProcess = React.lazy(() => import('./pages/study/italy/ItalyApplicationProcess'));
-const ItalyNoIelts = React.lazy(() => import('./pages/study/italy/ItalyNoIelts'));
-const ItalyCostOfLiving = React.lazy(() => import('./pages/study/italy/ItalyCostOfLiving'));
-const ItalyAccommodation = React.lazy(() => import('./pages/study/italy/ItalyAccommodation'));
-const ItalyIntakeDeadlines = React.lazy(() => import('./pages/study/italy/ItalyIntakeDeadlines'));
-
-// Healthcare Canada Doctor Pathways
-const CanadaDoctorCaRMS = React.lazy(() => import('./pages/healthcare/CanadaDoctorCaRMS'));
-const CanadaDoctorFellowship = React.lazy(() => import('./pages/healthcare/CanadaDoctorFellowship'));
-const CanadaDoctorPRA = React.lazy(() => import('./pages/healthcare/CanadaDoctorPRA'));
-const CanadaDoctorPER = React.lazy(() => import('./pages/healthcare/CanadaDoctorPER'));
-
-// Healthcare Australia Doctor Pathways
-const AustraliaDoctorIndex = React.lazy(() => import('./pages/healthcare/AustraliaDoctorIndex'));
-const AustraliaDoctorStandard = React.lazy(() => import('./pages/healthcare/AustraliaDoctorStandard'));
-const AustraliaDoctorCompetent = React.lazy(() => import('./pages/healthcare/AustraliaDoctorCompetent'));
-const AustraliaDoctorSpecialist = React.lazy(() => import('./pages/healthcare/AustraliaDoctorSpecialist'));
-
-// Healthcare Australia Other Professions
-const AustraliaNurse = React.lazy(() => import('./pages/healthcare/AustraliaNurse'));
-const AustraliaDentist = React.lazy(() => import('./pages/healthcare/AustraliaDentist'));
-const AustraliaPharmacist = React.lazy(() => import('./pages/healthcare/AustraliaPharmacist'));
-const AustraliaPhysiotherapist = React.lazy(() => import('./pages/healthcare/AustraliaPhysiotherapist'));
-
-// Blog Pages
+// Editorial Blog Guides
 const PakistaniDentistGermany = React.lazy(() => import('./pages/blog/PakistaniDentistGermany'));
 const GermanyOpportunityCard = React.lazy(() => import('./pages/blog/GermanyOpportunityCard'));
 const DaadScholarshipGuide = React.lazy(() => import('./pages/blog/DaadScholarshipGuide'));
@@ -96,54 +32,7 @@ const SaudiGoldenVisa = React.lazy(() => import('./pages/blog/SaudiGoldenVisa'))
 const DhaLicensingExam = React.lazy(() => import('./pages/blog/DhaLicensingExam'));
 const SwedishInstituteScholarship = React.lazy(() => import('./pages/blog/SwedishInstituteScholarship'));
 
-// Work Destinations (Italy)
-const ItalyWorkIndex = React.lazy(() => import('./pages/work/italy/ItalyWorkIndex'));
-const ItalyJobs = React.lazy(() => import('./pages/work/italy/ItalyJobs'));
-const ItalyWorkVisa = React.lazy(() => import('./pages/work/italy/ItalyWorkVisa'));
-const ItalyPakistanQuota = React.lazy(() => import('./pages/work/italy/ItalyPakistanQuota'));
-const ItalyWorkApplication = React.lazy(() => import('./pages/work/italy/ItalyWorkApplication'));
-const ItalySalary = React.lazy(() => import('./pages/work/italy/ItalySalary'));
-const ItalyRelocation = React.lazy(() => import('./pages/work/italy/ItalyRelocation'));
-const ItalyLanguage = React.lazy(() => import('./pages/work/italy/ItalyLanguage'));
-
-// Work Destinations (Germany)
-const GermanyWorkIndex = React.lazy(() => import('./pages/work/GermanyWorkIndex'));
-const CanadaWorkIndex = React.lazy(() => import('./pages/work/CanadaWorkIndex'));
-const CanadaJobs = React.lazy(() => import('./pages/work/CanadaJobs'));
-const CanadaWorkPermit = React.lazy(() => import('./pages/work/CanadaWorkPermit'));
-const CanadaLmia = React.lazy(() => import('./pages/work/CanadaLmia'));
-const CanadaWorkApplication = React.lazy(() => import('./pages/work/CanadaWorkApplication'));
-const CanadaSalary = React.lazy(() => import('./pages/work/CanadaSalary'));
-const CanadaRelocation = React.lazy(() => import('./pages/work/CanadaRelocation'));
-const CanadaLanguage = React.lazy(() => import('./pages/work/CanadaLanguage'));
-const GermanyJobs = React.lazy(() => import('./pages/work/GermanyJobs'));
-const GermanyWorkVisa = React.lazy(() => import('./pages/work/GermanyWorkVisa'));
-const GermanyWorkOpportunityCard = React.lazy(() => import('./pages/work/GermanyWorkOpportunityCard'));
-const GermanyWorkApplication = React.lazy(() => import('./pages/work/GermanyWorkApplication'));
-const GermanySalary = React.lazy(() => import('./pages/work/GermanySalary'));
-const GermanyRelocation = React.lazy(() => import('./pages/work/GermanyRelocation'));
-const GermanyLanguage = React.lazy(() => import('./pages/work/GermanyLanguage'));
-
-// Work in UK Pages
-const UkWorkIndex = React.lazy(() => import('./pages/work/uk/UkWorkIndex'));
-const UkJobs = React.lazy(() => import('./pages/work/uk/UkJobs'));
-const UkWorkVisa = React.lazy(() => import('./pages/work/uk/UkWorkVisa'));
-const UkHealthCareVisa = React.lazy(() => import('./pages/work/uk/UkHealthCareVisa'));
-const UkWorkApplication = React.lazy(() => import('./pages/work/uk/UkWorkApplication'));
-const UkSalary = React.lazy(() => import('./pages/work/uk/UkSalary'));
-const UkRelocation = React.lazy(() => import('./pages/work/uk/UkRelocation'));
-const UkLanguage = React.lazy(() => import('./pages/work/uk/UkLanguage'));
-
-// Work in Australia Pages
-const AustraliaWorkIndex = React.lazy(() => import('./pages/work/australia/AustraliaWorkIndex'));
-const AustraliaJobs = React.lazy(() => import('./pages/work/australia/AustraliaJobs'));
-const AustraliaWorkVisa = React.lazy(() => import('./pages/work/australia/AustraliaWorkVisa'));
-const AustraliaWorkApplication = React.lazy(() => import('./pages/work/australia/AustraliaWorkApplication'));
-const AustraliaSalary = React.lazy(() => import('./pages/work/australia/AustraliaSalary'));
-const AustraliaRelocation = React.lazy(() => import('./pages/work/australia/AustraliaRelocation'));
-const AustraliaLanguage = React.lazy(() => import('./pages/work/australia/AustraliaLanguage'));
-
-// Migrate
+// Migration Pathway Hub & Guides
 const MigrateHome = React.lazy(() => import('./pages/migrate/MigrateHome'));
 const CanadaMigrate = React.lazy(() => import('./pages/migrate/CanadaMigrate'));
 const CanadaExpressEntry = React.lazy(() => import('./pages/migrate/CanadaExpressEntry'));
@@ -182,7 +71,7 @@ export function AppRoutes() {
     <Suspense fallback={<LoadingFallback />}>
       <Routes>
         <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="study" element={<CountryGuides />} />
           <Route path="work-abroad" element={<CountryGuides />} />
           <Route path="scholarships" element={<Scholarships />} />
@@ -190,6 +79,8 @@ export function AppRoutes() {
           <Route path="healthcare-abroad/:professionId" element={<CountryGuides />} />
           <Route path="country-guides" element={<CountryGuides />} />
           <Route path="compare" element={<CompareCountries />} />
+
+          {/* Editorial Blog Guides */}
           <Route path="blog" element={<Blog />} />
           <Route path="blog/pakistani-dentist-germany-guide-2026" element={<PakistaniDentistGermany />} />
           <Route path="blog/germany-opportunity-card-pakistan-2026" element={<GermanyOpportunityCard />} />
@@ -198,12 +89,14 @@ export function AppRoutes() {
           <Route path="blog/saudi-arabia-golden-visa-pakistani-professionals" element={<SaudiGoldenVisa />} />
           <Route path="blog/dha-licensing-exam-pakistani-doctors" element={<DhaLicensingExam />} />
           <Route path="blog/swedish-institute-scholarships-pakistan" element={<SwedishInstituteScholarship />} />
+
+          {/* Core Info Pages */}
           <Route path="about" element={<AboutUs />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="disclaimer" element={<Disclaimer />} />
-          
-          {/* Migrate Routes */}
+
+          {/* Migration Routes */}
           <Route path="migrate" element={<MigrateHome />} />
           <Route path="migrate/canada" element={<CanadaMigrate />} />
           <Route path="migrate/canada/express-entry" element={<CanadaExpressEntry />} />
@@ -231,106 +124,30 @@ export function AppRoutes() {
           <Route path="migrate/golden-visa/uae" element={<UaeGoldenVisa />} />
           <Route path="migrate/golden-visa/malta" element={<MaltaGoldenVisa />} />
 
-          {/* Dynamic Routes */}
-          <Route path="study/germany/universities" element={<GermanyUniversities />} />
-          <Route path="study/germany/scholarships" element={<GermanyScholarships />} />
-          <Route path="study/germany/visa-process" element={<GermanyVisaProcess />} />
-          <Route path="study/germany/application-process" element={<GermanyApplicationProcess />} />
-          <Route path="study/germany/no-ielts" element={<GermanyNoIelts />} />
-          <Route path="study/germany/cost-of-living" element={<GermanyCostOfLiving />} />
-          <Route path="study/germany/accommodation" element={<GermanyAccommodation />} />
-          <Route path="study/germany/intake-deadlines" element={<GermanyIntakeDeadlines />} />
-          <Route path="study/germany/official-links" element={<GermanyOfficialLinks />} />
-          <Route path="study/canada/universities" element={<CanadaUniversities />} />
-          <Route path="study/canada/scholarships" element={<CanadaScholarships />} />
-          <Route path="study/canada/visa-process" element={<CanadaVisaProcess />} />
-          <Route path="study/canada/application-process" element={<CanadaApplicationProcess />} />
-          <Route path="study/canada/no-ielts" element={<CanadaNoIelts />} />
-          <Route path="study/canada/cost-of-living" element={<CanadaCostOfLiving />} />
-          <Route path="study/canada/accommodation" element={<CanadaAccommodation />} />
-          <Route path="study/canada/intake-deadlines" element={<CanadaIntakeDeadlines />} />
-          <Route path="study/australia/universities" element={<AustraliaUniversities />} />
-          <Route path="study/australia/scholarships" element={<AustraliaScholarships />} />
-          <Route path="study/australia/visa-process" element={<AustraliaVisaProcess />} />
-          <Route path="study/australia/application-process" element={<AustraliaApplicationProcess />} />
-          <Route path="study/australia/no-ielts" element={<AustraliaNoIelts />} />
-          <Route path="study/australia/cost-of-living" element={<AustraliaCostOfLiving />} />
-          <Route path="study/australia/accommodation" element={<AustraliaAccommodation />} />
-          <Route path="study/australia/intake-deadlines" element={<AustraliaIntakeDeadlines />} />
-          <Route path="study/uk/universities" element={<UkUniversities />} />
-          <Route path="study/uk/scholarships" element={<UkScholarships />} />
-          <Route path="study/uk/visa-process" element={<UkVisaProcess />} />
-          <Route path="study/uk/application-process" element={<UkApplicationProcess />} />
-          <Route path="study/uk/no-ielts" element={<UkNoIelts />} />
-          <Route path="study/uk/cost-of-living" element={<UkCostOfLiving />} />
-          <Route path="study/uk/accommodation" element={<UkAccommodation />} />
-          <Route path="study/uk/intake-deadlines" element={<UkIntakeDeadlines />} />
-          <Route path="study/italy" element={<ItalyStudyIndex />} />
-          <Route path="study/italy/universities" element={<ItalyUniversities />} />
-          <Route path="study/italy/scholarships" element={<ItalyScholarships />} />
-          <Route path="study/italy/visa-process" element={<ItalyVisaProcess />} />
-          <Route path="study/italy/application-process" element={<ItalyApplicationProcess />} />
-          <Route path="study/italy/no-ielts" element={<ItalyNoIelts />} />
-          <Route path="study/italy/cost-of-living" element={<ItalyCostOfLiving />} />
-          <Route path="study/italy/accommodation" element={<ItalyAccommodation />} />
-          <Route path="study/italy/intake-deadlines" element={<ItalyIntakeDeadlines />} />
+          {/* ========================================================================= */}
+          {/* DYNAMIC SUB-ROUTES (Powered by DynamicGuideTemplate & contentData.ts)      */}
+          {/* ========================================================================= */}
+
+          {/* Study: Country Overview Hubs */}
           <Route path="study/:countryId" element={<StudyDestination />} />
-          <Route path="work/germany" element={<GermanyWorkIndex />} />
-          <Route path="work/germany/jobs" element={<GermanyJobs />} />
-          <Route path="work/germany/visa" element={<GermanyWorkVisa />} />
-          <Route path="work/germany/opportunity-card" element={<GermanyWorkOpportunityCard />} />
-          <Route path="work/germany/application-process" element={<GermanyWorkApplication />} />
-          <Route path="work/germany/salary" element={<GermanySalary />} />
-          <Route path="work/germany/relocation" element={<GermanyRelocation />} />
-          <Route path="work/germany/language" element={<GermanyLanguage />} />
-          <Route path="work/italy" element={<ItalyWorkIndex />} />
-          <Route path="work/italy/jobs" element={<ItalyJobs />} />
-          <Route path="work/italy/visa" element={<ItalyWorkVisa />} />
-          <Route path="work/italy/pakistan-quota" element={<ItalyPakistanQuota />} />
-          <Route path="work/italy/application-process" element={<ItalyWorkApplication />} />
-          <Route path="work/italy/salary" element={<ItalySalary />} />
-          <Route path="work/italy/relocation" element={<ItalyRelocation />} />
-          <Route path="work/italy/language" element={<ItalyLanguage />} />
-          <Route path="work/canada" element={<CanadaWorkIndex />} />
-          <Route path="work/canada/jobs" element={<CanadaJobs />} />
-          <Route path="work/canada/work-permit" element={<CanadaWorkPermit />} />
-          <Route path="work/canada/lmia" element={<CanadaLmia />} />
-          <Route path="work/canada/application-process" element={<CanadaWorkApplication />} />
-          <Route path="work/canada/salary" element={<CanadaSalary />} />
-          <Route path="work/canada/relocation" element={<CanadaRelocation />} />
-          <Route path="work/canada/language" element={<CanadaLanguage />} />
-          <Route path="work/uk" element={<UkWorkIndex />} />
-          <Route path="work/uk/jobs" element={<UkJobs />} />
-          <Route path="work/uk/visa" element={<UkWorkVisa />} />
-          <Route path="work/uk/health-care-visa" element={<UkHealthCareVisa />} />
-          <Route path="work/uk/application-process" element={<UkWorkApplication />} />
-          <Route path="work/uk/salary" element={<UkSalary />} />
-          <Route path="work/uk/relocation" element={<UkRelocation />} />
-          <Route path="work/uk/language" element={<UkLanguage />} />
-          <Route path="work/australia" element={<AustraliaWorkIndex />} />
-          <Route path="work/australia/jobs" element={<AustraliaJobs />} />
-          <Route path="work/australia/visa" element={<AustraliaWorkVisa />} />
-          <Route path="work/australia/application-process" element={<AustraliaWorkApplication />} />
-          <Route path="work/australia/salary" element={<AustraliaSalary />} />
-          <Route path="work/australia/relocation" element={<AustraliaRelocation />} />
-          <Route path="work/australia/language" element={<AustraliaLanguage />} />
+
+          {/* Study: Sub-Topics (Cost of Living, No IELTS, Visa Process, Scholarships, etc.) */}
+          <Route path="study/:countryId/:topicId" element={<DynamicGuideTemplate />} />
+
+          {/* Work: Country Overview Hubs */}
           <Route path="work/:countryId" element={<WorkDestination />} />
-          <Route path="healthcare/canada/doctor/carms-pathway" element={<CanadaDoctorCaRMS />} />
-          <Route path="healthcare/canada/doctor/fellowship-pathway" element={<CanadaDoctorFellowship />} />
-          <Route path="healthcare/canada/doctor/pra-pathway" element={<CanadaDoctorPRA />} />
-          <Route path="healthcare/canada/doctor/per-pathway" element={<CanadaDoctorPER />} />
-          <Route path="healthcare/australia/doctor" element={<AustraliaDoctorIndex />} />
-          <Route path="healthcare/australia/doctor/standard-pathway" element={<AustraliaDoctorStandard />} />
-          <Route path="healthcare/australia/doctor/competent-authority-pathway" element={<AustraliaDoctorCompetent />} />
-          <Route path="healthcare/australia/doctor/specialist-pathway" element={<AustraliaDoctorSpecialist />} />
-          <Route path="healthcare/australia/nurse" element={<AustraliaNurse />} />
-          <Route path="healthcare/australia/dentist" element={<AustraliaDentist />} />
-          <Route path="healthcare/australia/pharmacist" element={<AustraliaPharmacist />} />
-          <Route path="healthcare/australia/physiotherapist" element={<AustraliaPhysiotherapist />} />
-          <Route path="healthcare/:countryId/:professionId" element={<HealthcareDestination />} />
+
+          {/* Work: Sub-Topics (Opportunity Card, Visa, Jobs, Salary, LMIA, etc.) */}
+          <Route path="work/:countryId/:topicId" element={<DynamicGuideTemplate />} />
+
+          {/* Healthcare: Specific Profession Guides (Doctor, Dentist, Nurse, etc.) */}
+          <Route path="healthcare/:countryId/:professionId" element={<DynamicGuideTemplate />} />
+
+          {/* Healthcare: Specific Licensing Pathway Guides (CaRMS, PLAB, AMC Standard, etc.) */}
+          <Route path="healthcare/:countryId/:professionId/:pathwayId" element={<DynamicGuideTemplate />} />
         </Route>
-        </Routes>
-      </Suspense>
+      </Routes>
+    </Suspense>
   );
 }
 
