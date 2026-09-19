@@ -24,11 +24,13 @@ const searchData = [
   { title: "Healthcare in UK", category: "Healthcare", href: "/healthcare/uk/doctor", keywords: ["uk", "healthcare", "doctor", "nurse", "plab", "nmc"] },
   { title: "Healthcare in Germany", category: "Healthcare", href: "/healthcare/germany/doctor", keywords: ["germany", "healthcare", "doctor", "nurse", "approbation", "fachsprachprüfung"] },
   { title: "Healthcare in Australia", category: "Healthcare", href: "/healthcare/australia/doctor", keywords: ["australia", "healthcare", "doctor", "nurse", "amc", "ahpra"] },
-  { title: "Saudi Golden Visa", category: "Blog", href: "/blog/saudi-golden-visa", keywords: ["saudi", "golden visa", "work", "ksa", "riyadh"] },
-  { title: "DHA Licensing Exam", category: "Blog", href: "/blog/dha-exam", keywords: ["dha", "dubai", "healthcare", "medical", "exam", "license"] },
-  { title: "DAAD Scholarship Guide", category: "Blog", href: "/blog/daad-scholarship", keywords: ["daad", "scholarship", "germany", "fully funded"] },
-  { title: "Sweden Work Visa", category: "Blog", href: "/blog/sweden-work-visa", keywords: ["sweden", "work", "visa", "tech", "job"] },
-  { title: "Swedish Institute Scholarship", category: "Blog", href: "/blog/swedish-institute-scholarship", keywords: ["sweden", "scholarship", "fully funded", "masters"] },
+  { title: "Pakistani Dentist in Germany", category: "Blog", href: "/blog/pakistani-dentist-germany-guide-2026", keywords: ["dentist", "germany", "approbation", "bds", "kenntnisprüfung", "fsp"] },
+  { title: "Germany Opportunity Card", category: "Blog", href: "/blog/germany-opportunity-card-pakistan-2026", keywords: ["germany", "opportunity card", "chancenkarte", "work visa"] },
+  { title: "Saudi Golden Visa", category: "Blog", href: "/blog/saudi-arabia-golden-visa-pakistani-professionals", keywords: ["saudi", "golden visa", "work", "ksa", "riyadh"] },
+  { title: "DHA Licensing Exam", category: "Blog", href: "/blog/dha-licensing-exam-pakistani-doctors", keywords: ["dha", "dubai", "healthcare", "medical", "exam", "license"] },
+  { title: "DAAD Scholarship Guide", category: "Blog", href: "/blog/daad-scholarship-pakistani-students-guide", keywords: ["daad", "scholarship", "germany", "fully funded"] },
+  { title: "Sweden Work Visa", category: "Blog", href: "/blog/sweden-work-visa-pakistan-2026", keywords: ["sweden", "work", "visa", "tech", "job"] },
+  { title: "Swedish Institute Scholarship", category: "Blog", href: "/blog/swedish-institute-scholarships-pakistan", keywords: ["sweden", "scholarship", "fully funded", "masters"] },
   { title: "Search Scholarships", category: "Scholarships", href: "/scholarships", keywords: ["scholarships", "funding", "financial aid", "bachelors", "masters", "phd"] }
 ];
 
