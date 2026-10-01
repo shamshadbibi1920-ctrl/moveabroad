@@ -1,4 +1,4 @@
-import { FOUNDER, EDITORIAL_TEAM, AuthorProfile } from './authors';
+import { FOUNDER, EDITORIAL_TEAM, SHAMSHAD_BIBI, AuthorProfile } from './authors';
 
 export interface BlogPost {
   title: string;
@@ -15,6 +15,19 @@ export interface BlogPost {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  { 
+    title: "University of Helsinki Scholarships 2027-28: Fully Funded Master's and PhD Options for Pakistani Students", 
+    category: 'Scholarships', 
+    date: 'Oct 01, 2026', 
+    publishedAt: '2026-10-01T07:00:00Z',
+    status: 'published',
+    author: SHAMSHAD_BIBI.name, 
+    authorProfile: SHAMSHAD_BIBI,
+    snippet: "Complete guide for Pakistani students applying to the University of Helsinki for the 2027-28 cycle. Learn about salaried PhD positions (€2,600-€3,500/mo), Master's tuition waivers, HEC attestation, and supervisor outreach...", 
+    slug: 'university-of-helsinki-scholarships-pakistan-2027-28',
+    image: '/images/blog/helsinki-scholarships-finland.jpg',
+    altText: 'Historic University of Helsinki campus and neoclassical buildings in Finland'
+  },
   { 
     title: 'How to Open a German Blocked Account (Sperrkonto) from Pakistan in 2026', 
     category: 'Germany', 

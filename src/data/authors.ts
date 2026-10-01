@@ -19,5 +19,12 @@ export const EDITORIAL_TEAM: AuthorProfile = {
   bio: "The MoveAbroad.pk editorial team researches and publishes informational guides regarding international education, employment pathways, immigration processes, and professional licensing for Pakistani students and professionals."
 };
 
+export const SHAMSHAD_BIBI: AuthorProfile = {
+  name: "Shamshad Bibi",
+  role: "Higher Education Contributor",
+  bio: "Researcher and contributor at MoveAbroad.pk specializing in European university admissions, Nordic higher education pathways, and fully funded scholarship strategies for Pakistani students.",
+  qualifications: "Education & Admissions Researcher"
+};
+
 export const DEFAULT_AUTHOR = FOUNDER;
 
