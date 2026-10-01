@@ -154,13 +154,18 @@ Kind regards,
               </div>
             </div>
 
-            {/* Editorial Lead Note */}
+            {/* Overview / Intake Notice Card */}
             <div className="bg-gradient-to-br from-blue-50/90 to-indigo-50/90 dark:from-slate-800/90 dark:to-slate-900/90 p-6 sm:p-8 rounded-2xl border border-blue-100 dark:border-slate-700 mb-10">
-              <p className="font-semibold text-blue-900 dark:text-blue-200 text-lg leading-relaxed mb-2">
-                Published on MoveAbroad.pk, your trusted guide to studying and settling abroad.
-              </p>
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="p-1.5 bg-blue-600 text-white rounded-lg inline-flex">
+                  <Sparkles className="w-4 h-4" />
+                </span>
+                <h2 className="font-display font-bold text-blue-950 dark:text-blue-100 text-xl sm:text-2xl">
+                  Overview: 2027–2028 Academic Intake &amp; Funding Deadlines
+                </h2>
+              </div>
               <p className="text-slate-700 dark:text-slate-300 text-base leading-relaxed">
-                We have updated this guide specifically for the <strong>2027-28 academic intake</strong>, as prospective Master's and PhD applications open this coming winter. Because institutional policies and funding allotments adjust between cycles, always confirm specific departmental figures with official university portals before submitting.
+                This comprehensive guide is prepared specifically for the <strong>2027–2028 academic intake</strong>, as prospective Master's admissions on Studyinfo.fi and centralized PhD calls open this coming winter. Because institutional policies and funding allotments adjust between cycles, always confirm specific departmental deadlines and criteria with official university portals before submitting.
               </p>
             </div>
 
@@ -336,7 +341,7 @@ Kind regards,
                   <div className="flex items-start gap-3">
                     <AlertTriangle className="w-6 h-6 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
                     <div className="text-sm sm:text-base text-amber-900 dark:text-amber-200 space-y-1">
-                      <p className="font-bold">Crucial Note from MoveAbroad.pk:</p>
+                      <p className="font-bold">Important Advisory for Applicants:</p>
                       <p>
                         Scholarship quotas and relocation grant values adjust between application seasons. We frequently see Pakistani candidates rely on outdated blog posts from 2022 or 2023 and encounter budgeting shortfalls. Always cross-reference the latest intake parameters on <strong>studies.helsinki.fi</strong> prior to financial planning.
                       </p>
@@ -812,10 +817,10 @@ Kind regards,
                       </span>
                     </div>
                     <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                      Shamshad Bibi is a researcher and contributor at MoveAbroad.pk specializing in European university admissions, Nordic higher education pathways, and fully funded scholarship strategies for Pakistani students.
+                      Shamshad Bibi is a researcher and higher education contributor specializing in European university admissions, Nordic higher education pathways, and fully funded scholarship strategies for Pakistani students.
                     </p>
                     <p className="text-xs text-slate-400 dark:text-slate-500 pt-1">
-                      Editorial Review: Dr. M. Malik, MBBS (Founder &amp; Lead Editor, MoveAbroad.pk). Content follows MoveAbroad.pk source-verified educational research standards.
+                      Editorial Review: Dr. M. Malik, MBBS (Lead Editor). Verified against official University of Helsinki and Finnish Immigration Service (Migri) portals.
                     </p>
                   </div>
                 </div>
