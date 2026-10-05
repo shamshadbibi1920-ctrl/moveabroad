@@ -1,4 +1,4 @@
-import { FOUNDER, EDITORIAL_TEAM, SHAMSHAD_BIBI, DR_HAKEEM, DR_M_HALEEM, AuthorProfile } from './authors';
+import { FOUNDER, EDITORIAL_TEAM, SHAMSHAD_BIBI, DR_HAKEEM, DR_M_HALEEM, DR_HALEEM, AuthorProfile } from './authors';
 
 export interface BlogPost {
   title: string;
@@ -15,6 +15,19 @@ export interface BlogPost {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  { 
+    title: 'Moving from Pakistan to Denmark as a Physiotherapist in 2026: Complete Step-by-Step Guide', 
+    category: 'Denmark', 
+    date: 'Oct 05, 2026', 
+    publishedAt: '2026-10-04T21:20:00Z',
+    status: 'published',
+    author: DR_HALEEM.name, 
+    authorProfile: DR_HALEEM,
+    snippet: 'Critical 2026 guide for Pakistani DPT graduates targeting Denmark. Learn about the 2026 Pakistan application suspension, Danish 3 language exam, the 3-year Specifically Requested Healthcare Professional route, and evaluation employment...', 
+    slug: 'moving-to-denmark-physiotherapist-pakistan-2026',
+    image: '/images/blog/denmark-physiotherapist-pakistan.jpg',
+    altText: 'Modern physiotherapy rehabilitation and clinical practice in Denmark'
+  },
   { 
     title: 'Moving from Pakistan to Germany as a Physiotherapist in 2026: Complete Step-by-Step Guide', 
     category: 'Germany', 

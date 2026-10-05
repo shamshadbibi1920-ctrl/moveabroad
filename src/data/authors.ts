@@ -40,5 +40,12 @@ export const DR_M_HALEEM: AuthorProfile = {
   qualifications: "DPT, German Healthcare Recognition Specialist"
 };
 
+export const DR_HALEEM: AuthorProfile = {
+  name: "Dr Haleem",
+  role: "Physical Therapy & European Licensure Specialist",
+  bio: "Senior physical therapy educator and European medical migration specialist analyzing Scandinavian and Nordic healthcare recognition policies, STPS licensing requirements, German Anerkennung, and practical international mobility strategies for Pakistani rehabilitation clinicians.",
+  qualifications: "DPT, European Healthcare Licensure Specialist"
+};
+
 export const DEFAULT_AUTHOR = FOUNDER;
 

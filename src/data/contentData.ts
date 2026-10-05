@@ -2341,6 +2341,232 @@ export const contentDatabase: Record<string, GuideContent> = {
         authorityType: 'Consulate'
       }
     ]
+  },
+
+  // =========================================================================
+  // ROUTE: healthcare/denmark/physiotherapist
+  // =========================================================================
+  'healthcare/denmark/physiotherapist': {
+    id: 'healthcare/denmark/physiotherapist',
+    category: 'healthcare',
+    country: 'Denmark',
+    topicTitle: 'Denmark Physiotherapy Authorisation & STPS Pathway',
+    metaTitle: 'Denmark Physiotherapist Registration 2026: STPS Guide for Pakistani DPT | MoveAbroad.pk',
+    metaDescription: 'Complete 2026 guide for Pakistani DPT physiotherapists moving to Denmark. Covers Danish Patient Safety Authority (STPS) authorisation, 2026 Pakistan suspension updates, Danish 3 exam, and 6-month evaluation employment.',
+    canonicalPath: '/healthcare/denmark/physiotherapist',
+    hero: {
+      badge: 'STPS Authorisation & 2026 Pakistan Advisory',
+      title: 'Denmark Physiotherapist Registration & Practice Pathways for Pakistani DPTs',
+      subtitle: 'A rigorous regulatory, language, and clinical roadmap for Pakistani physical therapy graduates navigating Danish Patient Safety Authority (STPS) credential evaluation, 2026 Pakistan suspension exceptions, Prøve i Dansk 3, and evaluation employment.',
+      lastUpdated: 'October 2026',
+      readTime: '17 min read',
+      keyTakeaway: 'Physiotherapist (Fysioterapeut) is a strictly regulated and legally protected title in Denmark. Overseas clinicians must obtain Danish state authorisation from the Danish Patient Safety Authority (Styrelsen for Patientsikkerhed - STPS). Non-EU graduates must pass the demanding Prøve i Dansk 3 language exam (minimum Oral 10, Reading 7, Writing 7 on the Danish 7-point scale) and complete 6 months of supervised clinical evaluation employment (Evalueringsansættelse). CRITICAL 2026 ADVISORY: STPS has maintained a temporary suspension on assessing qualifications from Pakistan as of 30 June 2026. However, exceptions exist for individuals already legally residing in Denmark (holding a CPR number) or candidates qualifying under the Special Process for Specifically Requested Healthcare Professionals (with a 3-year parallel training window).',
+      quickStats: [
+        { label: 'STPS Application Fee', value: 'DKK 1,362', subtext: 'Non-EU qualification assessment' },
+        { label: 'Danish 3 Exam Benchmark', value: 'Oral: 10 / Read: 7 / Write: 7', subtext: 'Danish 7-point grading scale' },
+        { label: 'Evaluation Employment', value: '6 Months', subtext: 'Supervised clinical placement' },
+        { label: '2026 Assessment Status', value: 'Temporary Pause', subtext: 'Exceptions for Danish residents & special route' }
+      ]
+    },
+    pakistaniContext: {
+      title: 'DPT Verification, 2026 Suspension Reality & HEC Sealed Directives',
+      badge: 'Critical Danish Regulatory Advisory for Pakistani Applicants',
+      summary: 'While Pakistani 5-year DPT curricula offer comprehensive theoretical foundation, STPS has temporarily paused new offshore credential applications from Pakistan due to document authenticity and verification concerns. Pakistani applicants must either be legally residing in Denmark (with a Danish CPR number) or secure an employer under the Special Process for Specifically Requested Healthcare Professionals.',
+      attestationDetails: [
+        {
+          authority: 'University Direct Sealed Verification',
+          requirement: 'STPS requires primary source verification. Pakistani universities must provide official transcripts and degree verification in sealed envelopes, stamped and signed across the flap by the registrar or controller of examinations.'
+        },
+        {
+          authority: 'Higher Education Commission (HEC) & MOFA Attestation',
+          requirement: 'Original DPT degree parchment and consolidated 5-year transcript must be verified via the HEC online portal, followed by physical stamping from the Ministry of Foreign Affairs (MOFA) in Pakistan.'
+        },
+        {
+          authority: 'Certified Danish or English Translation',
+          requirement: 'Any documents not issued originally in English or Danish must be translated by an authorized court-certified or sworn translator with official stamps and translator certification.'
+        },
+        {
+          authority: 'Detailed Clinical Logbook & Rotation Hours',
+          requirement: 'Obtain an official clinical rotation transcript detailing exact hospital hours completed across musculoskeletal, neurological, cardiopulmonary, and pediatric physical therapy.'
+        }
+      ],
+      bankingAdvice: 'SIRI processing fee for work permits in 2026 is DKK 6,810. For the Special Authorisation Residence Permit, maintenance funds require DKK 79,920 for single applicants (approx. PKR 3.2M). Funds must be held in a liquid personal bank account in your name for at least 30 days prior to submission.',
+      keyWarnings: [
+        'CRITICAL 2026 UPDATE: As of 30 June 2026, STPS has maintained its temporary suspension on processing qualifications from Pakistan, Nepal, and Bangladesh. Do not pay unauthorized agents claiming guaranteed offshore direct approvals.',
+        'Physiotherapy is NOT on Denmark’s 1 July 2026 Positive List for Higher Education. Candidates cannot use the fast-track Positive List scheme and must use the Special Authorisation or Pay Limit schemes.',
+        'Prøve i Dansk 3 is exceptionally rigorous. Achieving an Oral grade of 10 requires advanced spoken fluency in clinical discussions, case presentations, and Danish patient interactions.'
+      ]
+    },
+    dataTable: {
+      title: 'Denmark vs. Germany vs. Australia Physiotherapist Pathway Comparison',
+      subtitle: 'Comparative regulatory, language, clinical, and financial benchmarks for Pakistani DPT graduates in 2026.',
+      headers: ['Evaluation Metric', 'Denmark Pathway (STPS)', 'Germany Pathway (Länder)', 'Australia Pathway (APEP)'],
+      rows: [
+        {
+          cols: ['Regulatory Authority', 'Danish Patient Safety Authority (STPS)', 'State health authorities (16 Bundesländer)', 'Australian Physiotherapy Council (APC) & Ahpra'],
+        },
+        {
+          cols: ['2026 Pakistan Status', 'Temporarily suspended (unless resident or under special route)', 'Active processing (no country suspension)', 'Active processing (APEP stages available from Pakistan)'],
+          highlight: true
+        },
+        {
+          cols: ['Language Benchmark', 'Prøve i Dansk 3 (Oral 10, Reading 7, Writing 7)', 'German B2 (Goethe, telc, ÖSD)', 'IELTS 7.0 (Writing 6.5) or PTE 63 (Speaking 76)'],
+          highlight: true
+        },
+        {
+          cols: ['Clinical Assessment', '6-month evaluation employment in Denmark', 'Adaptation course (Anpassungslehrgang) or Knowledge test', 'Remote Capability viva + 1-day Melbourne workshop'],
+        },
+        {
+          cols: ['Initial Assessment Fee', 'DKK 1,362 (approx. €182)', '€25 to €430 (state dependent)', 'AUD $8,321 (APEP) + AUD $1,674 (Skills assessment)'],
+          highlight: true
+        },
+        {
+          cols: ['Shortage / Positive List', 'Not on 1 July 2026 Positive List for Higher Ed', 'Official national shortage (0.8 jobseeker ratio)', 'On Medium & Long-term Strategic Skills List (ANZSCO 252511)'],
+        },
+        {
+          cols: ['Average Remuneration', 'DKK 38,000 - 46,000 gross/mo (~€5,100 - €6,100)', '€3,248 gross/mo (median, up to €5,000)', 'AUD $75,000 - $110,000+ per year'],
+        },
+        {
+          cols: ['Visa Route Prior to Full Licence', 'Special Authorisation Permit or Pay Limit Scheme', 'Section 16d Recognition Visa (up to 20h secondary work)', '482/494 or 407 Training Visa with Limited Registration'],
+          highlight: true
+        }
+      ],
+      footnote: 'Official data based on Danish Patient Safety Authority, German Federal Employment Agency, and Australian Physiotherapy Council 2026 regulatory guidelines.'
+    },
+    timeline: {
+      title: '14 - 24 Month Action Roadmap for Denmark Physiotherapy Pathway',
+      subtitle: 'Chronological progression for eligible Pakistani DPT graduates navigating STPS authorisation and Danish healthcare integration.',
+      steps: [
+        {
+          stepNumber: 1,
+          title: 'Establish Legal Eligibility & Suspension Exemption',
+          duration: 'Months 1 - 2',
+          description: 'Confirm eligibility under either the legal Danish resident exemption (holding a CPR number) or the Special Process for Specifically Requested Healthcare Professionals with a prospective Danish hospital/clinic employer.',
+          pakistaniTip: 'If applying offshore without Danish residency or an employer offer, Germany or Australia represent active, uninterrupted alternative pathways.'
+        },
+        {
+          stepNumber: 2,
+          title: 'DPT Document Compilation & Sealed University Attestation',
+          duration: 'Months 2 - 5',
+          description: 'Obtain university verified transcripts, syllabus breakdown of theoretical and clinical hours, HEC/MOFA attestation, and certified Danish/English translations.',
+          pakistaniTip: 'Ensure transcripts clearly document clinical ward rotations and patient hours across orthopedic, neurological, and cardiopulmonary rehabilitation.'
+        },
+        {
+          stepNumber: 3,
+          title: 'Lodge STPS Authorisation Application & Assessment',
+          duration: 'Months 5 - 9',
+          description: 'Submit formal application for non-EU qualification assessment to the Danish Patient Safety Authority along with the DKK 1,362 fee.',
+          pakistaniTip: 'STPS assesses whether your Pakistani DPT education corresponds to the 3.5-year Danish professional bachelor in physiotherapy (Professionsbachelor i fysioterapi).'
+        },
+        {
+          stepNumber: 4,
+          title: 'Intensive Danish Language Study & Prøve i Dansk 3 Exam',
+          duration: 'Months 6 - 16',
+          description: 'Study Danish intensely to reach the required scores on the official state Prøve i Dansk 3: minimum grade 10 in Oral Communication, 7 in Reading, and 7 in Writing.',
+          pakistaniTip: 'The Danish 3 exam is held twice a year (May/June and November/December) in Denmark. The result must be less than 12 months old at the time of evaluation employment application.'
+        },
+        {
+          stepNumber: 5,
+          title: 'Secure 6-Month Evaluation Employment (Evalueringsansættelse)',
+          duration: 'Months 16 - 22',
+          description: 'Apply to Danish hospitals, municipal rehabilitation centers, or private physical therapy clinics for a 6-month supervised evaluation position.',
+          pakistaniTip: 'Once an employer offer is secured, STPS issues an Evaluation Authorisation (Evalueringsautorisation) and SIRI grants the corresponding residence and work permit.'
+        },
+        {
+          stepNumber: 6,
+          title: 'Clinical Assessment, Legislation Course & Full Authorisation',
+          duration: 'Months 22 - 24+',
+          description: 'Complete the 6-month supervised clinical placement with positive assessment ratings from your senior supervising physiotherapist. Conclude the Danish healthcare legislation course to receive permanent Danish Authorisation (Autorisation) and independent practice rights (Tilladelse til selvstændigt virke).',
+          pakistaniTip: 'Permanent authorisation grants you unrestricted clinical mobility across Denmark and eligibility to bill the Danish public healthcare system (Sygesikringen).'
+        }
+      ]
+    },
+    deepDiveSections: [
+      {
+        id: 'suspension-and-exceptions',
+        title: 'Decoding the 2026 Pakistan Suspension: Legal Realities & Active Exceptions',
+        leadParagraph: 'Understanding the Danish Patient Safety Authority\'s regulatory position is crucial to avoid fraudulent consultancy promises and plan a legitimate pathway.',
+        paragraphs: [
+          'Official 2026 Decision: As of 30 June 2026, STPS formally reviewed its temporary pause on processing educational qualifications completed in Pakistan, Nepal, and Bangladesh, and decided to maintain the suspension. This policy was instituted because of widespread difficulties in authenticating academic certificates, clinical logbooks, and institutional credentials directly from the region.',
+          'The Legal Resident Exception: STPS explicitly confirms that individuals who completed their physiotherapy education in Pakistan but are ALREADY legally residing in Denmark (holding a Danish Civil Registration CPR number and valid residence permit, such as a spouse visa, family reunification, or student visa) can still have their qualifications evaluated.',
+          'The Specifically Requested Professional Route: Employers in Denmark experiencing critical staffing shortages may sponsor an overseas clinician under the Special Process for Specifically Requested Healthcare Professionals, providing a binding employment and supervision contract.'
+        ],
+        callout: {
+          type: 'warning',
+          title: 'Beware of Unauthorized Consultancy Scams in Pakistan',
+          message: 'No private recruitment agency or consultancy has backdoor influence with STPS. If an agency claims they can bypass the official 2026 suspension without legal Danish residency or an approved Danish employer supervision plan, their claims contradict published Danish government policy.'
+        }
+      },
+      {
+        id: 'danish-3-exam-structure',
+        title: 'Mastering Prøve i Dansk 3: The 7-Point Danish Grading Benchmark',
+        leadParagraph: 'Clinical healthcare in Denmark is conducted exclusively in Danish. Meeting the language requirement is the most demanding technical hurdle for international applicants.',
+        paragraphs: [
+          'Rigorous Minimum Grades: STPS requires a minimum grade of 10 in Oral Communication (Mundtlig kommunikation), 7 in Reading Comprehension (Læseforståelse), and 7 in Written Communication (Skriftlig fremstilling) on the Danish 7-point scale (-3, 00, 02, 4, 7, 10, 12).',
+          'Clinical Oral Fluency: An oral grade of 10 represents an excellent performance demonstrating strong linguistic fluency, correct nuance, spontaneous patient dialogue, and accurate rehabilitation terminology.',
+          'Component Accumulation: Candidates are not required to achieve all passing scores in a single exam administration. If you score 10 in Oral but 4 in Writing, you may retake the written component in a subsequent testing cycle.',
+          'The 12-Month Rule: STPS stipulates that your passed language exam must not be older than 12 months when applying for evaluation authorisation, unless you have resided continuously in Denmark since passing the exam.'
+        ],
+        callout: {
+          type: 'tip',
+          title: 'Special Route 3-Year Window',
+          message: 'Under the Special Process for Specifically Requested Healthcare Professionals, candidates can commence evaluation employment first and are granted up to 3 years to pass Danish 3 while working under supervision.'
+        }
+      },
+      {
+        id: 'evaluation-employment-siri',
+        title: 'Evaluation Employment (Evalueringsansættelse) & SIRI Immigration Permits',
+        leadParagraph: 'Securing a supervised clinical contract in Denmark bridges the gap between educational theory and Danish clinical practice standards.',
+        paragraphs: [
+          'Mandatory 6-Month Duration: Evaluation employment must last for a minimum of 6 months in a full-time position (or equivalent part-time hours of at least 30 hours per week). The position must encompass diverse clinical physiotherapy duties under direct supervision.',
+          'Self-Driven Search: The Danish Patient Safety Authority does not allocate or guarantee hospital positions. Applicants must proactively search for positions on job portals such as Jobnet.dk, Sundhedsjobs.dk, and WorkinDenmark.dk.',
+          'Assessment & Final Sign-Off: At the conclusion of the 6-month placement, your supervising chief physiotherapist submits an official evaluation report assessing your diagnostic proficiency, therapeutic handling, documentation, patient communication, and professional conduct.',
+          'SIRI Work & Residence Permit: For 2026, the application fee to the Danish Agency for International Recruitment and Integration (SIRI) for a healthcare evaluation permit is DKK 6,810. You must prove financial self-sufficiency (DKK 79,920 for single applicants) until your paid employment begins.'
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: 'Are physiotherapy degrees from Pakistan currently being assessed by Denmark in 2026?',
+        answer: 'The Danish Patient Safety Authority (STPS) has temporarily suspended assessing qualifications completed in Pakistan, Nepal, and Bangladesh, a decision reaffirmed on 30 June 2026. However, exceptions exist if the applicant is already legally residing in Denmark (with a Danish CPR number) or applies under the Special Process for Specifically Requested Healthcare Professionals with an approved employer contract.'
+      },
+      {
+        question: 'What is the Special Process for Specifically Requested Healthcare Professionals?',
+        answer: 'This is an official Danish pathway where a Danish hospital, municipality, or rehabilitation clinic provides a binding employment offer (minimum 6 months full-time) and an institutional supervision plan. Candidates under this pathway are granted up to 3 years to complete their language test (Prøve i Dansk 3) and adaptation requirements in parallel.'
+      },
+      {
+        question: 'Is Physiotherapy included on Denmark’s 2026 Positive List for Higher Education?',
+        answer: 'No. The official Positive List effective 1 July 2026 does NOT include Physiotherapist (DISCO 226410). International applicants cannot use the fast-track Positive List scheme and must qualify under the Special Authorisation Residence Permit or the Pay Limit Scheme.'
+      },
+      {
+        question: 'What exact scores are needed on the Danish 3 examination (Prøve i Dansk 3)?',
+        answer: 'STPS mandates a minimum score of 10 in Oral Communication, 7 in Reading Comprehension, and 7 in Written Communication on the Danish 7-point scale. Passing components can be accumulated across different exam sittings.'
+      },
+      {
+        question: 'What is the application fee for Danish physiotherapy authorisation and SIRI visa?',
+        answer: 'The non-EU educational assessment fee to STPS is DKK 1,362. If applying for the residence and work permit through SIRI, the 2026 case processing fee is DKK 6,810, plus proof of liquid maintenance funds of DKK 79,920 for single applicants.'
+      }
+    ],
+    officialResources: [
+      {
+        name: 'Danish Patient Safety Authority (STPS) — Non-EU Physiotherapist',
+        url: 'https://en.stps.dk/health-professionals-and-authorities/registration-of-healthcare-professionals/physiotherapist',
+        description: 'Official national authority portal detailing non-EU qualification assessment, Danish 3 grades, and temporary suspension directives.',
+        authorityType: 'Regulatory Body'
+      },
+      {
+        name: 'New to Denmark (SIRI) — Healthcare Professional Residence Permit',
+        url: 'https://www.nyidanmark.dk/en-GB',
+        description: 'Official immigration portal for residence and work permits for Danish authorisation, fee schedules, and financial thresholds.',
+        authorityType: 'Government'
+      },
+      {
+        name: 'WorkinDenmark Official Portal',
+        url: 'https://www.workindenmark.dk',
+        description: 'Official Danish public employment service for international healthcare professionals seeking hospital and clinical vacancies.',
+        authorityType: 'Government'
+      }
+    ]
   }
 };
 
