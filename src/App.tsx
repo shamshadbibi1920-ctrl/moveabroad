@@ -16,6 +16,8 @@ const ContactUs = React.lazy(() => import('./pages/ContactUs'));
 const PrivacyPolicy = React.lazy(() => import('./pages/PrivacyPolicy'));
 const Disclaimer = React.lazy(() => import('./pages/Disclaimer'));
 const TermsOfService = React.lazy(() => import('./pages/TermsOfService'));
+const EditorialStandards = React.lazy(() => import('./pages/EditorialStandards'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 // Destination Hub Overview Pages
 const StudyDestination = React.lazy(() => import('./pages/StudyDestination'));
@@ -110,6 +112,7 @@ export function AppRoutes() {
           <Route path="disclaimer" element={<Disclaimer />} />
           <Route path="terms" element={<TermsOfService />} />
           <Route path="terms-of-service" element={<TermsOfService />} />
+          <Route path="editorial-standards" element={<EditorialStandards />} />
 
           {/* Migration Routes */}
           <Route path="migrate" element={<MigrateHome />} />
@@ -160,6 +163,9 @@ export function AppRoutes() {
 
           {/* Healthcare: Specific Licensing Pathway Guides (CaRMS, PLAB, AMC Standard, etc.) */}
           <Route path="healthcare/:countryId/:professionId/:pathwayId" element={<DynamicGuideTemplate />} />
+
+          {/* 404 Catch-All Page */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Suspense>
