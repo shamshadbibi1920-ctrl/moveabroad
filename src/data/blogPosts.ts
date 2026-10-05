@@ -1,4 +1,4 @@
-import { FOUNDER, EDITORIAL_TEAM, SHAMSHAD_BIBI, DR_HAKEEM, AuthorProfile } from './authors';
+import { FOUNDER, EDITORIAL_TEAM, SHAMSHAD_BIBI, DR_HAKEEM, DR_M_HALEEM, AuthorProfile } from './authors';
 
 export interface BlogPost {
   title: string;
@@ -15,6 +15,19 @@ export interface BlogPost {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  { 
+    title: 'Moving from Pakistan to Germany as a Physiotherapist in 2026: Complete Step-by-Step Guide', 
+    category: 'Germany', 
+    date: 'Oct 05, 2026', 
+    publishedAt: '2026-10-04T21:00:00Z',
+    status: 'published',
+    author: DR_M_HALEEM.name, 
+    authorProfile: DR_M_HALEEM,
+    snippet: 'Comprehensive 2026 roadmap for Pakistani DPT graduates moving to Germany. Learn about German B2 language targets, the state Anerkennung equivalence process, Defizitbescheid compensation, recognition visas, and official median salary (€3,248/mo)...', 
+    slug: 'moving-to-germany-physiotherapist-pakistan-2026',
+    image: '/images/blog/germany-physiotherapist-pakistan.jpg',
+    altText: 'Modern physiotherapy rehabilitation and clinical practice in Germany'
+  },
   { 
     title: 'Moving from Pakistan to Australia as a Physiotherapist in 2026: Complete Step-by-Step Guide', 
     category: 'Australia', 

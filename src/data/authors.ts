@@ -33,5 +33,12 @@ export const DR_HAKEEM: AuthorProfile = {
   qualifications: "DPT, Allied Health Migration Specialist"
 };
 
+export const DR_M_HALEEM: AuthorProfile = {
+  name: "Dr M.Haleem",
+  role: "Physical Therapy & European Licensure Specialist",
+  bio: "Senior physical therapy educator and European medical migration specialist focusing on German professional recognition (Anerkennung), Defizitbescheid compensation pathways, B2 medical language preparation, and German healthcare workforce integration for Pakistani rehabilitation clinicians.",
+  qualifications: "DPT, German Healthcare Recognition Specialist"
+};
+
 export const DEFAULT_AUTHOR = FOUNDER;
 
