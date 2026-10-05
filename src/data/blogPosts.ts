@@ -1,4 +1,4 @@
-import { FOUNDER, EDITORIAL_TEAM, SHAMSHAD_BIBI, AuthorProfile } from './authors';
+import { FOUNDER, EDITORIAL_TEAM, SHAMSHAD_BIBI, DR_HAKEEM, AuthorProfile } from './authors';
 
 export interface BlogPost {
   title: string;
@@ -15,6 +15,19 @@ export interface BlogPost {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  { 
+    title: 'Moving from Pakistan to Australia as a Physiotherapist in 2026: Complete Step-by-Step Guide', 
+    category: 'Australia', 
+    date: 'Oct 04, 2026', 
+    publishedAt: '2026-10-04T20:00:00Z',
+    status: 'published',
+    author: DR_HAKEEM.name, 
+    authorProfile: DR_HAKEEM,
+    snippet: 'Comprehensive 2026 roadmap for Pakistani DPT graduates moving to Australia. Covers APC APEP pathway, late-2026 fee updates (AUD $8,321), new PTE/IELTS English benchmarks, Ahpra Limited & General registration, and 189/190/491 skilled migration...', 
+    slug: 'moving-to-australia-physiotherapist-pakistan-2026',
+    image: '/images/blog/australia-physiotherapist-pakistan.jpg',
+    altText: 'Modern physiotherapy and clinical rehabilitation practice in Australia'
+  },
   { 
     title: "University of Helsinki Scholarships 2027-28: Fully Funded Master's and PhD Options for Pakistani Students", 
     category: 'Scholarships', 

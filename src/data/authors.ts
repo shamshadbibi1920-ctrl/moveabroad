@@ -26,5 +26,12 @@ export const SHAMSHAD_BIBI: AuthorProfile = {
   qualifications: "Education & Admissions Researcher"
 };
 
+export const DR_HAKEEM: AuthorProfile = {
+  name: "Dr Hakeem",
+  role: "Physiotherapy & Allied Health Specialist",
+  bio: "Doctor of Physical Therapy and clinical migration analyst specializing in Australian Health Practitioner Regulation Agency (Ahpra) licensing, Australian Physiotherapy Council (APC) APEP assessments, and skilled migration pathways for Pakistani rehabilitation professionals.",
+  qualifications: "DPT, Allied Health Migration Specialist"
+};
+
 export const DEFAULT_AUTHOR = FOUNDER;
 

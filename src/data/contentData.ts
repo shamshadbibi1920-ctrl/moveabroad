@@ -1952,6 +1952,204 @@ export const contentDatabase: Record<string, GuideContent> = {
         authorityType: 'Government'
       }
     ]
+  },
+
+  // =========================================================================
+  // ROUTE: healthcare/australia/physiotherapist
+  // =========================================================================
+  'healthcare/australia/physiotherapist': {
+    id: 'healthcare/australia/physiotherapist',
+    category: 'healthcare',
+    country: 'Australia',
+    topicTitle: 'Australia Physiotherapy Registration & APC APEP Pathway',
+    metaTitle: 'Australia Physiotherapy Registration 2026: APC APEP Pathway for Pakistani DPT | MoveAbroad.pk',
+    metaDescription: 'Complete 2026 guide for Pakistani DPT physiotherapists moving to Australia. Covers APC APEP pathway, late-2026 fees (AUD $8,321), new PTE/IELTS scores, Ahpra registration, and 189/190/491 visas.',
+    canonicalPath: '/healthcare/australia/physiotherapist',
+    hero: {
+      badge: 'APC Australian Physiotherapy Entry Pathway (APEP) 2026',
+      title: 'Australia Physiotherapy Registration & Skilled Migration for Pakistani DPTs',
+      subtitle: 'A step-by-step regulatory, examination, and immigration guide for Pakistani physical therapy graduates navigating the Australian Physiotherapy Council (APC) APEP pathway, Ahpra registration, and skilled visas.',
+      lastUpdated: 'October 2026',
+      readTime: '15 min read',
+      keyTakeaway: 'Pakistani DPT graduates can complete approximately 80% of the Australian Physiotherapy Entry Pathway (APEP) remotely from Pakistan. After completing Eligibility Assessment ($1,170) and Cultural Safety Training ($242), you receive an Interim Certificate valid for 2 years that supports eligibility for Ahpra Limited Registration (supervised practice in Australia). The late-2026 APEP fee is AUD $8,321 (effective 21 October 2026), plus AUD $1,674 for migration skills assessment (total AUD $9,995). English standards require IELTS 7.0 (6.5 in Writing) or PTE 63 (Speaking 76).',
+      quickStats: [
+        { label: 'APEP Total Fee', value: '$8,321 AUD', subtext: 'From 21 Oct 2026 (5 stages)' },
+        { label: 'Migration Skills Assessment', value: '$1,674 AUD', subtext: 'Separate APC evaluation' },
+        { label: 'PTE Speaking Benchmark', value: '76 Score', subtext: 'Overall 63 (New 2026 rules)' },
+        { label: 'Physiotherapist Base Salary', value: '$75,000 - $110,000+ AUD', subtext: 'Private & hospital sectors' }
+      ]
+    },
+    pakistaniContext: {
+      title: 'DPT Recognition, Supervised Practice & Melbourne Clinical Workshop',
+      badge: 'Critical Pakistani Physiotherapy Advisory',
+      summary: 'The Australian Physiotherapy Council confirms that Pakistani physiotherapists are eligible for the APEP pathway. Having a 5-year DPT does not confer automatic registration, but Pakistani candidates can progress through 4 of the 5 stages from Pakistan before attending the 1-day Clinical Workshop in Melbourne.',
+      attestationDetails: [
+        {
+          authority: 'University Clinical Placement Documentation',
+          requirement: 'Do not rely solely on your DPT degree certificate. Transcripts must demonstrate clinical education hours. If not detailed, obtain an official university placement letter signed by the registrar or clinical coordinator detailing supervised clinical placement rotations.'
+        },
+        {
+          authority: 'Legal Authority to Practise in Pakistan',
+          requirement: 'Provide official documentation establishing your legal entitlement to practise in Pakistan, such as provincial council registration or certified hospital appointment letters.'
+        },
+        {
+          authority: 'Higher Education Commission (HEC) Attestation',
+          requirement: 'Ensure original degree parchment and final consolidated marksheets are verified through the HEC e-portal and physically stamped prior to overseas verification.'
+        }
+      ],
+      bankingAdvice: 'APC assessment fees are charged in Australian Dollars (AUD). Ensure your Pakistani bank debit or credit card has international ecommerce transaction limits enabled above PKR 500,000 to cover individual stage payments smoothly.',
+      keyWarnings: [
+        'Do not confuse the APEP assessment fee (AUD $8,321) with the separate APC Migration Skills Assessment (AUD $1,674). Both combined equal AUD $9,995 for permanent skilled migration.',
+        'Beware of outdated English guidance: effective 23 April 2026, Ahpra accepts 6.5 in Writing for IELTS (not 7.0), but PTE requires a high Speaking score of 76.',
+        'Budget for the mandatory Melbourne trip: the final 1-day Clinical Workshop (Stage 5) must be taken in person in Melbourne. Budget separately for international flights, visitor visa, and accommodation.'
+      ]
+    },
+    dataTable: {
+      title: 'APC APEP Stage-by-Stage Fee & Format Breakdown (Late 2026)',
+      subtitle: 'Official Australian Physiotherapy Council fee schedule effective 21 October 2026.',
+      headers: ['APEP Stage', 'Fee (AUD)', 'Format / Delivery', 'Duration / Schedule', 'Key Milestone'],
+      rows: [
+        {
+          cols: ['Stage 1: Eligibility Assessment', '$1,170 AUD', 'Online Document Upload', '~3 weeks review', 'Confirms eligibility to enter APEP pathway'],
+        },
+        {
+          cols: ['Stage 2: Cultural Safety Training', '$242 AUD', 'Online Learning Module', 'Self-paced (1-2 weeks)', 'Aboriginal & Torres Strait Islander healthcare'],
+        },
+        {
+          cols: ['Interim Certificate Issuance', 'Included', 'Digital Certificate', 'Valid for 2 years', 'Supports Ahpra Limited Registration for Supervised Practice!'],
+          highlight: true
+        },
+        {
+          cols: ['Stage 3: Written Assessment', '$2,078 AUD', 'Computer-based Exam', '3-6 months prep', 'Tests clinical reasoning and patient safety'],
+        },
+        {
+          cols: ['Stage 4: Capability Assessment', '$2,928 AUD', 'Remote Online Oral Exam (1.5 hrs)', 'Completed from Pakistan', 'Case scenario viva evaluated across 9 clinical domains'],
+          highlight: true
+        },
+        {
+          cols: ['Stage 5: Clinical Workshop', '$1,903 AUD', 'In-Person (Melbourne)', '1 Full Day', 'Hands-on practical evaluation in simulated clinic'],
+          highlight: true
+        },
+        {
+          cols: ['Total APEP Assessment', '$8,321 AUD', 'All 5 Stages', '~9 - 14 Months', 'Leads to APC Final Certificate & Ahpra General Registration'],
+          highlight: true
+        },
+        {
+          cols: ['Migration Skills Assessment', '$1,674 AUD', 'Document Audit (8-10 wks)', 'Parallel / Post-APEP', 'Mandatory for Subclasses 189, 190, 491 visas'],
+        }
+      ],
+      footnote: 'Resit fees apply if any assessment stage needs to be repeated. Travel and accommodation for Melbourne workshop are not included in APC fees.'
+    },
+    timeline: {
+      title: '12-Month Step-by-Step Pathway to Australian Practice',
+      subtitle: 'Chronological progression from Pakistan DPT graduation to Australian clinical employment.',
+      steps: [
+        {
+          stepNumber: 1,
+          title: 'Document Assembly & English Testing',
+          duration: 'Months 1 - 3',
+          description: 'Obtain university clinical placement verification, HEC degree attestation, and sit IELTS Academic (7.0 / 6.5 Writing) or PTE Academic (63 / 76 Speaking).',
+          pakistaniTip: 'Target Superior English (PTE 79+ or IELTS 8.0) to gain 20 points toward your skilled visa Expression of Interest.'
+        },
+        {
+          stepNumber: 2,
+          title: 'APEP Eligibility & Cultural Safety Training',
+          duration: 'Months 3 - 5',
+          description: 'Lodge Stage 1 Eligibility Assessment with APC ($1,170) and complete Stage 2 Cultural Safety ($242). Receive your 2-year Interim Certificate.',
+          pakistaniTip: 'Use your Interim Certificate to explore employer-sponsored supervised clinical roles in regional Australia under Limited Registration.'
+        },
+        {
+          stepNumber: 3,
+          title: 'Written Assessment & Capability Assessment',
+          duration: 'Months 5 - 9',
+          description: 'Pass the computer-based Written Assessment ($2,078) and the 1.5-hour online Capability oral exam ($2,928) directly from home in Pakistan.',
+          pakistaniTip: 'Practise speaking clinical diagnoses, red flags, and multidisciplinary escalation aloud with peers using Australian clinical guidelines.'
+        },
+        {
+          stepNumber: 4,
+          title: 'Clinical Workshop in Melbourne & Final Certificate',
+          duration: 'Months 9 - 12',
+          description: 'Travel to Melbourne on an Australian visitor visa, attend the 1-day Clinical Workshop ($1,903), and receive your official APC Final Certificate.',
+          pakistaniTip: 'Book your Melbourne workshop and hotel well in advance to avoid peak season flight and lodging rates.'
+        },
+        {
+          stepNumber: 5,
+          title: 'Ahpra General Registration & Skilled Migration (189/190/491)',
+          duration: 'Months 12 - 15+',
+          description: 'Apply for Ahpra General Registration, obtain APC Migration Skills Assessment ($1,674), and submit your SkillSelect EOI for ANZSCO 252511.',
+          pakistaniTip: 'Consider Subclass 491 Regional Provisional (+15 points), which provides a clear pathway to Subclass 191 Permanent Residency with no minimum income threshold.'
+        }
+      ]
+    },
+    deepDiveSections: [
+      {
+        id: 'apep-structure',
+        title: 'Understanding the Australian Physiotherapy Entry Pathway (APEP)',
+        leadParagraph: 'APEP replaced the older, fragmented examination model with an integrated 5-stage framework that allows overseas physiotherapists to complete 80% of the requirements from their home country.',
+        paragraphs: [
+          'The pathway evaluates overseas physiotherapists against the Australian Physiotherapy Practice Thresholds. Candidates must demonstrate competent clinical reasoning, evidence-based management, patient-centred communication, and safety standards.',
+          'Upon completing Stages 1 and 2, candidates receive an Interim Certificate. This certificate enables candidates to apply for Limited Registration with Ahpra, paving the way for supervised employment in Australian health services while concluding their assessment.',
+          'The final hurdle is the 1-day hands-on Clinical Workshop conducted in Melbourne, where assessors observe real-time candidate handling, physical examination, exercise prescription, and communication in simulated treatment rooms.'
+        ],
+        callout: {
+          type: 'tip',
+          title: 'Subclass 491 to 191 PR Rule Clarification',
+          message: 'Under current Department of Home Affairs rules, there is no minimum income threshold for the Subclass 191 regional permanent residence stream. You must simply hold an eligible regional visa (such as 491) for at least 3 years and provide 3 income years of Australian Taxation Office (ATO) Notices of Assessment.'
+        }
+      },
+      {
+        id: 'english-scores',
+        title: 'Ahpra English Language Requirements: 2026 Standards',
+        leadParagraph: 'Effective 23 April 2026, the National Health Practitioner Boards instituted revised English test score minimums across all registered health professions.',
+        paragraphs: [
+          'For IELTS Academic, the overall minimum remains 7.0, with 7.0 in Listening, Reading, and Speaking. However, Writing requires a minimum of 6.5 (correcting a frequent misconception that 7.0 is required in all subtests).',
+          'For PTE Academic, the overall requirement is 63, with minimums of 58 in Listening, 59 in Reading, 60 in Writing, and 76 in Speaking. Candidates must pay particular attention to the Speaking 76 benchmark.',
+          'OET Physiotherapy requires 350 in Listening, 360 in Reading, 350 in Writing, and 360 in Speaking. Results from up to two sittings within a 12-month period may be combined in accordance with Ahpra rules.'
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: 'Does a Pakistani DPT degree automatically qualify for Australian registration?',
+        answer: 'No. A Pakistani DPT degree does not provide direct registration. Pakistani applicants must be assessed through the Australian Physiotherapy Council (APC) APEP pathway and register with Ahpra before legally practising.'
+      },
+      {
+        question: 'What are the total APC fees for APEP and skilled migration in late 2026?',
+        answer: 'From 21 October 2026, the APEP assessment total is AUD $8,321 (Eligibility $1,170, Cultural Safety $242, Written $2,078, Capability $2,928, Clinical Workshop $1,903). If pursuing skilled migration (189/190/491), the separate APC Migration Skills Assessment is AUD $1,674, making a combined total of AUD $9,995.'
+      },
+      {
+        question: 'Can I work in Australia before finishing all APEP stages?',
+        answer: 'Yes. After completing Eligibility Assessment and Cultural Safety Training, the APC issues an Interim Certificate (valid for 2 years). This certificate supports eligibility to apply for Limited Registration for Supervised Practice with Ahpra, allowing you to work under supervision while completing the remaining stages.'
+      },
+      {
+        question: 'What is the ANZSCO code for Physiotherapists in Australia?',
+        answer: 'Physiotherapist is classified under ANZSCO 252511 on Australia’s Skilled Occupation List, with the Australian Physiotherapy Council (APC) designated as the official assessing authority.'
+      },
+      {
+        question: 'Is there a minimum salary requirement for the 491 to 191 Permanent Residency pathway?',
+        answer: 'No. The Department of Home Affairs confirmed that there is no minimum income threshold for the Subclass 191 regional provisional stream. Applicants must hold an eligible regional visa (such as 491) for 3 years, comply with conditions, and submit 3 ATO Notices of Assessment.'
+      }
+    ],
+    officialResources: [
+      {
+        name: 'Australian Physiotherapy Council (APC)',
+        url: 'https://physiocouncil.com.au',
+        description: 'Official assessing authority administering the Australian Physiotherapy Entry Pathway (APEP).',
+        authorityType: 'Regulatory Body'
+      },
+      {
+        name: 'Australian Health Practitioner Regulation Agency (Ahpra)',
+        url: 'https://www.ahpra.gov.au',
+        description: 'Statutory authority managing professional registration for physiotherapists in Australia.',
+        authorityType: 'Regulatory Body'
+      },
+      {
+        name: 'Department of Home Affairs — SkillSelect',
+        url: 'https://immi.homeaffairs.gov.au',
+        description: 'Official Australian immigration portal for points-tested skilled migration (Subclasses 189, 190, 491).',
+        authorityType: 'Government'
+      }
+    ]
   }
 };
 

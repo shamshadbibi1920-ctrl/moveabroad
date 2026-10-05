@@ -28,6 +28,7 @@ const DynamicGuideTemplate = React.lazy(() => import('./components/DynamicGuideT
 // Editorial Blog Guides
 const GermanBlockedAccountGuide = React.lazy(() => import('./pages/blog/GermanBlockedAccountGuide'));
 const UniversityOfHelsinkiScholarships = React.lazy(() => import('./pages/blog/UniversityOfHelsinkiScholarships'));
+const PakistaniPhysiotherapistAustralia = React.lazy(() => import('./pages/blog/PakistaniPhysiotherapistAustralia'));
 const PakistaniDentistGermany = React.lazy(() => import('./pages/blog/PakistaniDentistGermany'));
 const GermanyOpportunityCard = React.lazy(() => import('./pages/blog/GermanyOpportunityCard'));
 const DaadScholarshipGuide = React.lazy(() => import('./pages/blog/DaadScholarshipGuide'));
@@ -87,6 +88,7 @@ export function AppRoutes() {
 
           {/* Editorial Blog Guides */}
           <Route path="blog" element={<Blog />} />
+          <Route path="blog/moving-to-australia-physiotherapist-pakistan-2026" element={<PakistaniPhysiotherapistAustralia />} />
           <Route path="blog/university-of-helsinki-scholarships-pakistan-2027-28" element={<UniversityOfHelsinkiScholarships />} />
           <Route path="blog/how-to-open-german-blocked-account-pakistan-2026" element={<GermanBlockedAccountGuide />} />
           <Route path="blog/pakistani-dentist-germany-guide-2026" element={<PakistaniDentistGermany />} />
